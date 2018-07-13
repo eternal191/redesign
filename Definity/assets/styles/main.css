@@ -8221,6 +8221,7 @@ form .input-error-2:focus {
   left: 0;
   right: 0;
   padding-left: 0;
+  background-color: #232323;
 }
 
 .freelancer-hero .hero-content-wrapper .hero-content {
