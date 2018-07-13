@@ -3,3 +3,16 @@
     position: relative;
     margin-bottom: 80px;
 }
+
+
+
+@media (min-width: 1260px)  {
+
+    .navbar-right {
+
+    float: right !important;
+    margin-right: -15px;
+
+    }
+
+}
