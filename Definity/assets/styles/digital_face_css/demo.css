@@ -1,4 +1,4 @@
-*,
+/**,
 *::after,
 *::before {
 	-webkit-box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
 	background: #232323;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+}*/
 
 main {
 	display: flex;
@@ -96,33 +96,33 @@ a:focus {
 	margin: 0 2em 0 auto;
 }
 
-.btn {
+main .btn {
 	border: none;
 	background: none;
 }
 
-.btn:focus {
+main .btn:focus {
 	outline: none;
 }
 
-.btn--menu {
+main .btn--menu {
 	font-size: 1em;
 	margin: 0 0 0 2em;
 	padding: 0;
 	color: #585656;
 }
 
-.btn--menu .icon--menu-alt,
-.btn--menu.mode--code .icon--menu {
+main .btn--menu .icon--menu-alt,
+main .btn--menu.mode--code .icon--menu {
 	display: none;
 }
 
-.btn--menu.mode--code .icon--menu-alt {
+main .btn--menu.mode--code .icon--menu-alt {
 	display: block;
 }
 
 /* Icons */
-.icon {
+main .icon {
 	display: block;
 	width: 1.5em;
 	height: 1.5em;
