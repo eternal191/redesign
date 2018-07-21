@@ -2,6 +2,7 @@
     display: block;
     position: relative;
     margin-bottom: 80px;
+    min-height: 529px;
 }
 
 
@@ -16,3 +17,20 @@
     }
 
 }
+
+
+.scroller {
+    z-index: 9000;
+}
+
+
+/*.title > .title__inner {
+    color: #6dcc9e;
+}*/
+
+
+/*
+.ft-cards .ft-item {
+    min-height: 510px;
+    height: 500px;
+}*/
