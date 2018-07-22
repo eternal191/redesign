@@ -104,6 +104,8 @@ Author: Siddharth Doshi
                     dataType: 'jsonp',
                     error: function (resp, text) {
                         console.log('mailchimp ajax submit error: ' + text);
+                        email.removeClass('valid').addClass('error');
+                        label.removeClass('valid').addClass('error');
                     }
                 });
 
@@ -134,11 +136,10 @@ Author: Siddharth Doshi
 (function ($) {
     
     "use strict";
-
     $('.mc-ajax').ajaxChimp({
         callback: mailchimpCallback,
         // Replace this with your own url, id and user code (see documentation). 
-        url: "http://viktorandonov.us8.list-manage.com/subscribe/post?u=0d1613dc78dfba6e3ad02aaa5&amp;id=25d4404c02" 
+        url: "https://digitaldimensionz.us12.list-manage.com/subscribe/post?u=5d04416300c797976408a41ff;id=c6df87c001"
     });
 
     function mailchimpCallback(resp) {
