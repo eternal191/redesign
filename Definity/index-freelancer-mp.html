@@ -28,6 +28,11 @@
         <link rel="stylesheet" href="assets/styles/responsive.css">
         <link rel="stylesheet" href="assets/styles/custom.css">
 
+      <!-- digital_facer CSS -->
+      <link rel="stylesheet" href="assets/styles/digital_face_css/demo.css">
+      <link rel="stylesheet" href="assets/styles/digital_face_css/pieces.css">
+
+
         <!-- JS -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -59,11 +64,11 @@
               </button>
 
               <!-- Logo -->
-              <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="assets/images/logo.png" alt="Definity - Logo"></a>
+              <!--<a class="navbar-brand" href="index.html"><img class="navbar-logo" src="assets/images/logo.png" alt="Definity - Logo"></a>-->
             </div><!-- / .navbar-header -->
 
             <!-- Navbar Links -->
-            <div id="navbar" class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
               <ul class="nav navbar-nav">
 
                 <!-- Home -->
@@ -380,10 +385,65 @@
             <!-- Hero Content -->
             <div class="hero-content-wrapper">
               <div class="hero-content">
-                
-                <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">Freelance Web Developer</h4>
-                <h1 class="hero-lead wow fadeInUp" data-wow-duration="1.5s">GREGORY LEWIS</h1>
-                <a href="pages/contact-3.html" target="_blank" class="btn btn-light btn-small wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Schedule your free consultation</a>
+
+                <!--TODO place face digital face image here-->
+
+                <main>
+                  <div class="pieces" style="background-image: url(assets/images/digital_face_images/me3.jpg)" data-img-alt="url(assets/images/digital_face_images/megreen2.jpg)" data-img-code="url(assets/images/digital_face_images/me-code_2.jpg)"></div>
+                  <!--<div class="pieces" style="background-image: url(assets/images/digital_face_images/medigital.jpg)" data-img-alt="url(assets/images/digital_face_images/me-digital-alt.jpg)" data-img-code="url(assets/images/digital_face_images/me_digital_code.png)"></div>-->
+                  <div class="overlay overlay--hidden"></div>
+                  <div class="content">
+                    <div class="content__inner">
+                      <div class="content__top">
+                        <h2 class="title">
+                          <span class="title__inner mode mode--design" data-switch data-glitch>DIGITAL DIMENSIONZ</span>
+                        </h2>
+                        <div class="controls">
+                          <a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/GridLoadingAnimations/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+                          <a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=30725" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+                          <button class="btn btn--menu mode mode--design" data-switch>
+                            <svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
+                            <svg class="icon icon--menu-alt"><use xlink:href="#icon-menu-alt"></use></svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="menu">
+                        <ul class="menu__inner">
+                          <li class="menu__item"><a class="menu__link" data-switch>On Interface Design</a></li>
+                          <li class="menu__item"><a class="menu__link" data-switch>Portfolio</a></li>
+                          <li class="menu__item"><a class="menu__link" data-switch>Case Studies</a></li>
+                          <li class="menu__item"><a class="menu__link" data-switch>Musings</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu menu--code">
+                        <ul class="menu__inner">
+                          <li class="menu__item"><a class="menu__link" data-switch>On Coding</a></li>
+                          <li class="menu__item"><a class="menu__link" data-switch>Experiments</a></li>
+                          <li class="menu__item"><a class="menu__link" data-switch>Current Projects</a></li>
+                          <li class="menu__item"><a class="menu__link" data-switch>Tutorials</a></li>
+                          <li class="menu__item"><a class="menu__link" data-switch>> Find me on GitHub</a></li>
+                        </ul>
+                      </div>
+                      <div class="content__bottom">
+                        <div class="switch mode mode--design">
+                          <a class="switch__item switch__item--current">Designer</a>
+                          <a class="switch__item"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
+                        </div>
+                        <div class="link-wrap">
+                          <a class="contact-link mode mode--design" data-switch data-glitch>Work with me</a>
+                        </div>
+                      </div>
+                    </div><!-- /content__inner-->
+                  </div><!-- /content -->
+                  <div class="loading"></div>
+                </main>
+
+
+                <div class="masthead_hdrs" style="position:absolute;left: 20px;/* margin-left: -100px; */top: 472px;/* width: 815px; */right: 20px;">
+                  <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeIn;">Freelance Web Developer</h4>
+                  <h1 class="hero-lead wow fadeInUp" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInUp;">GREGORY LEWIS</h1>
+                  <!--<a href="pages/contact-3.html" target="_blank" class="btn btn-light btn-small wow fadeIn" data-wow-duration="2s" data-wow-delay="1s" style="visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeIn;">Schedule your free consultation</a>-->
+                </div>
 
               </div>
             </div>
@@ -405,18 +465,18 @@
           <section id="services" class="container ft-cards">
             <div class="row section">
 
-              <header class="sec-heading">
-                <h2>What i do</h2>
-                <span class="subheading">I Create both the front end and back end of your web site or application</span>
+              <header class="sec-heading animated bounce delay-2s">
+                <h2 class="wow bounceInLeft" data-wow-delay=".1s">What i do</h2>
+                <span class="subheading">I create both the front end and back end of your web site or application</span>
               </header>
               
               <!-- Item 1 -->
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s">
                   <span class="linea-basic-book-pencil"></span>
-                  <h4>Technology Consultation</h4>
-                  <p> Most companies have no idea where to start when choosing a tech stack. I will educate and guide
-                    you through the online ecosystem, directing you to the solution that works best for you.</p>
+                  <h4>Technical Consultation</h4>
+                  <p>I offer a free technical consultation in which I meet with you to gather information about yuor business.  This allows me to understand what type of web funtionality
+                  would simplyfy and speed up your daily business operations, or even e;;iminate some pain points all together.</p>
                   <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
                 </div>
               </div>
@@ -424,11 +484,9 @@
               <!-- Item 2 -->
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                  <span class="linea-basic-gear"></span>
-                  <h4>Custom Programming</h4>
-                  <p>I live, eat, and breath writing code.  Every application I write is done with the precision and attention to detail I've gained
-                     from my professional experience working as a professional web developer in the corporate world.
-                  </p>
+                  <span class="linea-basic-cards-diamonds"></span>
+                  <h4>Planning</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimv</p>
                   <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
                 </div>
               </div>
@@ -436,10 +494,9 @@
               <!-- Item 3 -->
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                  <span class="et-paintbrush"></span>
-                  <h4>Graphic Design</h4>
-                  <p>A clean and cohesive design that properly conveys your message is critical in creating a successful
-                    site that catches your users eye and create trust.</p>
+                  <span class="linea-basic-star"></span>
+                  <h4>Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimv</p>
                   <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
                 </div>
               </div>
@@ -581,9 +638,8 @@
 
                 </div><!-- / .t-item -->
               </div><!-- / .col-md-4 -->
-
               <div class="col-lg-4 freelancer-about-content">
-                <h2 class="t1-heading">About me</h2>
+                <h2 class="t1-heading wow fadeInRight">About me</h2>
                 <p>I am excited about new web technologies that enhance and innovate the way in which we communicate and
                   interact with each other and the world. Our goal is to provide my clients with the best that the web
                   has to offer, keeping them up to date and ahead of the game. </p>
@@ -607,14 +663,14 @@
               
               <!-- Item 1 -->
               <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                <span id="count-1" class="count-nbr">467</span>
+                <span id="count-1" class="count-nbr">105</span>
                 <span class="count-text">Projects completed</span>
               </div>
 
               <!-- Item 2 -->
               <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
-                <span id="count-2" class="count-nbr">2835</span>
-                <span class="count-text">Emails Send</span>
+                <span id="count-2" class="count-nbr">2015</span>
+                <span class="count-text">Bugs smashed</span>
               </div>
 
               <!-- Item 3 -->
@@ -625,8 +681,8 @@
 
               <!-- Item 4 -->
               <div class="col-md-3 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                <span id="count-4" class="count-nbr">102,890</span>
-                <span class="count-text">Happy clients</span>
+                <span id="count-4" class="count-nbr">702,890</span>
+                <span class="count-text">Satisfied users</span>
               </div>
 
             </div><!-- / .row -->
@@ -989,28 +1045,28 @@
               <ul>
                 <!-- Address -->
                 <li>
-                  <span class="linea-basic-map adr-icon"></span>
+                  <span class="wow fadeInLeft linea-basic-map adr-icon"></span>
                   <div class="adr-group">
-                    <span class="adr-heading">Address</span>
-                    <span class="adr-info">100 Street, Il, Us</span>
+                    <span class="adr-heading">Skype</span>
+                    <span class="adr-info">g_lewis34</span>
                   </div>
                 </li>
 
                 <!-- Email -->
                 <li>
-                  <span class="linea-basic-paperplane adr-icon"></span>
+                  <span class="wow fadeInUpBig linea-basic-paperplane adr-icon"></span>
                   <div class="adr-group">
                     <span class="adr-heading">Email</span>
-                    <span class="adr-info">sayhello@email.com</span>
+                    <span class="adr-info">eternal191@email.com</span>
                   </div>
                 </li>
 
                 <!-- Phone -->
                 <li>
-                  <span class="linea-basic-smartphone adr-icon"></span>
+                  <span class="wow fadeInRight linea-basic-smartphone adr-icon"></span>
                   <div class="adr-group">
                     <span class="adr-heading">Phone</span>
-                    <span class="adr-info">+ 123 4567 890</span>
+                    <span class="adr-info">+ 313 651 6669</span>
                   </div>
                 </li>
               </ul>
@@ -1026,8 +1082,7 @@
                 <ul>
                   <li><a href="#">facebook</a></li>
                   <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Dribbble</a></li>
-                  <li><a href="#">Behance</a></li>
+                  <li><a href="#">Linked In</a></li>
                 </ul>
 
               </div>
@@ -1041,7 +1096,7 @@
               <div class="row">
                 
                 <div class="col-md-6">
-                  <small>&copy; 2015 Definity. Made by <a class="no-style-link" href="http://themeforest.net/user/octarinethemes" target="_blank">OctarineThemes</a></small>
+                  <small>&copy; 2018 DIGITALDIMENSIONZ.</small>
                 </div>
 
                 <div class="col-md-6">
@@ -1058,6 +1113,7 @@
         <!-- ========== Scripts ========== -->
 
         <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/animateextended.js"></script>
         <script src="assets/js/vendor/google-fonts.js"></script>
         <script src="assets/js/vendor/jquery.easing.js"></script>
         <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
@@ -1075,6 +1131,13 @@
         <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
         <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+
+        <!-- digital_facer JS -->
+
+        <script src="assets/js/digital_face_js/anime.min.js"></script>
+        <script src="assets/js/digital_face_js/charming.min.js"></script>
+        <script src="assets/js/digital_face_js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/digital_face_js/main.js"></script>
 
         <!-- Definity JS -->
         <script src="assets/js/main.js"></script>

@@ -3,3 +3,33 @@
     position: relative;
     margin-bottom: 80px;
 }
+
+
+
+@media (min-width: 1260px)  {
+
+    .navbar-right {
+
+    float: right !important;
+    margin-right: -15px;
+
+    }
+
+}
+
+
+.scroller {
+    z-index: 9000;
+}
+
+
+/*.title > .title__inner {
+    color: #6dcc9e;
+}*/
+
+
+/*
+.ft-cards .ft-item {
+    min-height: 510px;
+    height: 500px;
+}*/

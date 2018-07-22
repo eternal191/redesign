@@ -1286,7 +1286,7 @@ h6, .progress-group .progress-title,
 .blog-post-nav .next-btn, .sidebar .tags-widget .tag-list li a, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a,
 .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p, .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a, .landing-hero .heading-wrapper .cta-btn, .shop-sidebar .filter-widget label, .shop-sidebar-vertical .filter-widget label, .shop-sidebar .tags-widget .tag-list li a, .shop-sidebar-vertical .tags-widget .tag-list li a, .checkout-table tbody tr td:first-child, .prod-reviews .tp-review .tpr-name {
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  color: #111;
+  color: #6dcc9e;
   text-transform: uppercase;
 }
 
@@ -8223,6 +8223,8 @@ form .input-error-2:focus {
   left: 0;
   right: 0;
   padding-left: 0;
+  /*background-color: #232323;*/
+    background-color: #232323;
 }
 
 .freelancer-hero .hero-content-wrapper .hero-content {
