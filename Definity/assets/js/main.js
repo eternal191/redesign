@@ -20,6 +20,7 @@
 		initVideoBg();
 		initKenburns();
 		initCountdown();
+		initParticles();
 
 		if ( document.getElementById('shop-slider-range') ) {
 			initRangeSlider();
@@ -777,6 +778,23 @@
 			  });
 
 		}
+
+	}
+
+	function initParticles() {
+		var particles = new Particles('.mc-send-btn');
+
+		// Disintegrate the button into particles
+		/*particles.disintegrate();*/
+		$('.mc-send-btn').on('click', function (e) {
+			particles.disintegrate();
+
+			setTimeout(function () {
+				particles.integrate();
+			}, 3000)
+
+		})
+
 
 	}
 

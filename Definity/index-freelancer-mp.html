@@ -28,9 +28,20 @@
         <link rel="stylesheet" href="assets/styles/responsive.css">
         <link rel="stylesheet" href="assets/styles/custom.css">
 
+      <script>document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+      };
+      supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+      </script>
+
+
       <!-- digital_facer CSS -->
       <link rel="stylesheet" href="assets/styles/digital_face_css/demo.css">
       <link rel="stylesheet" href="assets/styles/digital_face_css/pieces.css">
+      <link rel="stylesheet" href="assets/vendor/particlebuttons/particles.css">
+      <!--<link rel="stylesheet" href="assets/vendor/particlebuttons/base.css">-->
 
 
         <!-- JS -->
@@ -892,6 +903,7 @@
         <!-- digital_facer JS -->
 
         <script src="assets/js/digital_face_js/anime.min.js"></script>
+        <script src="assets/vendor/particlebuttons/js/particles.js"></script>
         <script src="assets/js/digital_face_js/charming.min.js"></script>
         <script src="assets/js/digital_face_js/imagesloaded.pkgd.min.js"></script>
         <script src="assets/js/digital_face_js/main.js"></script>
