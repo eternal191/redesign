@@ -134,19 +134,16 @@
                       </div>
                       <div class="menu">
                         <ul class="menu__inner">
-                          <li class="menu__item"><a class="menu__link" data-switch>On Interface Design</a></li>
-                          <li class="menu__item"><a class="menu__link" data-switch>Portfolio</a></li>
-                          <li class="menu__item"><a class="menu__link" data-switch>Case Studies</a></li>
-                          <li class="menu__item"><a class="menu__link" data-switch>Musings</a></li>
+                          <li class="menu__item"><a href="#whatido" class="menu__link" data-switch>What I do</a></li>
+                          <li class="menu__item"><a href="#process" class="menu__link" data-switch>MY PROCESS</a></li>
+                          <li class="menu__item"><a href="#whoami" class="menu__link" data-switch>WHO AM I</a></li>
                         </ul>
                       </div>
                       <div class="menu menu--code">
                         <ul class="menu__inner">
-                          <li class="menu__item"><a class="menu__link" data-switch>On Coding</a></li>
-                          <li class="menu__item"><a class="menu__link" data-switch>Experiments</a></li>
-                          <li class="menu__item"><a class="menu__link" data-switch>Current Projects</a></li>
-                          <li class="menu__item"><a class="menu__link" data-switch>Tutorials</a></li>
-                          <li class="menu__item"><a class="menu__link" data-switch>> Find me on GitHub</a></li>
+                          <li class="menu__item"><a href="#techstack" class="menu__link" data-switch>TECH STACK</a></li>
+                          <li class="menu__item"><a href="#integrations" class="menu__link" data-switch>FEATURED INTEGRATIONS</a></li>
+                          <li class="menu__item"><a href="https://www.linkedin.com/in/gregory-m-lewis-9873319" class="menu__link" data-switch target="_blank"> Find me on Linked-IN</a></li>
                         </ul>
                       </div>
                       <div class="content__bottom">
@@ -191,7 +188,7 @@
             <div class="row section">
 
               <header class="sec-heading animated bounce delay-2s">
-                <h2 class="wow bounceInLeft" data-wow-delay=".1s">What i do</h2>
+                <h2 id="whatido" class="wow bounceInLeft" data-wow-delay=".1s">What i do</h2>
                 <span class="subheading">I create both the front end and back end of your web site or application</span>
               </header>
               
@@ -237,7 +234,7 @@
         <section class="container ft-steps-numbers">
             <div class="row section">
 
-              <header class="sec-heading ws-s">
+              <header id="process" class="sec-heading ws-s">
                 <h2>Our six step Work process</h2>
                 <span class="subheading">clear and straightforward worlflow</span>
               </header>
@@ -297,45 +294,29 @@
 
 
 
-        <!-- ========== Cricle Counters - Parallax ========== -->
 
-        <div id="skillsCircles" class="circles-counters">
+        <!-- ========== technologies List - Dark ========== -->
+        <div class="dark-bg" id="techstack">
           <div class="container">
-            <div id="counters" class="row count-wrapper">
-              
-              <!-- Item 1 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-gear"></span></div>
-                <span class="circle-text">Web Development</span>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-display"></span></div>
-                <span class="circle-text">Web Design</span>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-photo"></span></div>
-                <span class="circle-text">Photography</span>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-star"></span></div>
-                <span class="circle-text">Marketing</span>
-              </div>
-
-            </div><!-- / .row -->
-          </div><!-- / .container -->
-        </div><!-- / .circles-counters -->
+            <div class="row">
+              <div class="ws-s"></div>
+              <ul class="t-clients clients-slider ws-s">
+                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
 
 
         <!-- ========== Freelancer Layout ========== -->
 
-        <div class="gray-bg">
+        <div id="whoami" class="gray-bg">
           <section id="about" class="container freelancer-about">
             <div class="row section">
 
@@ -420,7 +401,7 @@
 
         <!-- / .portfolio-columns-fw -->
 
-        <div class="gray-bg">
+        <div class="gray-bg" id="integrations">
           <section class="container section ft-boxed-hover">
             <div class="row">
 
