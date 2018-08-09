@@ -1,0 +1,452 @@
+/**
+ *
+ * 8.2 Call to action
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+section.call-to-action {
+    overflow: hidden;
+    position: relative;
+}
+
+section.call-to-action .left h2 {
+    color: #304394;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+section.call-to-action .left p {
+    color: #9498ab;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6em;
+    margin-bottom: 30px;
+}
+
+section.call-to-action .left p.without-margin-bottom {
+    margin-bottom: 0;
+}
+
+section.call-to-action .left p a {
+    color: #2C3459;
+    text-decoration: underline;
+}
+
+section.call-to-action .left p a:hover {
+    text-decoration: none;
+}
+
+section.call-to-action .left .form {
+    position: relative;
+}
+
+section.call-to-action .left .form input {
+    width: 50%;
+}
+
+section.call-to-action .left .call-to-action-thanks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 253, 253, 0.85);
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #2C3459;
+    font-weight: 300;
+    z-index: 300;
+    display: none;
+}
+
+section.call-to-action .left .call-to-action-thanks .call-to-action-thanks-content {
+    margin: 12px 0 0 0;
+    line-height: 1.6em;
+    text-align: center;
+    width: 437px;
+}
+
+section.call-to-action .left .call-to-action-thanks .call-to-action-thanks-content .call-to-action-thanks-close {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section.call-to-action .left .call-to-action-thanks .call-to-action-thanks-content .call-to-action-thanks-close:hover {
+    text-decoration: none;
+}
+
+section.call-to-action .right .circles {
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+
+section.call-to-action .right .circle-1 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    margin-top: -226px;
+    margin-left: -226px;
+    border: 1px solid #f5f5f5;
+}
+
+section.call-to-action .right .circle-2 {
+    width: 330px;
+    height: 330px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #eee;
+    top: 50%;
+    left: 50%;
+    margin-top: -166px;
+    margin-left: -166px;
+    position: absolute;
+}
+
+section.call-to-action .right .circle-3 {
+    width: 220px;
+    height: 220px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #e5e5e5;
+    top: 50%;
+    left: 50%;
+    margin-top: -111px;
+    margin-left: -111px;
+    position: absolute;
+}
+
+section.call-to-action .right .circle-4 {
+    width: 120px;
+    height: 120px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    top: 50%;
+    left: 50%;
+    margin-top: -61px;
+    margin-left: -61px;
+    position: absolute;
+}
+
+section.call-to-action .right .circle-center {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #2C3459;
+    top: 50%;
+    left: 50%;
+    margin-top: -21px;
+    margin-left: -21px;
+    position: absolute;
+    font-size: 0;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+section.call-to-action .right .circle-center:hover {
+    background: #2C3459;
+}
+
+section.call-to-action .right .circle-center i {
+    font-size: 16px;
+    color: #2c3459;
+    display: block;
+    margin-top: 11px;
+}
+
+section.call-to-action .right .circle-center:hover i {
+    color: #fff;
+}
+
+section.call-to-action .right .circle-center .circle-center-tip {
+    position: absolute;
+    font-size: 13px;
+    background: #2c3459;
+    color: #fff;
+    width: 200px;
+    padding: 7px 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-left: -100px;
+    left: 50%;
+    margin-top: -37px;
+}
+
+section.call-to-action .right .circle-center .circle-center-tip:after {
+    width: 6px;
+    height: 6px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: ' ';
+    background: #2c3459;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: -3px;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.3;
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        -moz-transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0.3;
+    }
+}
+
+@-o-keyframes pulse {
+    0% {
+        -o-transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        -o-transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        -o-transform: scale(1);
+        opacity: 0.3;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+}
+
+.circle-pulse {
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    -o-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    opacity: 1;
+
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@media (min-width: 1350px) {
+
+    section.call-to-action .left {
+        width: 512.5px;
+        float: left;
+        margin-left: 190px;
+    }
+
+    section.call-to-action .right {
+        width: 512.5px;
+        float: right;
+    }
+
+    section.call-to-action .center {
+        padding: 75px 0;
+    }
+
+    section.call-to-action .right .circles {
+        margin: -100px 0;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1349px) {
+
+    section.call-to-action .left {
+        width: 400px;
+        float: left;
+    }
+
+    section.call-to-action .right {
+        width: 400px;
+        float: right;
+    }
+
+    section.call-to-action .left input[type="text"] {
+        width: 145px;
+    }
+
+    section.call-to-action .center {
+        padding: 50px 0;
+    }
+
+    section.call-to-action .right .circles {
+        margin: -100px 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 949px) {
+
+    section.call-to-action .center {
+        padding: 50px 0;
+    }
+
+    section.call-to-action .left {
+        background: #fdfdfd;
+        position: relative;
+        z-index: 200;
+    }
+
+    section.call-to-action .right .circles {
+        margin: -75px auto -125px auto;
+    }
+}
+
+@media (max-width: 599px) {
+
+    section.call-to-action .center {
+        padding: 30px 0;
+    }
+
+    section.call-to-action .left {
+        background: #fdfdfd;
+        position: relative;
+        z-index: 200;
+    }
+
+    section.call-to-action .left .form input {
+        margin-bottom: 10px;
+        width: -webkit-calc(100% - 52px);
+        width: -moz-calc(100% - 52px);
+        width: calc(100% - 52px);
+    }
+
+    section.call-to-action .right .circles {
+        left: 50%;
+        margin: -75px 0 -125px -225px;
+    }
+}
+
+/**
+ *
+ * 6. Button
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+.button {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 0 25px;
+    height: 49px;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    outline: none;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.button.button-icon {
+    padding: 0 20px;
+}
+
+.button i {
+    margin-left: 10px;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.button.button-icon i {
+    margin-left: 0;
+}
+
+a.button {
+    line-height: 1;
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none !important;
+    color: #2C3459 !important;
+    padding: 17px 25px 0 25px;
+    height: 30px;
+}
+
+.button.button-navy-blue {
+    border: 1px solid #2C3459;
+    color: #2C3459;
+    background: #fdfdfd;
+}
+
+.button.button-navy-blue:hover,
+.button.button-white:hover {
+    background: #2C3459;
+    color: #fff !important;
+    border: 1px solid #2C3459;
+}
+
+.button.button-navy-blue:hover i,
+.button.button-white:hover i {
+    color: #80859b;
+}
+
+.button.button-white {
+    border: 1px solid #2c3558;
+    color: #2c3558;
+    background: none;
+}
+
+.form input[type="tel"] {
+    border: 1px solid #ccc;
+    background: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 0 25px;
+    font-size: 14px;
+    height: 47px;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    width: 200px;
+    margin-right: 10px;
+    outline: none;
+}
