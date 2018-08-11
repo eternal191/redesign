@@ -8,11 +8,11 @@
 section.call-to-action {
     overflow: hidden;
     position: relative;
-    background: rgb(22, 61, 85, .9);
+    background: rgb( 0, 0, 0);
 }
 
 section.call-to-action .left h2 {
-    color: #304394;
+    color: #83d6c9;
     font-size: 32px;
     margin-bottom: 30px;
 }
@@ -93,7 +93,7 @@ section.call-to-action .right .circle-1 {
     left: 50%;
     margin-top: -226px;
     margin-left: -226px;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #75c2b7;
 }
 
 section.call-to-action .right .circle-2 {
@@ -102,7 +102,7 @@ section.call-to-action .right .circle-2 {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    border: 1px solid #eee;
+    border: 1px solid #75c2b7;
     top: 50%;
     left: 50%;
     margin-top: -166px;
@@ -116,7 +116,7 @@ section.call-to-action .right .circle-3 {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #75c2b7;
     top: 50%;
     left: 50%;
     margin-top: -111px;
@@ -130,7 +130,7 @@ section.call-to-action .right .circle-4 {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid #75c2b7;
     top: 50%;
     left: 50%;
     margin-top: -61px;
@@ -163,7 +163,7 @@ section.call-to-action .right .circle-center:hover {
 
 section.call-to-action .right .circle-center i {
     font-size: 16px;
-    color: #2c3459;
+    color: #fff;
     display: block;
     margin-top: 11px;
 }
@@ -415,6 +415,7 @@ a.button {
     border: 1px solid #2C3459;
     color: #2C3459;
     background: #fdfdfd;
+    padding-top: 10px;
 }
 
 .button.button-navy-blue:hover,

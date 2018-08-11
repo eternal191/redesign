@@ -138,13 +138,14 @@ Author: Siddharth Doshi
     "use strict";
     $('.mc-ajax').ajaxChimp({
         callback: mailchimpCallback,
-        // Replace this with your own url, id and user code (see documentation). 
-        url: "https://digitaldimensionz.us12.list-manage.com/subscribe/post?u=5d04416300c797976408a41ff;id=c6df87c001"
+        url: "https://digitaldimensionz.us12.list-manage.com/subscribe/post?u=5d04416300c797976408a41ff&amp;id=bf357258fa"
     });
 
     function mailchimpCallback(resp) {
         if (resp.result === 'success') {
-            $('.subscribe-result').hide().html('<div class="alert alert-success alert-dismissible wow fadeInUp" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Thank you!</strong><br>You must confirm the subscription in your inbox.</div>').slideDown().delay(10000).slideUp();
+            /*$('.subscribe-result').hide().html('<div class="alert alert-success alert-dismissible wow fadeInUp" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Thank you!</strong><br>You must confirm the subscription in your inbox.</div>').slideDown().delay(10000).slideUp();*/
+                var foo = $('div.particles input.mc-send-btn');
+                foo.attr('value', 'u r subscribed');
         }
         else if (resp.result === 'error') {
             $('.subscribe-result').hide().html('<div class="alert alert-danger alert-dismissible wow fadeInUp" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>').slideDown().delay(10000).slideUp();
