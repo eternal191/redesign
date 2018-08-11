@@ -33,3 +33,27 @@
     min-height: 510px;
     height: 500px;
 }*/
+
+
+#techstack.dark-bg {
+    position: relative;
+}
+#techstack.dark-bg button.slick-prev{
+    background-color: #f8fffd;
+    position: absolute;
+    left: 0;
+    top: calc(50%);
+    min-width: 70px;
+    color: #111111;
+}
+
+
+#techstack.dark-bg button.slick-next{
+    background-color: #f8fffd;
+    position: absolute;
+    right: 0;
+    top: calc(50%);
+    min-width:70px;
+    color: #111111;
+
+}

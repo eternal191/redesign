@@ -433,11 +433,12 @@
 		// Brands/Clients Slider
 		$('.clients-slider').slick({
 			autoplay: true,
-			autoplaySpeed: 4000,
-			slidesToShow: 5,
+			autoplaySpeed: 2500,
+			slidesToShow: 4,
 			slidesToScroll: 1,
 			dots: false,
-			arrows: false,
+			fade: false,
+			arrows: true,
 			responsive: [
 			    {
 			      breakpoint: 999,
@@ -448,18 +449,21 @@
 			      }
 			    },
 			    {
-			      breakpoint: 770,
+			      breakpoint: 850,
 			      settings: {
 			        slidesToShow: 2,
 			        slidesToScroll: 1
 			      }
 			    },
 			    {
-			      breakpoint: 599,
+			      breakpoint: 478,
 			      settings: {
-			        slidesToShow: 1,
-			        slidesToScroll: 1
-			      }
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+					  arrows: false,
+					  autoplaySpeed: 2000
+
+				  }
 			    }
 			]
 		});
