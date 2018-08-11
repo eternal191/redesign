@@ -8,19 +8,43 @@
     // Initialize all functions when the document is ready.
 	$(document).ready(function(){
 
+		var isaboutpage = $('body.aboutme').length == 1;
+
+
+
 		initNavbar();
-		initScroller();
+
+		if ($('.portfolio-filters').length) {
+
+			initScroller();
+
+		}
 		initCountCirc();
 		initCountCircMin();
 		initCountNbr();
 		initCountMin();
-		initSliders();
+		if ($('.ft-slider').length) {
+
+
+			initSliders();
+
+		}
 		initGallery();
 		initAnimation();
 		initVideoBg();
 		initKenburns();
 		initCountdown();
-		initParticles();
+
+
+
+		if ($('.mc-send-btn').length) {
+
+			initParticles();
+
+		}
+
+
+
 		calmelistener();
 
 		if ( document.getElementById('shop-slider-range') ) {
@@ -29,11 +53,18 @@
 
 		// Parallax disabled for mobile screens
 		if ($(window).width() >= 1260) {
-			initParallax();
 
-			$(window).stellar({
-				hideDistantElements: false
-			});
+			if (!isaboutpage) {
+
+				initParallax();
+				$(window).stellar({
+					hideDistantElements: false
+				});
+
+
+			}
+
+
 		}
 
 	});
@@ -47,8 +78,12 @@
 
 		});
 
-		initPortfolio();
-		initBlogMasonry();
+
+		if ($('.portfolio-filters').length) {
+			initPortfolio();
+			initBlogMasonry();
+
+		}
 
 	});
 
@@ -177,17 +212,20 @@
 /* --------------------------------------------------
 	Scroll Nav
 -------------------------------------------------- */
+	if ($('.portfolio-filters').length) {
 
-	function initScroller () {
+		function initScroller () {
 
-		$('#navbar').localScroll({
-			easing: 'easeInOutExpo'
-		});
 
-		$('#page-top').localScroll({
-			easing: 'easeInOutExpo'
-		});	
-	} // initScroller
+			$('#navbar').localScroll({
+				easing: 'easeInOutExpo'
+			});
+
+			$('#page-top').localScroll({
+				easing: 'easeInOutExpo'
+			});
+		} // initScroller
+	}
 
 
 
