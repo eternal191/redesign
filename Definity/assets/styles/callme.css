@@ -8,6 +8,7 @@
 section.call-to-action {
     overflow: hidden;
     position: relative;
+    background: rgb(22, 61, 85, .9);
 }
 
 section.call-to-action .left h2 {

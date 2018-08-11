@@ -21,6 +21,7 @@
 		initKenburns();
 		initCountdown();
 		initParticles();
+		calmelistener();
 
 		if ( document.getElementById('shop-slider-range') ) {
 			initRangeSlider();
@@ -50,6 +51,47 @@
 		initBlogMasonry();
 
 	});
+
+
+
+
+	function calmelistener() {
+		/**
+		 *
+		 * get a phone call
+		 *
+		 */
+
+		$('.send-phone-call-quote').click(function () {
+
+			var element = $(this);
+			var phoneField = element.siblings('.phone-number');
+			var phoneNumber = phoneField.val();
+
+			if (phoneNumber == '') phoneField.addClass('error');
+			else {
+
+				phoneField.removeClass('error');
+				$.ajax({
+					url: 'submitphone.php',
+					data: {'phoneNumber': phoneNumber},
+					type: 'post',
+					success: function (output) {
+
+
+						$('#text_number').modal();
+
+
+					}
+
+				});
+			}
+
+			console.log('clicked call now btn');
+
+		});
+	}
+
 
 
 /* --------------------------------------------------
