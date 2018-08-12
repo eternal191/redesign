@@ -23,12 +23,10 @@
 		initCountCircMin();
 		initCountNbr();
 		initCountMin();
-		if ($('.ft-slider').length) {
 
 
 			initSliders();
 
-		}
 		initGallery();
 		initAnimation();
 		initVideoBg();
