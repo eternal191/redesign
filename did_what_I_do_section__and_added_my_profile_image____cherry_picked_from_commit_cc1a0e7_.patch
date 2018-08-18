@@ -1,0 +1,79 @@
+Index: Definity/assets/styles/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Definity/assets/styles/main.css	(date 1534624111000)
++++ Definity/assets/styles/main.css	(revision )
+@@ -308,7 +308,7 @@
+ }
+ 
+ .mb-75 {
+-  margin-bottom: 75px;
++  margin-bottom: 75px;p
+ }
+ 
+ .mb-100 {
+@@ -1277,8 +1277,8 @@
+ .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead,
+ h5,
+ .ft-boxed-hover ul li .hover-content .ft-heading,
+-.ft-tabs .tabs-list li a .tab-group .tab-info,
+ .sidebar .comments-widget .widget-item span .widget-comm-title,
++.ft-tabs .tabs-list li a .tab-group .tab-info,
+ .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer,
+ .shop-layout-options span,
+ h6, .progress-group .progress-title,
+@@ -1783,13 +1783,13 @@
+   background: #ececec;
+ }
+ 
+-.progress .progress-bar {
++/*.progress .progress-bar {
+   background: #111;
+   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 13px;
+   line-height: 1.9em;
+   letter-spacing: 1px;
+-}
++}*/
+ 
+ .progress-thin {
+   height: 3px;
+@@ -3262,8 +3262,16 @@
+   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+   font-weight: lighter;
+   font-size: 165px;
++  position: relative;
++  transition: transform 1s;
++  transform-style: preserve-3d;
++  pointer-events: none;
+ }
+ 
++.ft-steps-numbers .ft-item:hover .ft-nbr {
++  transform: rotateY(360deg);
++}
++
+ .ft-steps-numbers .ft-item h4, .ft-steps-numbers .ft-item .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .ft-steps-numbers .ft-item .tab-heading, .ft-steps-numbers .ft-item .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item blockquote footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .team-3col .t-item .t-info .t-role, .team-3col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .team-4col .t-item .t-info .t-role, .team-4col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .freelancer-about .t-item .t-info .t-role, .freelancer-about .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .t-join .t-info .t-role, .t-join .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .ft-steps-numbers .ft-item .cards-header, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .ft-steps-numbers .ft-item .sc-lead {
+   margin: 0;
+   padding-bottom: 20px;
+@@ -4246,7 +4254,8 @@
+ /* ---- 10.2 Counters - Numbers ---- */
+ .number-counters, .number-counters-dark-bg {
+   position: relative;
+-  background: #ccc url(http://placehold.it/2102x1578);
++  /*background: #ccc url(http://placehold.it/2102x1578);*/
++  background: #ccc url('../images/africa-15428_1920.jpg');
+   background-size: cover;
+   background-position: 50%;
+   background-attachment: fixed;
+@@ -4373,7 +4382,7 @@
+ -------------------------------------------------- */
+ /* ---- 12.1 Testimonial - 1 Column Slider ---- */
+ .testimonials-parallax, .testimonials-dark {
+-  background: url(http://placehold.it/2440x1578);
++  background: url(http://placehold.it/2440x1578);  /*Todo add testominals bkg*/
+   background-size: cover;
+   background-position: 50%;
+   background-attachment: fixed;
+\ No newline at end of file
