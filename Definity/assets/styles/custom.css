@@ -40,20 +40,31 @@
 }
 #techstack.dark-bg button.slick-prev{
     background-color: #f8fffd;
+    left: 0;
     position: absolute;
     left: 0;
     top: calc(50%);
     min-width: 70px;
     color: #111111;
+    transition: left .5s;
+}
+
+#techstack.dark-bg button.slick-prev:hover {
+    left: 12px;
 }
 
 
 #techstack.dark-bg button.slick-next{
+    right: 0;
     background-color: #f8fffd;
     position: absolute;
     right: 0;
     top: calc(50%);
     min-width:70px;
     color: #111111;
+    transition: right .5s;
+}
 
+#techstack.dark-bg button.slick-next:hover{
+    right: 12px;
 }

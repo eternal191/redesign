@@ -1,0 +1,22 @@
+use pages/portfolio/portfolio-single-1.html# as single portfolio page.
+
+show icons with companies I’ve worked for :  heart, GM, master card, verizon
+
+
+key services: wordpress, e-commerce, responsive websites, creative web design, seo, shopify expert
+
+third party integrations
+
+
+web development process section  : shopify, Facebook api,
+
+social net working apis section
+
+Geolocation, payment gateways, media services(spotify, soundcloud )
+
+
+
+featured artist demo image : <img src="http://plmcreations.com/aboutUsImages/gregg2.jpg"  width="84" height="89"/>
+
+
+add another class to 'progress .progress-bar{}' i main.css to make preogress bars work in main template.
