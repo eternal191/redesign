@@ -38,6 +38,24 @@
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
 
+.form-body-classic .form-control.textareastyle {
+	height: 334px;
+	margin: 0;
+	padding: 0 20px;
+	background: #f8f8f8 none repeat scroll 0 0;
+	border: 1px solid #eee;
+	border-radius: 0px;
+	font-family: 'Roboto', FontAwesome;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 44px;
+	color: #333;
+	-moz-border-radius: none; -webkit-border-radius: none; border-radius: none;
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+
+
 .form-body-classic .form-control:focus {
 	outline: 0;
 	background: #f8f8f8 none repeat scroll 0 0;
