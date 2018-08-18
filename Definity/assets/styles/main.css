@@ -1159,7 +1159,7 @@ hr {
   font-size: 15px;
   opacity: 0;
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .info-slider .slick-prev:focus,
@@ -1197,7 +1197,7 @@ hr {
   opacity: .5;
   z-index: 800;
   -webkit-transition: all 0.45s;
-          transition: all 0.45s;
+  transition: all 0.45s;
 }
 
 .quick-link-btns .quick-btn:hover {
@@ -1223,7 +1223,7 @@ hr {
   padding-left: 11px;
   right: -35px;
   -webkit-transition: right 0.7s;
-          transition: right 0.7s;
+  transition: right 0.7s;
 }
 
 .quick-link-btns .buy-btn {
@@ -1277,8 +1277,8 @@ h4,
 .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead,
 h5,
 .ft-boxed-hover ul li .hover-content .ft-heading,
-.ft-tabs .tabs-list li a .tab-group .tab-info,
 .sidebar .comments-widget .widget-item span .widget-comm-title,
+.ft-tabs .tabs-list li a .tab-group .tab-info,
 .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer,
 .shop-layout-options span,
 h6, .progress-group .progress-title,
@@ -1341,7 +1341,7 @@ h6, .progress-group .progress-title,
 /* ---- 1.3 Links ---- */
 a {
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 a:hover {
@@ -1473,7 +1473,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
   line-height: 1.8em;
   border-radius: 0;
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn:visited, .btn-ghost:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited, .btn-text:visited, .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
@@ -1514,7 +1514,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
   width: 100%;
   height: 100%;
   -webkit-transition: top 0.3s;
-          transition: top 0.3s;
+  transition: top 0.3s;
   z-index: -1;
 }
 
@@ -1730,7 +1730,7 @@ input[class="btn-ghost-light"]:hover {
   line-height: 22px;
   letter-spacing: .5px;
   -webkit-transition: border-color 0.5s;
-          transition: border-color 0.5s;
+  transition: border-color 0.5s;
 }
 
 .form-control:focus,
@@ -1783,13 +1783,13 @@ fieldset[disabled] .form-control:hover {
   background: #ececec;
 }
 
-.progress .progress-bar {
+/*.progress .progress-bar {
   background: #111;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.9em;
   letter-spacing: 1px;
-}
+}*/
 
 .progress-thin {
   height: 3px;
@@ -1856,7 +1856,7 @@ fieldset[disabled] .form-control:hover {
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .faq-contact-links a:hover {
@@ -2225,7 +2225,7 @@ fieldset[disabled] .form-control:hover {
 
 .footer-widgets .gallery-widget ul li a img {
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .footer-widgets .gallery-widget ul li a .hover-link {
@@ -2237,7 +2237,7 @@ fieldset[disabled] .form-control:hover {
   background: rgba(17, 17, 17, 0);
   text-align: center;
   -webkit-transition: background 0.4s;
-          transition: background 0.4s;
+  transition: background 0.4s;
 }
 
 .footer-widgets .gallery-widget ul li a .hover-link span {
@@ -2247,13 +2247,13 @@ fieldset[disabled] .form-control:hover {
   font-size: 50px;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .footer-widgets .gallery-widget ul li a:hover img {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .footer-widgets .gallery-widget ul li a:hover .hover-link {
@@ -2280,7 +2280,7 @@ fieldset[disabled] .form-control:hover {
   padding: 2px;
   border: 1px solid rgba(255, 255, 255, 0);
   -webkit-transition: all 0.4s;
-          transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .footer-widgets .twitter-widget ul li:hover {
@@ -2329,7 +2329,7 @@ fieldset[disabled] .form-control:hover {
   border: none;
   background: rgba(204, 204, 204, 0.1);
   -webkit-transition: background 0.3s;
-          transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .footer-widgets .newsletter-widget form .form-group input[type="email"]:focus {
@@ -2348,7 +2348,7 @@ fieldset[disabled] .form-control:hover {
   color: rgba(244, 244, 244, 0.5);
   background: rgba(204, 204, 204, 0.1);
   -webkit-transition: all 0.4s;
-          transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .footer-widgets .newsletter-widget form .form-group button i {
@@ -2392,7 +2392,7 @@ fieldset[disabled] .form-control:hover {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.5s, visibility 0.6s, top 0.5s;
-          transition: opacity 0.5s, visibility 0.6s, top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, top 0.5s;
   z-index: 999;
 }
 
@@ -2427,7 +2427,7 @@ fieldset[disabled] .form-control:hover {
   height: 100%;
   background: rgba(17, 17, 17, 0.93);
   -webkit-transition: opacity 0.5s, visibility 0.6s;
-          transition: opacity 0.5s, visibility 0.6s;
+  transition: opacity 0.5s, visibility 0.6s;
 }
 
 .footer-contact .contact-info address ul {
@@ -2579,7 +2579,7 @@ fieldset[disabled] .form-control:hover {
   letter-spacing: 2px;
   color: #999;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .navbar .navbar-nav li a:focus {
@@ -2616,7 +2616,7 @@ fieldset[disabled] .form-control:hover {
   background: none;
   color: #111;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .navbar .navbar-nav .active a:hover,
@@ -2659,7 +2659,7 @@ fieldset[disabled] .form-control:hover {
   line-height: 0.8em;
   border-left: 3px solid rgba(17, 17, 17, 0);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbar .navbar-nav .dropdown .dropdown-menu li a:hover {
@@ -2819,7 +2819,7 @@ fieldset[disabled] .form-control:hover {
   line-height: 1.8em;
   border-radius: 0;
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-text:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-text-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
@@ -2861,7 +2861,7 @@ fieldset[disabled] .form-control:hover {
   width: 100%;
   height: 100%;
   -webkit-transition: top 0.3s;
-          transition: top 0.3s;
+  transition: top 0.3s;
   z-index: -1;
 }
 
@@ -3019,7 +3019,7 @@ fieldset[disabled] .form-control:hover {
   border-bottom: none;
   background: transparent;
   -webkit-transition: background 0.3s;
-          transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .navbar-trans .navbar-logo {
@@ -3117,15 +3117,15 @@ fieldset[disabled] .form-control:hover {
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   min-height:480px;
   height: 480px;
 }
 
 .ft-cards .ft-item:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -3173,13 +3173,13 @@ fieldset[disabled] .form-control:hover {
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ft-cards-2 .ft-card-item:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -3211,10 +3211,10 @@ fieldset[disabled] .form-control:hover {
   float: right;
   color: #777;
   -webkit-transform: translateX(30px);
-      -ms-transform: translateX(30px);
-          transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
   -webkit-transition: -webkit-transform 0.4s;
-          transition: transform 0.4s;
+  transition: transform 0.4s;
 }
 
 .ft-cards-2 .ft-card-item .ft-content .link-btn span {
@@ -3222,25 +3222,25 @@ fieldset[disabled] .form-control:hover {
   font-size: 23px;
   vertical-align: top;
   -webkit-transform: translateX(-30px);
-      -ms-transform: translateX(-30px);
-          transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  transform: translateX(-30px);
   opacity: 0;
   -webkit-transition: all 0.4s;
-          transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .ft-cards-2 .ft-card-item .ft-content .link-btn:hover {
   color: #111;
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .ft-cards-2 .ft-card-item .ft-content .link-btn:hover span {
   opacity: 1;
   -webkit-transform: translateX(5px);
-      -ms-transform: translateX(5px);
-          transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .ft-cards-2 .ft-card-item .ft-content .link-btn:focus {
@@ -3262,6 +3262,14 @@ fieldset[disabled] .form-control:hover {
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 165px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+.ft-steps-numbers .ft-item:hover .ft-nbr {
+  transform: rotateY(360deg);
 }
 
 .ft-steps-numbers .ft-item h4, .ft-steps-numbers .ft-item .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .ft-steps-numbers .ft-item .tab-heading, .ft-steps-numbers .ft-item .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item blockquote footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .team-3col .t-item .t-info .t-role, .team-3col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .team-4col .t-item .t-info .t-role, .team-4col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .freelancer-about .t-item .t-info .t-role, .freelancer-about .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .t-join .t-info .t-role, .t-join .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .ft-steps-numbers .ft-item .cards-header, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .ft-steps-numbers .ft-item .sc-lead {
@@ -3297,8 +3305,8 @@ fieldset[disabled] .form-control:hover {
 .ft-x .ft-material:hover span,
 .ft-y .ft-material:hover span, .ft-centered .ft-material:hover i, .ft-x .ft-material:hover i, .ft-y .ft-material:hover i {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -3312,7 +3320,7 @@ fieldset[disabled] .form-control:hover {
   color: #777;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ft-centered .ft-diagonal span,
@@ -3342,7 +3350,7 @@ fieldset[disabled] .form-control:hover {
   border-radius: 100px;
   line-height: 102px;
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .ft-centered .ft-square-frame span,
@@ -3360,7 +3368,7 @@ fieldset[disabled] .form-control:hover {
 .ft-x .ft-dark-spin:hover span,
 .ft-y .ft-dark-spin:hover span, .ft-centered .ft-dark-spin:hover i, .ft-x .ft-dark-spin:hover i, .ft-y .ft-dark-spin:hover i {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   border: 1px solid #cccccc;
   background: #fff;
   color: #111;
@@ -3375,7 +3383,7 @@ fieldset[disabled] .form-control:hover {
   background: #111;
   border-radius: 100px;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ft-centered .ft-circle-frame-dark:hover span,
@@ -3409,13 +3417,13 @@ fieldset[disabled] .form-control:hover {
   background: #f8f8f8;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ft-centered .ft-small-card:hover, .ft-x .ft-small-card:hover, .ft-y .ft-small-card:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -3437,7 +3445,7 @@ fieldset[disabled] .form-control:hover {
   font-size: 64px;
   color: #777;
   -webkit-transition: color 0.7s;
-          transition: color 0.7s;
+  transition: color 0.7s;
 }
 
 .ft-centered .ft-circle-overlay:hover span,
@@ -3456,7 +3464,7 @@ fieldset[disabled] .form-control:hover {
   border: 10px solid #f4f4f4;
   line-height: 90px;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ft-centered .ft-square-overlay span,
@@ -3580,7 +3588,7 @@ fieldset[disabled] .form-control:hover {
   background: #fff;
   text-align: center;
   -webkit-transition: border-color 0.3s;
-          transition: border-color 0.3s;
+  transition: border-color 0.3s;
 }
 
 .ft-boxed-hover ul li:hover {
@@ -3611,7 +3619,7 @@ fieldset[disabled] .form-control:hover {
   background: #111;
   opacity: 0;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ft-boxed-hover ul li .hover-content .ft-icon {
@@ -3873,8 +3881,8 @@ fieldset[disabled] .form-control:hover {
   position: relative;
   top: 44%;
   -webkit-transform: translateY(-44%);
-      -ms-transform: translateY(-44%);
-          transform: translateY(-44%);
+  -ms-transform: translateY(-44%);
+  transform: translateY(-44%);
   text-align: center;
   color: #ececec;
 }
@@ -3888,7 +3896,7 @@ fieldset[disabled] .form-control:hover {
   position: relative;
   height: 440px;
   -webkit-transition: all 0.4s;
-          transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .ft-hover-item .ft-item .content-wrapper {
@@ -3897,7 +3905,7 @@ fieldset[disabled] .form-control:hover {
   right: 100px;
   bottom: 0;
   -webkit-transition: all 0.4s;
-          transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .ft-hover-item .ft-item .content-wrapper h3,
@@ -3952,7 +3960,7 @@ fieldset[disabled] .form-control:hover {
   background-size: 100%;
   background-position: 50%;
   -webkit-transition: background-size 0.3s;
-          transition: background-size 0.3s;
+  transition: background-size 0.3s;
 }
 
 .ft-hover-item .ft-1 .bg-overlay, .ft-hover-item .ft-2 .bg-overlay {
@@ -3964,7 +3972,7 @@ fieldset[disabled] .form-control:hover {
   height: 100%;
   background: rgba(17, 17, 17, 0.55);
   -webkit-transition: background 0.4s;
-          transition: background 0.4s;
+  transition: background 0.4s;
 }
 
 .ft-hover-item .ft-2 {
@@ -3988,10 +3996,10 @@ fieldset[disabled] .form-control:hover {
   font-size: 64px;
   vertical-align: middle;
   -webkit-transform: translateX(65px);
-      -ms-transform: translateX(65px);
-          transform: translateX(65px);
+  -ms-transform: translateX(65px);
+  transform: translateX(65px);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .play-btn h5, .play-btn .ft-boxed-hover ul li .hover-content .ft-heading, .ft-boxed-hover ul li .hover-content .play-btn .ft-heading, .play-btn .ft-tabs .tabs-list li a .tab-group .tab-info, .ft-tabs .tabs-list li a .tab-group .play-btn .tab-info, .play-btn .sidebar .comments-widget .widget-item span .widget-comm-title, .sidebar .comments-widget .widget-item span .play-btn .widget-comm-title, .play-btn .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer, .comingsoon .content-wrapper .content-inner .cs-timer .item .play-btn .title-timer, .play-btn .shop-layout-options span, .shop-layout-options .play-btn span {
@@ -4000,14 +4008,14 @@ fieldset[disabled] .form-control:hover {
   vertical-align: middle;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .play-btn:hover .play-icon {
   font-size: 40px;
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .play-btn:hover h5, .play-btn:hover .ft-boxed-hover ul li .hover-content .ft-heading, .ft-boxed-hover ul li .hover-content .play-btn:hover .ft-heading, .play-btn:hover .ft-tabs .tabs-list li a .tab-group .tab-info, .ft-tabs .tabs-list li a .tab-group .play-btn:hover .tab-info, .play-btn:hover .sidebar .comments-widget .widget-item span .widget-comm-title, .sidebar .comments-widget .widget-item span .play-btn:hover .widget-comm-title, .play-btn:hover .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer, .comingsoon .content-wrapper .content-inner .cs-timer .item .play-btn:hover .title-timer, .play-btn:hover .shop-layout-options span, .shop-layout-options .play-btn:hover span {
@@ -4246,7 +4254,8 @@ fieldset[disabled] .form-control:hover {
 /* ---- 10.2 Counters - Numbers ---- */
 .number-counters, .number-counters-dark-bg {
   position: relative;
-  background: #ccc url(http://placehold.it/2102x1578);
+  /*background: #ccc url(http://placehold.it/2102x1578);*/
+  background: #ccc url('../images/africa-15428_1920.jpg');
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -4314,7 +4323,7 @@ fieldset[disabled] .form-control:hover {
   border: 2px solid #ececec;
   border-radius: 100px;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .slick-dots li button {
@@ -4345,7 +4354,7 @@ fieldset[disabled] .form-control:hover {
   line-height: 0;
   color: #ececec;
   -webkit-transition: background 0.3s;
-          transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .slider-nav i {
@@ -4373,7 +4382,7 @@ fieldset[disabled] .form-control:hover {
 -------------------------------------------------- */
 /* ---- 12.1 Testimonial - 1 Column Slider ---- */
 .testimonials-parallax, .testimonials-dark {
-  background: url(http://placehold.it/2440x1578);
+  background: url(http://placehold.it/2440x1578);  /*Todo add testominals bkg*/
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -4438,14 +4447,14 @@ fieldset[disabled] .form-control:hover {
   background: none;
   opacity: 0;
   -webkit-transition: background 0.4s, opacity 0.6s;
-          transition: background 0.4s, opacity 0.6s;
+  transition: background 0.4s, opacity 0.6s;
 }
 
 .testimonials-parallax .t-wrapper .t-slider-nav span, .testimonials-dark .t-wrapper .t-slider-nav span {
   color: #ececec;
   font-size: 28px;
   -webkit-transition: color 0.4s;
-          transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 .testimonials-parallax .t-wrapper .t-slider-nav:hover, .testimonials-dark .t-wrapper .t-slider-nav:hover {
@@ -4509,13 +4518,13 @@ fieldset[disabled] .form-control:hover {
   background: #fff;
   text-align: center;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .testimonials-3col .t-item:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -4622,7 +4631,7 @@ fieldset[disabled] .form-control:hover {
   background: none;
   opacity: 0;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .clients-list-parallax .c-wrapper .clients-slider-nav:hover, .clients-list-minimal .c-wrapper .clients-slider-nav:hover, .clients-list-gray .c-wrapper .clients-slider-nav:hover {
@@ -4681,7 +4690,7 @@ fieldset[disabled] .form-control:hover {
 .clients-list-gray .c-wrapper .clients-slider-nav {
   border: 2px solid #777;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .clients-list-gray .c-wrapper .clients-slider-nav:hover {
@@ -4707,13 +4716,13 @@ fieldset[disabled] .form-control:hover {
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .clients-layout .client-item:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -4768,13 +4777,13 @@ fieldset[disabled] .form-control:hover {
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .team-3col .t-item:hover, .team-4col .t-item:hover, .freelancer-about .t-item:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -4804,7 +4813,7 @@ fieldset[disabled] .form-control:hover {
   width: 100%;
   background: white;
   -webkit-transition: bottom 0.4s;
-          transition: bottom 0.4s;
+  transition: bottom 0.4s;
 }
 
 .team-3col .t-item .t-image .t-description .content-wrapper, .team-4col .t-item .t-image .t-description .content-wrapper, .freelancer-about .t-item .t-image .t-description .content-wrapper {
@@ -4813,7 +4822,7 @@ fieldset[disabled] .form-control:hover {
   padding-bottom: 73px;
   border-bottom: 1px solid rgba(235, 235, 236, 0);
   -webkit-transition: opacity 1s, padding-top 0.8s, border 1.5s ease-out;
-          transition: opacity 1s, padding-top 0.8s, border 1.5s ease-out;
+  transition: opacity 1s, padding-top 0.8s, border 1.5s ease-out;
 }
 
 .team-3col .t-item .t-image .t-description .content-wrapper h4, .team-4col .t-item .t-image .t-description .content-wrapper h4, .freelancer-about .t-item .t-image .t-description .content-wrapper h4, .team-3col .t-item .t-image .t-description .content-wrapper .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .team-3col .t-item .t-image .t-description .content-wrapper .tab-heading, .team-4col .t-item .t-image .t-description .content-wrapper .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .team-4col .t-item .t-image .t-description .content-wrapper .tab-heading, .freelancer-about .t-item .t-image .t-description .content-wrapper .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .freelancer-about .t-item .t-image .t-description .content-wrapper .tab-heading, .team-3col .testimonials-3col .t-item .t-image .t-description .content-wrapper blockquote footer cite, .testimonials-3col .team-3col .t-item .t-image .t-description .content-wrapper blockquote footer cite, .team-3col .testimonials-3col .t-item blockquote footer .t-image .t-description .content-wrapper cite, .testimonials-3col .team-3col .t-item blockquote footer .t-image .t-description .content-wrapper cite, .team-4col .testimonials-3col .t-item .t-image .t-description .content-wrapper blockquote footer cite, .testimonials-3col .team-4col .t-item .t-image .t-description .content-wrapper blockquote footer cite, .team-4col .testimonials-3col .t-item blockquote footer .t-image .t-description .content-wrapper cite, .testimonials-3col .team-4col .t-item blockquote footer .t-image .t-description .content-wrapper cite, .freelancer-about .testimonials-3col .t-item .t-image .t-description .content-wrapper blockquote footer cite, .testimonials-3col .freelancer-about .t-item .t-image .t-description .content-wrapper blockquote footer cite, .freelancer-about .testimonials-3col .t-item blockquote footer .t-image .t-description .content-wrapper cite, .testimonials-3col .freelancer-about .t-item blockquote footer .t-image .t-description .content-wrapper cite, .team-3col .testimonials-3col .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .team-3col .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .team-3col .testimonials-3col .t-item .wrapper-404 .t-image .t-description .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .team-3col .t-item .wrapper-404 .t-image .t-description .content-wrapper .info-wrapper .info-404 footer cite, .team-4col .testimonials-3col .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .team-4col .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .team-4col .testimonials-3col .t-item .wrapper-404 .t-image .t-description .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .team-4col .t-item .wrapper-404 .t-image .t-description .content-wrapper .info-wrapper .info-404 footer cite, .freelancer-about .testimonials-3col .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .freelancer-about .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .freelancer-about .testimonials-3col .t-item .wrapper-404 .t-image .t-description .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .freelancer-about .t-item .wrapper-404 .t-image .t-description .content-wrapper .info-wrapper .info-404 footer cite, .team-3col .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .team-3col .t-item .t-image .t-description .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .team-4col .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .team-4col .t-item .t-image .t-description .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .freelancer-about .t-item .t-image .t-description .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .freelancer-about .t-item .t-image .t-description .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .team-3col .testimonials-3col .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .team-3col .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner p footer cite, .team-3col .testimonials-3col .t-item .bg-maintenance .t-image .t-description .content-wrapper .content-inner p footer cite, .testimonials-3col .team-3col .t-item .bg-maintenance .t-image .t-description .content-wrapper .content-inner p footer cite, .team-4col .testimonials-3col .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .team-4col .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner p footer cite, .team-4col .testimonials-3col .t-item .bg-maintenance .t-image .t-description .content-wrapper .content-inner p footer cite, .testimonials-3col .team-4col .t-item .bg-maintenance .t-image .t-description .content-wrapper .content-inner p footer cite, .freelancer-about .testimonials-3col .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .freelancer-about .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner p footer cite, .freelancer-about .testimonials-3col .t-item .bg-maintenance .t-image .t-description .content-wrapper .content-inner p footer cite, .testimonials-3col .freelancer-about .t-item .bg-maintenance .t-image .t-description .content-wrapper .content-inner p footer cite, .team-3col .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .team-3col .t-item .t-image .t-description .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .team-4col .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .team-4col .t-item .t-image .t-description .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .freelancer-about .t-item .t-image .t-description .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .freelancer-about .t-item .t-image .t-description .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .team-3col .t-item .t-image .t-description .content-wrapper .t-info .t-role, .team-3col .t-item .t-info .t-image .t-description .content-wrapper .t-role, .team-4col .t-item .t-image .t-description .content-wrapper .t-info .t-role, .team-4col .t-item .t-info .t-image .t-description .content-wrapper .t-role, .freelancer-about .t-item .t-image .t-description .content-wrapper .t-info .t-role, .freelancer-about .t-item .t-info .t-image .t-description .content-wrapper .t-role, .t-join .t-info .team-3col .t-item .t-image .t-description .content-wrapper .t-role, .t-join .t-info .team-4col .t-item .t-image .t-description .content-wrapper .t-role, .t-join .t-info .freelancer-about .t-item .t-image .t-description .content-wrapper .t-role, .team-3col .t-item .t-image .t-description .content-wrapper .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .team-3col .t-item .t-image .t-description .content-wrapper .cards-header, .team-4col .t-item .t-image .t-description .content-wrapper .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .team-4col .t-item .t-image .t-description .content-wrapper .cards-header, .freelancer-about .t-item .t-image .t-description .content-wrapper .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .freelancer-about .t-item .t-image .t-description .content-wrapper .cards-header, .team-3col .t-item .t-image .t-description .content-wrapper .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .team-3col .t-item .t-image .t-description .content-wrapper .sc-lead, .team-4col .t-item .t-image .t-description .content-wrapper .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .team-4col .t-item .t-image .t-description .content-wrapper .sc-lead, .freelancer-about .t-item .t-image .t-description .content-wrapper .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .freelancer-about .t-item .t-image .t-description .content-wrapper .sc-lead {
@@ -4898,13 +4907,13 @@ fieldset[disabled] .form-control:hover {
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .t-join:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -4968,40 +4977,40 @@ fieldset[disabled] .form-control:hover {
 
 .freelancer-about .t-item:hover .social-links li {
   -webkit-transform: translateY(-50px);
-      -ms-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
 }
 
 .freelancer-about .t-item .t-image {
   height: 440px;
   -webkit-transition: height 0.3s;
-          transition: height 0.3s;
+  transition: height 0.3s;
 }
 
 .freelancer-about .t-item .social-links {
   -webkit-transform: translateY(50px);
-      -ms-transform: translateY(50px);
-          transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
 }
 
 .freelancer-about .t-item .social-links li:first-child {
   -webkit-transition: -webkit-transform 0.5s;
-          transition: transform 0.5s;
+  transition: transform 0.5s;
 }
 
 .freelancer-about .t-item .social-links li:nth-child(2) {
   -webkit-transition: -webkit-transform 0.65s;
-          transition: transform 0.65s;
+  transition: transform 0.65s;
 }
 
 .freelancer-about .t-item .social-links li:nth-child(3) {
   -webkit-transition: -webkit-transform 0.8s;
-          transition: transform 0.8s;
+  transition: transform 0.8s;
 }
 
 .freelancer-about .t-item .social-links li:nth-child(4) {
   -webkit-transition: -webkit-transform 0.95s;
-          transition: transform 0.95s;
+  transition: transform 0.95s;
 }
 
 .freelancer-about .freelancer-about-content {
@@ -5082,7 +5091,7 @@ fieldset[disabled] .form-control:hover {
   width: 100%;
   height: auto;
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .portfolio-columns-fw .portfolio-item figure figcaption, .portfolio-columns-boxed .portfolio-item figure figcaption {
@@ -5096,7 +5105,7 @@ fieldset[disabled] .form-control:hover {
   overflow: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
-          transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .portfolio-columns-fw .portfolio-item figure figcaption .p-content, .portfolio-columns-boxed .portfolio-item figure figcaption .p-content {
@@ -5105,7 +5114,7 @@ fieldset[disabled] .form-control:hover {
   right: 40px;
   bottom: 25px;
   -webkit-transition: bottom 0.5s;
-          transition: bottom 0.5s;
+  transition: bottom 0.5s;
 }
 
 .portfolio-columns-fw .portfolio-item figure figcaption .p-content h2:first-child,
@@ -5380,15 +5389,15 @@ fieldset[disabled] .form-control:hover {
   width: 100%;
   height: auto;
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .portfolio-columns-fw .p-wrapper:hover img,
 .portfolio-columns-boxed .p-wrapper:hover img,
 .portfolio-columns-fw .p-wrapper:active img, .portfolio-columns-boxed .p-wrapper:active img {
   -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 .portfolio-columns-fw .p-wrapper:hover .open-btn,
@@ -5427,15 +5436,15 @@ fieldset[disabled] .form-control:hover {
   width: 100%;
   height: auto;
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .portfolio-masonry .p-wrapper:hover img,
 .portfolio-masonry-2 .p-wrapper:hover img,
 .portfolio-masonry-3 .p-wrapper:hover img, .portfolio-masonry .p-wrapper:active img, .portfolio-masonry-2 .p-wrapper:active img, .portfolio-masonry-3 .p-wrapper:active img {
   -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 .portfolio-masonry .p-wrapper .p-hover, .portfolio-masonry-2 .p-wrapper .p-hover, .portfolio-masonry-3 .p-wrapper .p-hover {
@@ -5449,7 +5458,7 @@ fieldset[disabled] .form-control:hover {
   overflow: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
-          transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .portfolio-masonry .p-wrapper .p-hover .p-content, .portfolio-masonry-2 .p-wrapper .p-hover .p-content, .portfolio-masonry-3 .p-wrapper .p-hover .p-content {
@@ -5458,7 +5467,7 @@ fieldset[disabled] .form-control:hover {
   right: 40px;
   bottom: 25px;
   -webkit-transition: bottom 0.5s;
-          transition: bottom 0.5s;
+  transition: bottom 0.5s;
 }
 
 .portfolio-masonry .p-wrapper .p-hover .p-content h2:first-child,
@@ -5726,7 +5735,7 @@ fieldset[disabled] .form-control:hover {
   color: #111;
   background: #ececec;
   -webkit-transition: top .5;
-          transition: top .5;
+  transition: top .5;
 }
 
 .portfolio-masonry .p-wrapper .open-btn:focus,
@@ -5777,8 +5786,8 @@ fieldset[disabled] .form-control:hover {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .portfolio-1col-fw .portfolio-item .img-wrapper img, .portfolio-1col-boxed .portfolio-item .img-wrapper img {
@@ -5805,13 +5814,13 @@ fieldset[disabled] .form-control:hover {
 .portfolio-1col-boxed .portfolio-item {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .portfolio-1col-boxed .portfolio-item:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -5946,7 +5955,7 @@ fieldset[disabled] .form-control:hover {
   margin-top: -25px;
   opacity: 0;
   -webkit-transition: opacity, 0.5s;
-          transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
 }
 
 .single-img-slider .slider-nav span {
@@ -6091,52 +6100,52 @@ fieldset[disabled] .form-control:hover {
 .project-nav nav .nav-btns .prev:hover,
 .project-nav nav .nav-btns .next:hover {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .project-nav nav .nav-btns .prev:hover .nav-icon,
 .project-nav nav .nav-btns .next:hover .nav-icon {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
 .project-nav nav .nav-btns .prev {
   float: left;
   -webkit-transform: translateX(-20px);
-      -ms-transform: translateX(-20px);
-          transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .project-nav nav .nav-btns .prev .nav-icon {
   opacity: 0;
   -webkit-transform: translateX(20px);
-      -ms-transform: translateX(20px);
-          transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .project-nav nav .nav-btns .next {
   float: right;
   -webkit-transform: translateX(20px);
-      -ms-transform: translateX(20px);
-          transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .project-nav nav .nav-btns .next .nav-icon {
   opacity: 0;
   -webkit-transform: translateX(-20px);
-      -ms-transform: translateX(-20px);
-          transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 /* ---- 15.6 Portfoli Mobile ---- */
@@ -6146,18 +6155,18 @@ fieldset[disabled] .form-control:hover {
   background: #f8f8f8;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .portfolio-mobile .pt-item img {
   -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .portfolio-mobile .pt-item:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -6295,8 +6304,8 @@ fieldset[disabled] .form-control:hover {
 
 .pricing-tables .pt-featured {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -6362,7 +6371,7 @@ fieldset[disabled] .form-control:hover {
   text-align: center;
   color: #999;
   -webkit-transition: border-color 0.4s;
-          transition: border-color 0.4s;
+  transition: border-color 0.4s;
 }
 
 .cta-newsletter .cta-wrapper input[type="email"]:focus {
@@ -6394,7 +6403,7 @@ fieldset[disabled] .form-control:hover {
   display: block;
   font-weight: initial;
   -webkit-transition: translateY(10px);
-          transition: translateY(10px);
+  transition: translateY(10px);
 }
 
 .cta-newsletter .cta-wrapper .subscribe-result {
@@ -6463,13 +6472,13 @@ fieldset[disabled] .form-control:hover {
   background: #f8f8f8;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .blog-columns .blog-post:hover, .blog-classic .blog-post:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -6481,7 +6490,7 @@ fieldset[disabled] .form-control:hover {
   max-width: 100%;
   height: auto;
   -webkit-transition: opacity 0.5s;
-          transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .blog-columns .blog-post .post-img:hover img, .blog-classic .blog-post .post-img:hover img {
@@ -6501,7 +6510,7 @@ fieldset[disabled] .form-control:hover {
   vertical-align: middle;
   color: #ccc;
   -webkit-transition: color 0.3s;
-          transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .blog-columns .blog-post .bp-content .post-meta .post-date span,
@@ -6517,7 +6526,7 @@ fieldset[disabled] .form-control:hover {
   vertical-align: middle;
   color: #999;
   -webkit-transition: color 0.3s;
-          transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .blog-columns .blog-post .bp-content .post-meta .post-date:hover i,
@@ -6609,7 +6618,7 @@ fieldset[disabled] .form-control:hover {
   vertical-align: middle;
   color: #ccc;
   -webkit-transition: color 0.3s;
-          transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .blog-post-single .post-meta .post-date span,
@@ -6624,7 +6633,7 @@ fieldset[disabled] .form-control:hover {
   vertical-align: middle;
   color: #999;
   -webkit-transition: color 0.3s;
-          transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .blog-post-single .post-meta .post-date:hover i,
@@ -6706,7 +6715,7 @@ fieldset[disabled] .form-control:hover {
   color: #777;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .sidebar .categories-widget .widget-item a span {
@@ -6737,7 +6746,7 @@ fieldset[disabled] .form-control:hover {
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   color: #999;
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .sidebar .tags-widget .tag-list li a:hover {
@@ -6761,7 +6770,7 @@ fieldset[disabled] .form-control:hover {
   font-size: 18px;
   color: #ccc;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .sidebar .search-widget .form-group .inside-input-btn:hover {
@@ -6859,7 +6868,7 @@ fieldset[disabled] .form-control:hover {
   letter-spacing: 2px;
   color: #999;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .blog-post-comments .bp-comment .comment-info .comment-replay-btn:hover, .blog-post-comments .bp-comment-reply .comment-info .comment-replay-btn:hover {
@@ -6937,7 +6946,7 @@ form .input-error,
 form .input-error-2 {
   border-color: #e80000;
   -webkit-transition: border-color 0.4s;
-          transition: border-color 0.4s;
+  transition: border-color 0.4s;
 }
 
 form .input-error:hover,
@@ -6966,7 +6975,7 @@ form .input-error-2:focus {
   margin: 0 auto;
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-          transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
 }
 
 .contact-1 .contact-wrapper .contact-info-wrapper address .address-group {
@@ -7026,7 +7035,7 @@ form .input-error-2:focus {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.5s, visibility 0.6s, top 0.5s;
-          transition: opacity 0.5s, visibility 0.6s, top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, top 0.5s;
 }
 
 .contact-1 .contact-wrapper .show-info-link a {
@@ -7169,7 +7178,7 @@ form .input-error-2:focus {
 .contact-3 .form-wrapper .form-minimal .input-error-2 {
   border-color: #e80000 !important;
   -webkit-transition: border-color 0.4s;
-          transition: border-color 0.4s;
+  transition: border-color 0.4s;
 }
 
 .contact-3 .form-wrapper .form-minimal .input-error:hover,
@@ -7225,7 +7234,7 @@ form .input-error-2:focus {
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .login-1 .panel-group .panel .panel-collapse .panel-body .form-login .forget-pass-link:hover {
@@ -7288,13 +7297,13 @@ form .input-error-2:focus {
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .login-2 .bg-overlay .form-wrapper:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -7315,7 +7324,7 @@ form .input-error-2:focus {
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .login-2 .bg-overlay .form-wrapper .form-content .forget-pass-link:hover {
@@ -7356,7 +7365,7 @@ form .input-error-2:focus {
 .login-2 .bg-overlay .form-wrapper .social-signup .social-card i {
   position: absolute;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead {
@@ -7381,7 +7390,7 @@ form .input-error-2:focus {
 
 .login-2 .bg-overlay .form-wrapper .social-signup .fb-card {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .login-2 .bg-overlay .form-wrapper .social-signup .fb-card:hover {
@@ -7396,7 +7405,7 @@ form .input-error-2:focus {
 
 .login-2 .bg-overlay .form-wrapper .social-signup .tw-card {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .login-2 .bg-overlay .form-wrapper .social-signup .tw-card:hover {
@@ -7414,7 +7423,7 @@ form .input-error-2:focus {
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .login-2 .bg-overlay .email-signup:hover {
@@ -7667,7 +7676,7 @@ form .input-error-2:focus {
   border: 1px solid #ccc;
   text-align: center;
   -webkit-transition: background 0.3s;
-          transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .line-icons ul li:hover {
@@ -7683,7 +7692,7 @@ form .input-error-2:focus {
   font-size: 50px;
   color: #777;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .line-icons ul li p {
@@ -7743,8 +7752,8 @@ form .input-error-2:focus {
 
 .scroller:hover .scroller-text {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   opacity: 1;
 }
 
@@ -7756,11 +7765,11 @@ form .input-error-2:focus {
   text-transform: uppercase;
   color: #ececec;
   -webkit-transform: translateY(5px);
-      -ms-transform: translateY(5px);
-          transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
   opacity: 0;
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .scroller-dark {
@@ -7802,7 +7811,7 @@ form .input-error-2:focus {
   background: #ececec;
   opacity: 0;
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .fs-slider .slick-prev span,
@@ -8224,7 +8233,7 @@ form .input-error-2:focus {
   right: 0;
   padding-left: 0;
   /*background-color: #232323;*/
-    background-color: #232323;
+  background-color: #232323;
 }
 
 .freelancer-hero .hero-content-wrapper .hero-content {
@@ -8264,8 +8273,8 @@ form .input-error-2:focus {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .agency-hero .hero-wrapper .hero-content .lead-img {
@@ -8546,8 +8555,8 @@ form .input-error-2:focus {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .app-hero .hero-text {
@@ -8665,7 +8674,7 @@ form .input-error-2:focus {
   overflow: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
-          transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .hover-default .p-hover .p-content, .hover-light .p-hover .p-content {
@@ -8674,7 +8683,7 @@ form .input-error-2:focus {
   right: 40px;
   bottom: 25px;
   -webkit-transition: bottom 0.5s;
-          transition: bottom 0.5s;
+  transition: bottom 0.5s;
 }
 
 .hover-default .p-hover .p-content h2:first-child,
@@ -8948,7 +8957,7 @@ form .input-error-2:focus {
   color: #111;
   background: #ececec;
   -webkit-transition: top .5;
-          transition: top .5;
+  transition: top .5;
 }
 
 .hover-default .open-btn:focus,
@@ -9103,17 +9112,17 @@ form .input-error-2:focus {
 /* ---- 26.2 Hover Bottom - Effect ---- */
 .portfolio-item.hover-bottom figure img {
   -webkit-transition: -webkit-transform 0.4s;
-          transition: transform 0.4s;
+  transition: transform 0.4s;
 }
 
 .portfolio-item.hover-bottom figure:hover img,
 .portfolio-item.hover-bottom figure:active img {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transform: translateY(-60px);
-      -ms-transform: translateY(-60px);
-          transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  transform: translateY(-60px);
 }
 
 .portfolio-item.hover-bottom figure:hover figcaption,
@@ -9129,7 +9138,7 @@ form .input-error-2:focus {
   background: #111;
   opacity: 1;
   -webkit-transition: bottom 0.4s;
-          transition: bottom 0.4s;
+  transition: bottom 0.4s;
 }
 
 .portfolio-item.hover-bottom figure figcaption a:focus {
@@ -9157,7 +9166,7 @@ form .input-error-2:focus {
   float: right;
   background: #2b2b2b;
   -webkit-transition: background 0.4s;
-          transition: background 0.4s;
+  transition: background 0.4s;
 }
 
 .portfolio-item.hover-bottom figure figcaption .hover-btns li:hover {
@@ -9205,24 +9214,24 @@ form .input-error-2:focus {
 /* ---- 26.3 Hover Side Panel - Effect ---- */
 .portfolio-item.hover-side figure img {
   -webkit-transition: -webkit-transform 0.4s;
-          transition: transform 0.4s;
+  transition: transform 0.4s;
 }
 
 .portfolio-item.hover-side figure:hover img,
 .portfolio-item.hover-side figure:active img {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transform: translateX(38.2%);
-      -ms-transform: translateX(38.2%);
-          transform: translateX(38.2%);
+  -ms-transform: translateX(38.2%);
+  transform: translateX(38.2%);
 }
 
 .portfolio-item.hover-side figure:hover figcaption,
 .portfolio-item.hover-side figure:active figcaption {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .portfolio-item.hover-side figure:hover figcaption .hover-heading,
@@ -9242,10 +9251,10 @@ form .input-error-2:focus {
   background: #111;
   opacity: 1;
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.4s;
-          transition: transform 0.4s;
+  transition: transform 0.4s;
 }
 
 .portfolio-item.hover-side figure figcaption .hover-heading {
@@ -9256,7 +9265,7 @@ form .input-error-2:focus {
   color: #ececec;
   opacity: 0;
   -webkit-transition: opacity 0.6s;
-          transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
 .portfolio-item.hover-side figure figcaption .hover-text {
@@ -9266,7 +9275,7 @@ form .input-error-2:focus {
   color: #999;
   opacity: 0;
   -webkit-transition: opacity 0.6s;
-          transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
 .portfolio-item.hover-side figure figcaption .hover-more-btn {
@@ -9276,7 +9285,7 @@ form .input-error-2:focus {
   color: #999;
   opacity: 0;
   -webkit-transition: opacity 0.6s, color 0.4s;
-          transition: opacity 0.6s, color 0.4s;
+  transition: opacity 0.6s, color 0.4s;
 }
 
 .portfolio-item.hover-side figure figcaption .hover-more-btn:hover {
@@ -9292,7 +9301,7 @@ form .input-error-2:focus {
   list-style: none;
   opacity: 0;
   -webkit-transition: opacity 0.7s;
-          transition: opacity 0.7s;
+  transition: opacity 0.7s;
 }
 
 .portfolio-item.hover-side figure figcaption .hover-btns li {
@@ -9362,13 +9371,13 @@ form .input-error-2:focus {
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .shop-product-card:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
@@ -9412,7 +9421,7 @@ form .input-error-2:focus {
   vertical-align: middle;
   color: inherit;
   -webkit-transition: background 0.5s, top 0.3s;
-          transition: background 0.5s, top 0.3s;
+  transition: background 0.5s, top 0.3s;
   z-index: 100;
 }
 
@@ -9437,14 +9446,14 @@ form .input-error-2:focus {
   color: #111;
   opacity: 0;
   -webkit-transition: all 0.35s;
-          transition: all 0.35s;
+  transition: all 0.35s;
   z-index: 100;
 }
 
 .shop-product-card .product-image-wrapper .fav-btn:hover {
   -webkit-transform: rotate(145deg);
-      -ms-transform: rotate(145deg);
-          transform: rotate(145deg);
+  -ms-transform: rotate(145deg);
+  transform: rotate(145deg);
 }
 
 .shop-product-card .product-image-wrapper .shop-p-slider-nav {
@@ -9456,11 +9465,11 @@ form .input-error-2:focus {
   background: #fff;
   color: #111;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0;
   -webkit-transition: background 0.35s, color 0.35s, opacity 0.5s;
-          transition: background 0.35s, color 0.35s, opacity 0.5s;
+  transition: background 0.35s, color 0.35s, opacity 0.5s;
 }
 
 .shop-product-card .product-image-wrapper .shop-p-slider-nav span {
@@ -9643,7 +9652,7 @@ form .input-error-2:focus {
   color: #777;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .shop-sidebar .categories-widget .widget-item a span, .shop-sidebar-vertical .categories-widget .widget-item a span {
@@ -9677,7 +9686,7 @@ form .input-error-2:focus {
   font-size: 18px;
   color: #ccc;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .shop-sidebar .search-widget .form-group .inside-input-btn:hover, .shop-sidebar-vertical .search-widget .form-group .inside-input-btn:hover {
@@ -9708,7 +9717,7 @@ form .input-error-2:focus {
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   color: #999;
   -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .shop-sidebar .tags-widget .tag-list li a:hover, .shop-sidebar-vertical .tags-widget .tag-list li a:hover {
@@ -9866,8 +9875,8 @@ form .input-error-2:focus {
 .totals-content .checkout-btn {
   left: 50%;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .totals-content .subtotal-group, .totals-content .shipping-group {
@@ -10005,11 +10014,11 @@ form .input-error-2:focus {
   background: #fff;
   color: #111;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0;
   -webkit-transition: background 0.35s, color 0.35s, opacity 0.5s;
-          transition: background 0.35s, color 0.35s, opacity 0.5s;
+  transition: background 0.35s, color 0.35s, opacity 0.5s;
 }
 
 .prod_single_img_slider .shop-p-slider-nav span {
@@ -10219,7 +10228,7 @@ form .input-error-2:focus {
 
 .table-hover tbody tr td {
   -webkit-transition: all 0.4s;
-          transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .table-light thead {
