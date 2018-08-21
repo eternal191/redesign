@@ -1277,8 +1277,8 @@ h4,
 .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead,
 h5,
 .ft-boxed-hover ul li .hover-content .ft-heading,
-.sidebar .comments-widget .widget-item span .widget-comm-title,
 .ft-tabs .tabs-list li a .tab-group .tab-info,
+.sidebar .comments-widget .widget-item span .widget-comm-title,
 .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer,
 .shop-layout-options span,
 h6, .progress-group .progress-title,
@@ -1967,6 +1967,15 @@ fieldset[disabled] .form-control:hover {
 }
 
 .page-title .subheading {
+  display: block;
+  margin: 20px 0 0 0;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+  color: #777;
+}
+
+
+.page-title .subheadingHDR {
   display: block;
   margin: 20px 0 0 0;
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
@@ -3262,14 +3271,6 @@ fieldset[disabled] .form-control:hover {
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 165px;
-  position: relative;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  pointer-events: none;
-}
-
-.ft-steps-numbers .ft-item:hover .ft-nbr {
-  transform: rotateY(360deg);
 }
 
 .ft-steps-numbers .ft-item h4, .ft-steps-numbers .ft-item .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .ft-steps-numbers .ft-item .tab-heading, .ft-steps-numbers .ft-item .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item blockquote footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .ft-steps-numbers .ft-item cite, .ft-steps-numbers .ft-item .team-3col .t-item .t-info .t-role, .team-3col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .team-4col .t-item .t-info .t-role, .team-4col .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .freelancer-about .t-item .t-info .t-role, .freelancer-about .t-item .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .t-join .t-info .t-role, .t-join .t-info .ft-steps-numbers .ft-item .t-role, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .ft-steps-numbers .ft-item .cards-header, .ft-steps-numbers .ft-item .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .ft-steps-numbers .ft-item .sc-lead {
@@ -4254,8 +4255,7 @@ fieldset[disabled] .form-control:hover {
 /* ---- 10.2 Counters - Numbers ---- */
 .number-counters, .number-counters-dark-bg {
   position: relative;
-  /*background: #ccc url(http://placehold.it/2102x1578);*/
-  background: #ccc url('../images/africa-15428_1920.jpg');
+  background: #ccc url(http://placehold.it/2102x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -4382,7 +4382,7 @@ fieldset[disabled] .form-control:hover {
 -------------------------------------------------- */
 /* ---- 12.1 Testimonial - 1 Column Slider ---- */
 .testimonials-parallax, .testimonials-dark {
-  background: url(http://placehold.it/2440x1578);  /*Todo add testominals bkg*/
+  background: url(http://placehold.it/2440x1578);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
