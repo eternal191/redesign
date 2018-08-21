@@ -29,6 +29,9 @@
         <link rel="stylesheet" href="../assets/styles/contactwizard/css/form-wizard-green.css">
       <!--<link rel="stylesheet" href="assets/custom/css/form-wizard-blue.css">-->
 
+      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"  media="screen">
+
+
 
       <style type="text/css">
         .progress .progress-bar {
@@ -588,7 +591,21 @@
                             <!-- Progress Bar -->
                             <h4>Profile Image: <span>Step 3 - 4</span></h4>
                             <div style="clear:both;"></div>
-                            <div class="form-group image-upload">
+
+                            <div data-role="main" class="ui-content">
+                              <form method="post" action="/action_page_post.php">
+                                <div data-role="rangeslider">
+                                  <label for="price-min">Price:</label>
+                                  <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                  <label for="price-max">Price:</label>
+                                  <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+                                </div>
+                                <input type="submit" data-inline="true" value="Submit">
+                                <p>The range slider can be useful for allowing users to select a specific price range when browsing products.</p>
+                              </form>
+                            </div>
+
+                   <!--         <div class="form-group image-upload">
                               <div class="setting image_picker">
                                 <br/><h3 class="text-center">Upload Profile Image</h3>
                                 <div class="settings_wrap">
@@ -599,12 +616,13 @@
                                   <div class="settings_actions vertical"><a class="disabled" data-action="remove_current_image"><i class="fa fa-trash" aria-hidden="true"></i> Remove Image</a></div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox"> Yes, show this image on my profile.
-                              </label>
-                            </div>
+                            </div>-->
+
+
+
+
+
+
                             <div class="form-wizard-buttons">
                               <button type="button" class="btn btn-previous">Previous</button>
                               <button type="button" class="btn btn-next">Next</button>
@@ -781,7 +799,7 @@
         <script src="../assets/js/gmap.js"></script>
 <!--        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"></script>-->
         <script src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyA10FjiXX0V5U1JqfDDbl6NSYCA9_K7udA" type="text/javascript"></script>
-
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
         <!-- Definity JS -->
         <script src="../assets/js/main.js"></script>
