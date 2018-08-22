@@ -513,9 +513,17 @@
                             <!-- Step 3 -->
                             <div class="form-wizard-step">
                               <div class="form-wizard-step-icon"><i class="fa fa-camera" aria-hidden="true"></i></div>
-                              <p>Image</p>
+                              <p> Budget</p>
                             </div>
                             <!-- Step 3 -->
+
+                            <!-- Step 4 -->
+                            <div class="form-wizard-step">
+                              <div class="form-wizard-step-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                              <p>Timeline</p>
+                            </div>
+                            <!-- Step 4 -->
+
 
                             <!-- Step 4 -->
                             <div class="form-wizard-step">
@@ -523,6 +531,7 @@
                               <p>Success</p>
                             </div>
                             <!-- Step 4 -->
+
                           </div>
                           <!-- Form progress -->
 
@@ -594,6 +603,13 @@
                           </fieldset>
                           <!-- Form Step 2 -->
 
+
+
+
+
+
+
+
                           <!-- Form Step 3 -->
                           <fieldset>
                             <!-- Progress Bar -->
@@ -637,7 +653,7 @@
                             <div class="form-group image-upload">
                               <span id="slider-value-lower-dates">From: </span>                              <span class="example-val" id="event-start">Thursday, 14th October 2010</span>
 
-                              <h4>Project Timeline: <span>Step 4 - 5</span></h4>
+                              <h4>Project Timeline: <span>Step 4 - 4</span></h4>
                               <span id="slider-value-higher-dates">To: </span>                              <span class="example-val" id="event-end">Thursday, 19th June 2014</span>
 
                               <div id="slider-date" class="noUi-target noUi-ltr noUi-horizontal">
@@ -665,7 +681,7 @@
                               </div>
                             </div>
                             <!-- Progress Bar -->
-                            <h4>Success Account: <span>Step 4 - 4</span></h4>
+                            <h4>Success:</h4>
                             <div style="clear:both;"></div>
                             <div class="success">
                               <h3>Sing Up Success</h3>
@@ -843,16 +859,13 @@
           var snapSlider = document.getElementById('priceSlider');
 
           noUiSlider.create(snapSlider, {
-            start: [ 0, 500 ],
+            start: [ 500, 1500 ],
             connect: true,
+            tooltips:true,
+            behaviour: 'drag',
             range: {
-              'min': 0,
-              '10%': 50,
-              '20%': 100,
-              '30%': 150,
-              '40%': 500,
-              '50%': 800,
-              'max': 1000
+              'min': [  500 ],
+              'max': [ 3000 ]
             }
           });
 
@@ -889,16 +902,16 @@
           noUiSlider.create(dateSlider, {
           // Create two timestamps to define a range.
             range: {
-              min: timestamp('2010'),
-              max: timestamp('2016')
+              min: timestamp('2018'),
+              max: timestamp('2021')
             },
             connect: true,
-
-          // Steps of one week
+            behaviour: 'drag',
+            // Steps of one week
             step: 7 * 24 * 60 * 60 * 1000,
 
           // Two more timestamps indicate the handle starting positions.
-            start: [ timestamp('2011'), timestamp('2015') ],
+            start: [ Date.now() , timestamp('2020') ],
 
           // No decimals
             format: wNumb({
