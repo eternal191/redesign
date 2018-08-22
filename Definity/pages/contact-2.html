@@ -27,10 +27,12 @@
         <link rel="stylesheet" href="../assets/styles/main.css">
         <link rel="stylesheet" href="../assets/styles/responsive.css">
         <link rel="stylesheet" href="../assets/styles/contactwizard/css/form-wizard-green.css">
+
+
+
+
+        <link rel="stylesheet" href="../assets/noUiSlider/nouislider.css">
       <!--<link rel="stylesheet" href="assets/custom/css/form-wizard-blue.css">-->
-
-      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"  media="screen">
-
 
 
       <style type="text/css">
@@ -42,13 +44,24 @@
           letter-spacing: 1px;*/
         }
 
+        .form-group.image-upload span {
+          display: inline-block;
+          margin: 20px 0px;
+        }
+
+
+       /* .form-group.image-upload span:first-child {
+          margin-right: 150px;
+        }
+*/
+
       </style>
 
       <!-- JS -->
         <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body id="page-top">
-        
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -133,12 +146,12 @@
                         <li><a href="../index-agency2-op.html" target="_blank">Agency 2</a></li>
                         <li><a href="../index-app-landing.html" target="_blank">Mobile App</a></li>
                         <li><a href="../index-web-app-landing.html" target="_blank">Web App</a></li>
-                        
+
                       </div>
                     </div><!-- / .row -->
                   </ul><!-- / .dropdown-menu -->
                 </li><!-- / Home -->
-                
+
 
                 <!-- Elements -->
                 <li class="dropdown">
@@ -188,7 +201,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <div class="row">
-                      
+
                       <!-- Introduction -->
                       <div class="col-lg-3 mb-sm-30">
                         <li class="dropdown-header">Introduction</li>
@@ -234,14 +247,14 @@
                     </div><!-- / .row -->
                   </ul><!-- / .dropdown-menu -->
                 </li><!-- / Pages -->
-                
+
 
                 <!-- Portfolio -->
                 <li class="dropdown mega-fw">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <div class="row">
-                      
+
                       <!-- Full Width -->
                       <div class="col-lg-3 mb-sm-30">
                         <li class="dropdown-header">Full Width</li>
@@ -284,7 +297,7 @@
                     </div><!-- / .row -->
                   </ul><!-- / .dropdown-menu -->
                 </li><!-- / Portfolio -->
-                
+
 
                 <!-- Blog -->
                 <li class="dropdown">
@@ -322,7 +335,7 @@
                   </ul>
                 </li><!-- / Blog -->
               </ul><!-- / .nav .navbar-nav -->
-              
+
 
               <!-- Navbar Links Right -->
               <ul class="nav navbar-nav navbar-right">
@@ -401,11 +414,11 @@
         </header>
 
 
-        
+
         <!-- ========== Contact ========== -->
 
         <section id="contact" class="section contact-2">
-          
+
           <header class="sec-heading">
             <h2>Ready to start your new web project?</h2>
             <span class="subheading">Fill out this short form below to get started, I'll get back with you to discuss your idea shortly.</span>
@@ -447,12 +460,12 @@
                     </div>
                   </li>
                 </ul>
-              </address>            
+              </address>
             </div><!-- / .gray-bg -->
           </div>
-          
+
           <div class="container">
-            
+
             <!-- Contact Form -->
             <div class="row">
 
@@ -589,40 +602,19 @@
                               </div>
                             </div>
                             <!-- Progress Bar -->
-                            <h4>Profile Image: <span>Step 3 - 4</span></h4>
                             <div style="clear:both;"></div>
-
-                            <div data-role="main" class="ui-content">
-                              <form method="post" action="/action_page_post.php">
-                                <div data-role="rangeslider">
-                                  <label for="price-min">Price:</label>
-                                  <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-                                  <label for="price-max">Price:</label>
-                                  <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
-                                </div>
-                                <input type="submit" data-inline="true" value="Submit">
-                                <p>The range slider can be useful for allowing users to select a specific price range when browsing products.</p>
-                              </form>
-                            </div>
-
-                   <!--         <div class="form-group image-upload">
-                              <div class="setting image_picker">
-                                <br/><h3 class="text-center">Upload Profile Image</h3>
-                                <div class="settings_wrap">
-                                  <label class="drop_target">
-                                    <div class="image_preview"></div>
-                                    <input id="inputFile" type="file"/>
-                                  </label>
-                                  <div class="settings_actions vertical"><a class="disabled" data-action="remove_current_image"><i class="fa fa-trash" aria-hidden="true"></i> Remove Image</a></div>
-                                </div>
+                            <div class="form-group image-upload">
+                              <span id="slider-value-lower">From</span>
+                              <h4>Project Budget: <span>Step 3 - 4</span></h4>
+                              <span id="slider-value-higher">To</span>
+                              <div class="setting image_picker" id="priceSlider">
                               </div>
+                            </div>
+                   <!--         <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Yes, show this image on my profile.
+                              </label>
                             </div>-->
-
-
-
-
-
-
                             <div class="form-wizard-buttons">
                               <button type="button" class="btn btn-previous">Previous</button>
                               <button type="button" class="btn btn-next">Next</button>
@@ -630,7 +622,42 @@
                           </fieldset>
                           <!-- Form Step 3 -->
 
+
+
+
                           <!-- Form Step 4 -->
+                          <fieldset>
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                              </div>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div style="clear:both;"></div>
+                            <div class="form-group image-upload">
+                              <span id="slider-value-lower-dates">From: </span>                              <span class="example-val" id="event-start">Thursday, 14th October 2010</span>
+
+                              <h4>Project Timeline: <span>Step 4 - 5</span></h4>
+                              <span id="slider-value-higher-dates">To: </span>                              <span class="example-val" id="event-end">Thursday, 19th June 2014</span>
+
+                              <div id="slider-date" class="noUi-target noUi-ltr noUi-horizontal">
+                              </div>
+
+
+
+
+                            </div>
+                            <div class="form-wizard-buttons">
+                              <button type="button" class="btn btn-previous">Previous</button>
+                              <button type="button" class="btn btn-next">Next</button>
+                            </div>
+                          </fieldset>
+                          <!-- Form Step 4 -->
+
+
+
+
+                          <!-- Form Step 5 -->
                           <fieldset>
                             <!-- Progress Bar -->
                             <div class="progress">
@@ -649,7 +676,7 @@
                               <button type="submit" class="btn btn-submit">Done</button>
                             </div>
                           </fieldset>
-                          <!-- Form Step 4 -->
+                          <!-- Form Step 5 -->
 
                         </form>
 
@@ -670,7 +697,7 @@
 
 
         <!-- ========== Footer Widgets ========== -->
-        
+
         <footer class="footer-widgets">
           <div class="container">
             <div class="row section">
@@ -718,7 +745,7 @@
                 <div class="widget twitter-widget">
                   <h5 class="header-widget">Twitter Feed</h5>
                   <ul>
-                    
+
                     <li>
                       <a href="#"><i class="fa fa-twitter"></i></a>
                       <p>5 Reasons You Should Take a Sabbatical from Creative Work <a href="#">http://enva.to/NTa6F</a> by <a href="#">@envato</a> <span>- AUG 10</span></p>
@@ -737,7 +764,7 @@
               <div class="col-md-3 col-sm-6">
                 <div class="widget newsletter-widget">
                   <h5 class="header-widget">Newsletter</h5>
-                  
+
                   <form action="post">
                     <div class="form-group">
                       <input type="email" name="w-newssletter" placeholder="Join our newsletter">
@@ -756,7 +783,7 @@
           <div class="copyright">
             <div class="container">
               <div class="row">
-                
+
                 <div class="col-sm-6">
                   <small>&copy; 2015 Definity. Made by <a class="no-style-link" href="http://themeforest.net/user/octarinethemes" target="_blank">OctarineThemes</a></small>
                 </div>
@@ -771,7 +798,7 @@
 
         </footer><!-- / .footer-widgets -->
 
-    
+
 
         <!-- ========== Scripts ========== -->
 
@@ -781,7 +808,7 @@
         <script src="../assets/js/vendor/jquery.easing.js"></script>
         <script src="../assets/js/vendor/jquery.waypoints.min.js"></script>
         <!--<script src="../assets/js/vendor/bootstrap.min.js"></script>-->
-        <script src="../assets/js/vendor/bootstrapcontact.js"></script>
+
         <script src="../assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
         <script src="../assets/js/vendor/smoothscroll.js"></script>
         <script src="../assets/js/vendor/jquery.localScroll.min.js"></script>
@@ -797,12 +824,155 @@
 
         <!-- Google Maps -->
         <script src="../assets/js/gmap.js"></script>
+
+
+        <script src="../assets/js/wNumb.js"></script>
 <!--        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"></script>-->
         <script src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyA10FjiXX0V5U1JqfDDbl6NSYCA9_K7udA" type="text/javascript"></script>
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 
         <!-- Definity JS -->
         <script src="../assets/js/main.js"></script>
         <script src="../assets/styles/contactwizard/js/form-wizard.js"></script>
+        <script src="../assets/noUiSlider/nouislider.js"></script>
+
+
+        <script type="text/javascript">
+
+
+          var snapSlider = document.getElementById('priceSlider');
+
+          noUiSlider.create(snapSlider, {
+            start: [ 0, 500 ],
+            connect: true,
+            range: {
+              'min': 0,
+              '10%': 50,
+              '20%': 100,
+              '30%': 150,
+              '40%': 500,
+              '50%': 800,
+              'max': 1000
+            }
+          });
+
+          var snapValues = [
+            document.getElementById('slider-value-lower'),
+            document.getElementById('slider-value-higher')
+          ];
+
+          snapSlider.noUiSlider.on('update', function( values, handle ) {
+            console.log(values);
+            if (handle === 0) {
+              snapValues[handle].innerHTML = "From: $"+values[handle];
+            } else {
+              snapValues[handle].innerHTML = "To: $"+values[handle];
+            }
+          });
+
+
+
+
+
+
+
+
+          /*Dates Slider*/
+
+          // Create a new date from a string, return as a timestamp.
+          function timestamp(str){
+            return new Date(str).getTime();
+          }
+
+          var dateSlider = document.getElementById('slider-date');
+
+          noUiSlider.create(dateSlider, {
+          // Create two timestamps to define a range.
+            range: {
+              min: timestamp('2010'),
+              max: timestamp('2016')
+            },
+            connect: true,
+
+          // Steps of one week
+            step: 7 * 24 * 60 * 60 * 1000,
+
+          // Two more timestamps indicate the handle starting positions.
+            start: [ timestamp('2011'), timestamp('2015') ],
+
+          // No decimals
+            format: wNumb({
+              decimals: 0
+            })
+          });
+
+
+          var dateValues = [
+            document.getElementById('event-start'),
+            document.getElementById('event-end')
+          ];
+
+          dateSlider.noUiSlider.on('update', function( values, handle ) {
+            dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+          });
+
+          // Create a list of day and monthnames.
+          var
+                  weekdays = [
+                    "Sunday", "Monday", "Tuesday",
+                    "Wednesday", "Thursday", "Friday",
+                    "Saturday"
+                  ],
+                  months = [
+                    "January", "February", "March",
+                    "April", "May", "June", "July",
+                    "August", "September", "October",
+                    "November", "December"
+                  ];
+
+          // Append a suffix to dates.
+          // Example: 23 => 23rd, 1 => 1st.
+          function nth (d) {
+            if(d>3 && d<21) return 'th';
+            switch (d % 10) {
+              case 1:  return "st";
+              case 2:  return "nd";
+              case 3:  return "rd";
+              default: return "th";
+            }
+          }
+
+          // Create a string representation of the date.
+          function formatDate ( date ) {
+
+
+            // Create a list of day and monthnames.
+            var
+                    weekdays = [
+                      "Sunday", "Monday", "Tuesday",
+                      "Wednesday", "Thursday", "Friday",
+                      "Saturday"
+                    ],
+                    months = [
+                      "January", "February", "March",
+                      "April", "May", "June", "July",
+                      "August", "September", "October",
+                      "November", "December"
+                    ];
+
+
+            return weekdays[date.getDay()] + ", " +
+                    date.getDate() + nth(date.getDate()) + " " +
+                    months[date.getMonth()] + " " +
+                    date.getFullYear();
+          }
+
+
+          /*Dates Slider*/
+
+
+
+        </script>
+
     </body>
 </html>

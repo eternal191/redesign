@@ -388,7 +388,7 @@
 }
 
 .form-wizard h4 {
-	float:left;
+	/*float:left;*/
 	font-size: 20px;
     font-weight: 300;
     color: #388e3c;
