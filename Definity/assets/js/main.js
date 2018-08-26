@@ -984,4 +984,9 @@ function validateField ( field ) {
 
 	}
 
+/*	(function($){
+		$(window).on("load",function(){
+			$("body").mCustomScrollbar();
+		});
+	})(jQuery);*/
 });
