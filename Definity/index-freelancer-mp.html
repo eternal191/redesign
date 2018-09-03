@@ -59,7 +59,7 @@
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body id="page-top">
-        
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -156,9 +156,9 @@
                       </div>
                       <div class="menu">
                         <ul class="menu__inner">
-                          <li class="menu__item"><a href="#whatido" class="menu__link" data-switch>What I do</a></li>
-                          <li class="menu__item"><a href="#process" class="menu__link" data-switch>MY PROCESS</a></li>
-                          <li class="menu__item"><a href="#whoami" class="menu__link" data-switch>WHO AM I</a></li>
+                          <li class="menu__item"><a href="#whatido" class="scroll menu__link" data-switch>What I do</a></li>
+                          <li class="menu__item"><a href="#sixsteps" class="scroll menu__link" data-switch>MY PROCESS</a></li>
+                          <li class="menu__item"><a href="#whoami" class="scroll menu__link" data-switch>WHO AM I</a></li>
                         </ul>
                       </div>
                       <div class="menu menu--code">
@@ -228,7 +228,7 @@
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                   <span class="linea-basic-cards-diamonds"></span>
-                  <h4>Planning</h4>
+                  <h4>Development</h4>
                   <p>
                     Any successful project such as a website requires a special attention to detail at every phase of
                     the project. Having a clear idea of the expected outcome at the beginning of a project ensures your
@@ -242,7 +242,7 @@
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                   <span class="linea-basic-star"></span>
-                  <h4>Design</h4>
+                  <h4>Marketing</h4>
                   <p>
                     No matter how great a website is, depending on if the design is aesthetically pleasing or not will
                     determine if a user will stay or leave your site. I’m a
@@ -262,7 +262,7 @@
 
         <!-- ========== Feature - Steps Numbers ========== -->
 
-        <section class="container ft-steps-numbers">
+        <section class="container ft-steps-numbers" id="sixsteps">
             <div class="row section">
 
               <header id="process" class="sec-heading ws-s">
@@ -378,7 +378,9 @@
                   <!-- Image -->
                   <div class="t-image">
                     <!--<img src="http://placehold.it/360x440" alt="Team Member" class="img-responsive">-->
-                    <img src="assets/images/me.jpg" alt="Team Member" class="img-responsive">
+                    <a href="./pages/about-1.html">
+                      <img src="assets/images/me.jpg" alt="Team Member" class="img-responsive">
+                    </a>
                   </div>
 
                   <!-- Info -->
@@ -619,8 +621,8 @@
         <section class="call-to-action background">
             <div class="center">
                 <div class="left">
-                    <h2>Speak with a developer.</h2>
-                    <p>Learn more about the ways we can take your business online.</p>
+                    <h2>Give me a call</h2>
+                    <p>Lets discuss your project details.</p>
                     <div class="form">
                         <div class="call-to-action-thanks">
                             <div class="call-to-action-thanks-content">
@@ -703,9 +705,8 @@
                 <!-- Item 1 -->
                 <li>
                   <h6>Responsive to your needs</h6>
-                  <p>I can answer your questions and messages right away. As such, any changes,
-                    suggestions, or comments can be delivered without delay. There is no hierarchy that can cause
-                    delays, nor hiccups in the project. It doesn’t matter whether you have a small project or a big one
+                  <p>I can answer your questions right away. As such, any changes,
+                    suggestions, or comments can be delivered without delay. It doesn’t matter whether you have a small project or a big one
                     as your needs will always be met without delay.</p>
                 </li>
 
@@ -727,7 +728,7 @@
                 <li>
                   <h6>Speed</h6>
                   <p>I make decisions and move faster than a large design firm. Design revisions happen
-                    more quickly when there is only one individual doing the coordinating.</p>
+                    more quickly when there is a smaler group doing the coordinating.  I can more closly work around you particular schedule.</p>
                 </li>
 
                 <!-- Item 2 -->
@@ -909,9 +910,15 @@
             <address>
               <ul>
                 <!-- Address -->
-                <li>
+                <li class="skype-list">
                   <!--<span class="wow fadeInLeft linea-basic-map adr-icon"></span>-->
-                  <i class="fab fa-skype" style="font-size: 60px;"></i>
+
+                  <a href="">
+                    <span style="position: relative">
+                       <i class="fab fa-skype" style="font-size: 60px;position: relative;bottom: 11px;right: 30px;"></i>
+                  </span>
+                  </a>
+
 
                   <div class="adr-group">
                     <span class="adr-heading">Skype</span>
@@ -921,7 +928,9 @@
 
                 <!-- Email -->
                 <li>
-                  <span class="wow fadeInUpBig linea-basic-paperplane adr-icon"></span>
+                  <a href="mailto:eternal191@gmail.com">
+                    <span class="wow fadeInUpBig linea-basic-paperplane adr-icon"></span>
+                  </a>
                   <div class="adr-group">
                     <span class="adr-heading">Email</span>
                     <span class="adr-info">eternal191@email.com</span>
@@ -930,7 +939,9 @@
 
                 <!-- Phone -->
                 <li>
-                  <span class="wow fadeInRight linea-basic-smartphone adr-icon"></span>
+                  <a href="tel:1-313-651-6669">
+                    <span class="wow fadeInRight linea-basic-smartphone adr-icon"></span>
+                  </a>
                   <div class="adr-group">
                     <span class="adr-heading">Phone</span>
                     <span class="adr-info">+ 313 651 6669</span>
@@ -947,9 +958,9 @@
               <div class="row">
                 
                 <ul>
-                  <li><a href="#">facebook</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Linked In</a></li>
+                  <li><a href="https://www.facebook.com/gregory.lewis.7902?ref=bookmarks">facebook</a></li>
+                  <li><a href="https://twitter.com/glewis83">Twitter</a></li>
+                  <li><a href="https://www.linkedin.com/in/gregory-m-lewis-9873319/">Linked In</a></li>
                 </ul>
 
               </div>
@@ -973,6 +984,11 @@
               </div><!-- / .row -->
             </div><!-- / .container -->
           </div><!-- / .copyright -->
+
+          <span class="skype-button bubble " data-contact-id="g_lewis32" data-color="#6DCC9C"></span>
+          <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+
+
         </footer><!-- / .footer-litle -->
 
     
@@ -1006,7 +1022,7 @@
         <script src="assets/js/digital_face_js/charming.min.js"></script>
         <script src="assets/js/digital_face_js/imagesloaded.pkgd.min.js"></script>
         <script src="assets/js/digital_face_js/main.js"></script>
-        <script src="assets/js/vendor/animDots.js"></script>
+        <!--<script src="assets/js/vendor/animDots.js"></script>-->
         <script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
 
         <!-- Definity JS -->
