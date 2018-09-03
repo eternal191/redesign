@@ -984,9 +984,34 @@ function validateField ( field ) {
 
 	}
 
-/*	(function($){
+	(function($){
+
+
 		$(window).on("load",function(){
-			$("body").mCustomScrollbar();
+			$("#mCSB_1").mCustomScrollbar({
+				scrollButtons:{
+					enable:true
+				}
+			});
 		});
-	})(jQuery);*/
+
+
+	})(jQuery);
+
+	(function () {
+		// Smooth scrolling
+		$(document).ready(function () {
+			var scrollLink = $('.scroll');
+			scrollLink.click(function(e) {
+				var theposition = $(this.hash).offset().top;
+				e.preventDefault();
+				$('body,html').animate({
+					scrollTop: (theposition - 30)
+				}, 1000 );
+			});
+		});
+
+
+	})(jQuery)
+
 });

@@ -68,3 +68,7 @@
 #techstack.dark-bg button.slick-next:hover{
     right: 12px;
 }
+
+a:focus{
+    color:#6dcc9e;
+}

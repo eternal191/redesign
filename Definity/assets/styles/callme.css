@@ -18,7 +18,7 @@ section.call-to-action .left h2 {
 }
 
 section.call-to-action .left p {
-    color: #9498ab;
+    color: white;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6em;
@@ -140,6 +140,7 @@ section.call-to-action .right .circle-4 {
 
 section.call-to-action .right .circle-center {
     width: 40px;
+    background-color: darkgrey;
     height: 40px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -158,7 +159,7 @@ section.call-to-action .right .circle-center {
 }
 
 section.call-to-action .right .circle-center:hover {
-    background: #2C3459;
+    background: #83d8b1;
 }
 
 section.call-to-action .right .circle-center i {
@@ -175,8 +176,8 @@ section.call-to-action .right .circle-center:hover i {
 section.call-to-action .right .circle-center .circle-center-tip {
     position: absolute;
     font-size: 13px;
-    background: #2c3459;
-    color: #fff;
+    background: #83d8b1;
+    color: #000;
     width: 200px;
     padding: 7px 0;
     -webkit-border-radius: 2px;
@@ -412,9 +413,9 @@ a.button {
 }
 
 .button.button-navy-blue {
-    border: 1px solid #2C3459;
+    border: 1px solid #ffffff;
     color: #2C3459;
-    background: #fdfdfd;
+    background: #78d2a8;
     padding-top: 10px;
 }
 
