@@ -6377,6 +6377,28 @@ fieldset[disabled] .form-control:hover {
     transition: border-color 0.4s;
 }
 
+
+
+
+
+
+
+.services-url-wrap .cta-wrapper input[type="email"] {
+    display: block;
+    margin: 0 auto 50px auto;
+    padding-bottom: 10px;
+    width: 600px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #777;
+    font-size: 2.6em;
+    font-weight: 400;
+    text-align: center;
+    color: #999;
+    -webkit-transition: border-color 0.4s;
+    transition: border-color 0.4s;
+}
+
 .cta-newsletter .cta-wrapper input[type="email"]:focus {
     outline: none;
     border-color: #ececec;
