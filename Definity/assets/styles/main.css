@@ -1500,7 +1500,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light {
     background: none;
     color: #111;
-    border: 2px solid #111;
+    border: 2px solid #fff;
     overflow: hidden;
     z-index: 1;
 }
@@ -1522,7 +1522,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost-light:visited,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,
 .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus {
-    color: #111;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -1961,6 +1961,16 @@ fieldset[disabled] .form-control:hover {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
+
+
+ @media screen and (min-width: 1200px){
+     .page-title{
+         min-height: 351px;
+     }
+ }
+
+
 
 .page-title h1, .page-title .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer, .comingsoon .content-wrapper .content-inner .cs-timer .item .page-title .nbr-timer {
     margin: 0;
@@ -5787,6 +5797,7 @@ fieldset[disabled] .form-control:hover {
 
 .portfolio-1col-fw .portfolio-item .img-wrapper, .portfolio-1col-boxed .portfolio-item .img-wrapper {
     position: relative;
+    overflow: hidden;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -5800,8 +5811,37 @@ fieldset[disabled] .form-control:hover {
     height: auto;
 }
 
+.portfolio-1col-fw .portfolio-item .img-wrapper img {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.portfolio-1col-fw .portfolio-item .img-wrapper img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .portfolio-1col-fw .portfolio-item figcaption, .portfolio-1col-boxed .portfolio-item figcaption {
     padding: 70px 100px 70px 70px;
+    background-color: black;
+}
+
+.portfolio-1col-fw .portfolio-item figcaption .flat-list li {
+    display: inline-block;
+    margin-bottom: 35px;
+    color:white;
+}
+
+.portfolio-1col-fw .portfolio-item figcaption p.techused {
+    text-align: center;
 }
 
 .portfolio-1col-fw .portfolio-item figcaption .subheading, .portfolio-1col-boxed .portfolio-item figcaption .subheading {
@@ -5811,7 +5851,10 @@ fieldset[disabled] .form-control:hover {
 }
 
 .portfolio-1col-fw .portfolio-item figcaption .view-btn, .portfolio-1col-boxed .portfolio-item figcaption .view-btn {
-    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
 
 .portfolio-1col-boxed .portfolio-item {
@@ -10274,3 +10317,11 @@ form .input-error-2:focus {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+header.portfolio_header_bkg {
+    background-position: -125px 100% !important;;
+    position: relative;
+    background-color: #0b0b0b;
+    background-image: url('../../assets/images/portfolio/portfolio_header.jpeg');
+}
