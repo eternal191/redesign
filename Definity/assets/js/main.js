@@ -105,22 +105,31 @@
 			else {
 
 				phoneField.removeClass('error');
+
+				//phpfile
+
+				var neximo = window.location.origin + '/Digitaldimensionz_Redesign/Definity/send-message.php';
+				console.log(neximo);
 				$.ajax({
-					url: 'submitphone.php',
+					url: neximo,
 					data: {'phoneNumber': phoneNumber},
 					type: 'post',
 					success: function (output) {
 
 
-						$('#text_number').modal();
+						console.log(output);
+						console.log('worked');
 
 
+					}
+					,
+					error: function (e) {
+						console.log(e);
 					}
 
 				});
 			}
 
-			console.log('clicked call now btn');
 
 		});
 	}
@@ -489,6 +498,8 @@
 					dots: false,
 					fade: false,
 					arrows: true,
+					prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+					nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
 					responsive: [
 						{
 							breakpoint: 999,

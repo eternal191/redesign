@@ -1483,7 +1483,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 
 .btn:visited:hover, .btn-ghost:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
     color: #ececec;
-    background: #3f3f3f;
+    background: #6fc29a;
 }
 
 .btn:hover, .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, .btn-text:hover, .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
@@ -1508,7 +1508,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
     content: '';
     position: absolute;
-    background: #111;
+    background: #4f9072;
     left: 0;
     top: 100%;
     width: 100%;
@@ -2078,7 +2078,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .pt-plax-lg-dark {
-    background: url(http://placehold.it/2440x1280);
+    background: url('../../assets/images/background_digital.jpg');
     background-size: cover;
 }
 
@@ -3045,7 +3045,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar-trans .navbar-logo {
-    content: url(../images/logo-light.png);
+    content: url(../images/digitaldimension.png);
 }
 
 .navbar-trans .navbar-logo-dark {
@@ -6383,7 +6383,9 @@ fieldset[disabled] .form-control:hover {
 
 /* ---- 17.2 CTA - Newsletter Signup ---- */
 .cta-newsletter {
-    background: url(../../assets/images/shattered.gif) repeat;
+    background: url(../../assets/images/shapes.jpg);
+    background-position: 210%;
+    background-size: 100%;
 }
 
 .cta-newsletter .bg-overlay {
@@ -10325,3 +10327,14 @@ header.portfolio_header_bkg {
     background-color: #0b0b0b;
     background-image: url('../../assets/images/portfolio/portfolio_header.jpeg');
 }
+
+
+@media (min-width: 1200px){
+
+    header.contact .container {
+        margin-top: 43px;
+        margin-left: 170px;
+    }
+
+}
+
