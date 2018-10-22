@@ -11,7 +11,7 @@ $token = 'da3f58609b17cc8a4f768bd1ba76d191';
 $twilio_number = "+12486218275";
 
 
-$usermessage = $_POST['phoneNumber'];
+$usermessage = $_POST['textmeElement'];
 
 $client = new Client($sid, $token);
 

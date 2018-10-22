@@ -64,7 +64,6 @@
         .clients-slider .slick-prev  i.fa {
           font-size: 80px;
           position: absolute;
-          top: 38%;
           right: 2%;
           transform: rotate(180deg);
         }
@@ -72,11 +71,14 @@
         .clients-slider .slick-next i.fa {
           font-size: 80px;
           position: absolute;
-          top: 34%;
           left: 2%;
           transform: rotate(180deg);
+        }
 
-          }
+
+        .clients-slider .slick-next i.fa, .clients-slider .slick-prev i.fa {
+          top:44%;
+        }
 
       </style>
 
@@ -645,7 +647,7 @@
         <section class="call-to-action background">
             <div class="center">
                 <div class="left">
-                    <h2>Give me a call</h2>
+                    <h2>Send me a quick text message</h2>
                     <p>Lets discuss your project details.</p>
                     <div class="form">
                         <div class="call-to-action-thanks">
@@ -654,8 +656,8 @@
                                 <span class="call-to-action-thanks-close">Close this notice.</span>
                             </div>
                         </div>
-                        <input type="tel" name="Phone number" placeholder="Your phone number..." class="phone-number">
-                        <button class="button button-navy-blue send-phone-call-quote">Get a phone call <i
+                      <textarea class="form-control" name="textarea" id="txt-forms" rows="9" placeholder="Your Message"></textarea>
+                        <button class="button button-navy-blue send-phone-call-quote">Send Text Message <i
                                 class="icon-phone"></i></button>
                     </div>
                 </div>
@@ -676,6 +678,8 @@
                             </div>
                         </a>
                     </div>
+
+                  <p style="position: absolute;left: 9%;top: 156%;color: white;font-size: 36px;line-height: 54px;width: 98%;">GIVE ME A QUICK CALL</p>
                 </div>
                 <div class="clear">
                 </div>
@@ -771,7 +775,7 @@
 
         <!-- ========== Blog Preview ========== -->
 
-        <div id="blog" class="gray-bg">
+        <!--<div id="blog" class="gray-bg">
           <section id="blog" class="section container blog-columns blog-preview">
             <div class="row">
               
@@ -781,16 +785,16 @@
               </header>
 
               
-              <!-- Blog Post 1 -->
+              &lt;!&ndash; Blog Post 1 &ndash;&gt;
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="blog-post wow fadeIn" data-wow-duration="2s">
 
-                  <!-- Image -->
+                  &lt;!&ndash; Image &ndash;&gt;
                   <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
 
                   <div class="bp-content">
                     
-                    <!-- Meta data -->
+                    &lt;!&ndash; Meta data &ndash;&gt;
                     <div class="post-meta">
                       <a href="#" class="post-date">
                         <i class="fa fa-calendar-o"></i>
@@ -800,33 +804,33 @@
                         <i class="fa fa-comments-o"></i>
                         <span>12</span>
                       </a>
-                    </div><!-- / .meta -->
+                    </div>&lt;!&ndash; / .meta &ndash;&gt;
 
-                    <!-- Post Title -->
+                    &lt;!&ndash; Post Title &ndash;&gt;
                     <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
 
-                    <!-- Blurb -->
+                    &lt;!&ndash; Blurb &ndash;&gt;
                     <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
 
-                    <!-- Link -->
+                    &lt;!&ndash; Link &ndash;&gt;
                     <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
 
-                  </div><!-- / .bp-content -->
+                  </div>&lt;!&ndash; / .bp-content &ndash;&gt;
 
-                </div><!-- / .blog-post -->
-              </div><!-- / .col-lg-4 -->
+                </div>&lt;!&ndash; / .blog-post &ndash;&gt;
+              </div>&lt;!&ndash; / .col-lg-4 &ndash;&gt;
 
 
-              <!-- Blog Post 2 -->
+              &lt;!&ndash; Blog Post 2 &ndash;&gt;
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">
 
-                  <!-- Image -->
+                  &lt;!&ndash; Image &ndash;&gt;
                   <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
 
                   <div class="bp-content">
                     
-                    <!-- Meta data -->
+                    &lt;!&ndash; Meta data &ndash;&gt;
                     <div class="post-meta">
                       <a href="#" class="post-date">
                         <i class="fa fa-calendar-o"></i>
@@ -836,33 +840,33 @@
                         <i class="fa fa-comments-o"></i>
                         <span>12</span>
                       </a>
-                    </div><!-- / .meta -->
+                    </div>&lt;!&ndash; / .meta &ndash;&gt;
 
-                    <!-- Post Title -->
+                    &lt;!&ndash; Post Title &ndash;&gt;
                     <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
 
-                    <!-- Blurb -->
+                    &lt;!&ndash; Blurb &ndash;&gt;
                     <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
 
-                    <!-- Link -->
+                    &lt;!&ndash; Link &ndash;&gt;
                     <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
 
-                  </div><!-- / .bp-content -->
+                  </div>&lt;!&ndash; / .bp-content &ndash;&gt;
 
-                </div><!-- / .blog-post -->
-              </div><!-- / .col-lg-4 -->
+                </div>&lt;!&ndash; / .blog-post &ndash;&gt;
+              </div>&lt;!&ndash; / .col-lg-4 &ndash;&gt;
 
               
-              <!-- Blog Post 3 -->
+              &lt;!&ndash; Blog Post 3 &ndash;&gt;
               <div class="col-lg-4 col-md-6">
                 <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".6s">
 
-                  <!-- Image -->
+                  &lt;!&ndash; Image &ndash;&gt;
                   <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
 
                   <div class="bp-content">
                     
-                    <!-- Meta data -->
+                    &lt;!&ndash; Meta data &ndash;&gt;
                     <div class="post-meta">
                       <a href="#" class="post-date">
                         <i class="fa fa-calendar-o"></i>
@@ -872,32 +876,32 @@
                         <i class="fa fa-comments-o"></i>
                         <span>12</span>
                       </a>
-                    </div><!-- / .meta -->
+                    </div>&lt;!&ndash; / .meta &ndash;&gt;
 
-                    <!-- Post Title -->
+                    &lt;!&ndash; Post Title &ndash;&gt;
                     <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
 
-                    <!-- Blurb -->
+                    &lt;!&ndash; Blurb &ndash;&gt;
                     <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
 
-                    <!-- Link -->
+                    &lt;!&ndash; Link &ndash;&gt;
                     <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
 
-                  </div><!-- / .bp-content -->
+                  </div>&lt;!&ndash; / .bp-content &ndash;&gt;
 
-                </div><!-- / .blog-post -->
-              </div><!-- / .col-lg-4 -->
+                </div>&lt;!&ndash; / .blog-post &ndash;&gt;
+              </div>&lt;!&ndash; / .col-lg-4 &ndash;&gt;
 
 
-            </div><!-- / .row -->
-          </section><!-- / .container -->
-        </div><!-- / .gray-bg -->
+            </div>&lt;!&ndash; / .row &ndash;&gt;
+          </section>&lt;!&ndash; / .container &ndash;&gt;
+        </div>--><!-- / .gray-bg -->
 
 
 
         <!-- ========== CTA - Newsletter Signup ========== -->
 
-        <div class="cta-newsletter">
+     <!--   <div class="cta-newsletter">
           <div class="bg-overlay">
             <div class="cta-wrapper">
 
@@ -905,23 +909,23 @@
 
               <form class="mc-ajax mc-form subscribe-form" _lpchecked="1">
 
-                <!-- Email -->
+                &lt;!&ndash; Email &ndash;&gt;
                 <input type="email" name="EMAIL" placeholder="Your email address" id="mc-email" class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s" >
                 
-                <!-- Send Button -->
+                &lt;!&ndash; Send Button &ndash;&gt;
                 <input type="submit" name="subscribe" value="Subscribe" class="btn btn-light btn-large wow fadeInUp mc-send-btn" data-wow-delay=".1s" data-wow-duration="1s">
 
-                <!-- Info (uncomment this for extra info) -->
-                <!-- <label for="mc-email" class="mc-info"></label> -->
+                &lt;!&ndash; Info (uncomment this for extra info) &ndash;&gt;
+                &lt;!&ndash; <label for="mc-email" class="mc-info"></label> &ndash;&gt;
 
-                <!-- Ajax message -->
+                &lt;!&ndash; Ajax message &ndash;&gt;
                 <div class="subscribe-result"></div>
                 
               </form>
 
-            </div><!-- / .cta-wrapper -->
-          </div><!-- / .bg-overlay -->
-        </div><!-- / .cta-newsletter -->
+            </div>
+          </div>
+        </div>-->
 
 
 

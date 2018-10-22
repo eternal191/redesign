@@ -35,11 +35,6 @@
 
 
 
-		if ($('.mc-send-btn').length) {
-
-			initParticles();
-
-		}
 
 
 
@@ -98,21 +93,21 @@
 		$('.send-phone-call-quote').click(function () {
 
 			var element = $(this);
-			var phoneField = element.siblings('.phone-number');
-			var phoneNumber = phoneField.val();
+			var textfild = element.siblings('textarea');
 
-			if (phoneNumber == '') phoneField.addClass('error');
+			var textmeElement = textfild.val();
+
+			if (textmeElement == '') textfild.addClass('error');
 			else {
 
-				phoneField.removeClass('error');
+				textfild.removeClass('error');
 
 				//phpfile
-
 				var neximo = window.location.origin + '/Digitaldimensionz_Redesign/Definity/send-message.php';
 				console.log(neximo);
 				$.ajax({
 					url: neximo,
-					data: {'phoneNumber': phoneNumber},
+					data: {'textmeElement': textmeElement},
 					type: 'post',
 					success: function (output) {
 
@@ -921,22 +916,6 @@
 
 	}
 
-	function initParticles() {
-		var particles = new Particles('.mc-send-btn');
-
-		// Disintegrate the button into particles
-		/*particles.disintegrate();*/
-		$('.mc-send-btn').on('click', function (e) {
-			particles.disintegrate();
-
-			setTimeout(function () {
-				particles.integrate();
-			}, 3000)
-
-		})
-
-
-	}
 
 
 

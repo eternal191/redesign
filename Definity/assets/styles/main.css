@@ -288,7 +288,7 @@ hr {
 
 /* ---- White Space ---- */
 .ws-s {
-    padding-bottom: 50px;
+    padding-bottom: 12px;
 }
 
 .ws-m {
@@ -3166,6 +3166,14 @@ fieldset[disabled] .form-control:hover {
     margin: 0;
 }
 
+
+
+@media (max-width:600px){
+    .ft-cards .ft-item p {
+        font-size:12px;
+    }
+}
+
 .ft-cards .ft-item a {
     padding-top: 50px;
     display: block;
@@ -3603,6 +3611,15 @@ fieldset[disabled] .form-control:hover {
     text-align: center;
     -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
+    min-height: 223px;
+}
+
+
+
+@media (max-width:600px){
+    .ft-boxed-hover ul li {
+        padding: 30px;
+    }
 }
 
 .ft-boxed-hover ul li:hover {

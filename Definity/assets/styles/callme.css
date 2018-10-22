@@ -286,6 +286,7 @@ section.call-to-action .right .circle-center .circle-center-tip:after {
     section.call-to-action .right {
         width: 512.5px;
         float: right;
+        position: relative;
     }
 
     section.call-to-action .center {
