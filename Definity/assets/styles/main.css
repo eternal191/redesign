@@ -10355,3 +10355,16 @@ header.portfolio_header_bkg {
 
 }
 
+section.portfolio-hdr .port-bkg {
+    background-image: url('../../assets/images/portfolio/pexels-photo-redo.jpg');
+    background-position-x: 50%;
+    background-position-y: 100%;
+    min-height: 433px;
+}
+
+
+@media screen and (max-width: 1436px){
+    section.portfolio-hdr .port-bkg {
+        background-position-x: 45%;
+    }
+}
