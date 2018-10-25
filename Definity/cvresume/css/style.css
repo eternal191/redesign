@@ -342,6 +342,7 @@ a, a:hover, a:focus {
 .section-skills .professional-skills,
 .section-skills .additional-skills {
 	padding: 0 30px 30px;
+	min-height: 608px;
 }
 
 	.section-skills .title-skills {
