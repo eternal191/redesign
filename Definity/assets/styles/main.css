@@ -282,6 +282,10 @@ hr {
     background: #f8f8f8;
 }
 
+.gray-bg.project-nav .container {
+    background: #000;
+}
+
 .bg-white {
     background: #fff;
 }
@@ -2093,7 +2097,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .pt-plax-lg-light {
-    background: url(http://placehold.it/2440x1280);
+    background: url('../../assets/images/portfolio/portfolio-bkg.jpg');
     background-size: cover;
 }
 
@@ -2104,7 +2108,7 @@ fieldset[disabled] .form-control:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(244, 244, 244, 0.83);
+    /*background: rgba(244, 244, 244, 0.83);*/
 }
 
 /* --------------------------------------------------
@@ -6142,14 +6146,14 @@ fieldset[disabled] .form-control:hover {
 
 .project-nav nav .nav-btns li a {
     display: block;
-    color: #111;
+    color: #fff;;
     text-transform: uppercase;
 }
 
 .project-nav nav .nav-btns .nav-icon {
     display: inline-block;
     font-size: 26px;
-    color: #111;
+    color: #fff;;
     vertical-align: top;
 }
 
