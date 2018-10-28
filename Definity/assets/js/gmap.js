@@ -4,7 +4,7 @@
 
 
 
-$(document).ready(function(){
+$(document).ready(function($showINfoBtn){
 
 	
 	function initGMap() {
@@ -388,6 +388,13 @@ $(document).ready(function(){
 		var map = new google.maps.Map(document.getElementById('map-canvas'),
 		  mapOptions);
 
+		$(".show-info").on('click', function(e){
+			map.setZoom(9);
+		});
+
+		$(".show-map").on('click', function(e){
+			map.setZoom(12);
+		});
 		// Map marker 
 		var image = '/assets/images/map-pin.png';
 		var myLatLng = new google.maps.LatLng(41.880038, -87.631127);

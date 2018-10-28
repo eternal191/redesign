@@ -298,6 +298,7 @@
 }
 .linea-music-bell:before {
   content: "^";
+  cursor: grab;
 }
 .linea-music-cd:before {
   content: "_";

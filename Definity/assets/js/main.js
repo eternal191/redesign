@@ -144,10 +144,16 @@
 				$('nav').removeClass('navbar-trans', 300);
 				$('nav').removeClass('navbar-trans-dark');
 				$('nav').addClass('navbar-small', 300);
+
+				$('ul.nav.navbar-nav .linea-music-bell').addClass('ring');
+
+
 			}
 			else {
 				$('nav:not(.mobile-nav)').addClass('navbar-trans', 300);
 				$('nav').removeClass('navbar-small', 300);
+
+				$('ul.nav.navbar-nav .linea-music-bell').removeClass('ring');
 
 				if ($('nav').hasClass('trans-helper')) {
 					$('nav:not(.mobile-nav)').addClass('navbar-trans-dark');
@@ -162,7 +168,7 @@
 		// Nav on mobile screens
 		$(window).resize(function() {
 	        if ($(window).width() <= 1259) {
-				$('nav').addClass('mobile-nav');		        
+				$('nav').addClass('mobile-nav');
 		    } else {
 		    	$('nav').removeClass('mobile-nav');
 		    }
@@ -179,7 +185,7 @@
     		// Remove dropdown open on hover for small screens
     		if ($('nav').hasClass('mobile-nav')) {
 
-    			$('.dropdown-toggle').on('mouseover', function(e){    
+    			$('.dropdown-toggle').on('mouseover', function(e){
     			        e.preventDefault();
 
     			        $('.dropdown').removeClass('open');
@@ -193,7 +199,7 @@
 
     		if (!$('.nav a').hasClass('dropdown-toggle')) {
 
-    			$('.nav a').on('click', function(){ 
+    			$('.nav a').on('click', function(){
 			        if($('.navbar-toggle').css('display') !='none'){
 			            $(".navbar-toggle").trigger( "click" );
 			        }
@@ -205,6 +211,15 @@
 
 		// Bugfix for iOS not scrolling on open menu
 	    $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
+
+
+		/*setInterval(function(){
+			$('ul.nav.navbar-nav .linea-music-bell').addClass('ring');
+		}, 9000);*/
+
+		/*setTimeout(function(){
+			$('ul.nav.navbar-nav .linea-music-bell').addClass('ring');
+ 		}, 2000);*/
 
 
 	} // initNavbar
