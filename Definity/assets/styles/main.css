@@ -7530,7 +7530,7 @@ form .input-error-2:focus {
 .comingsoon {
     width: 100%;
     height: 100vh;
-    background: #ececec url(http://placehold.it/2440x1578);
+    background: #ececec url("../images/digitaldimension_coming_soon_bkg.jpg");
     background-position: 50%;
     background-size: cover;
 }
@@ -10372,3 +10372,19 @@ section.portfolio-hdr .port-bkg {
         background-position-x: 45%;
     }
 }
+
+
+
+
+
+.navbar-brand {
+    height:0px;
+}
+
+@media (min-width: 1260px) {
+    .navbar-nav > li > a {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+}
+

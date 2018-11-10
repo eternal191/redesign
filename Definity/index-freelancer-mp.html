@@ -9,6 +9,7 @@
         
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico">
+        <!--<link rel="shortcut icon" href="./assets/images/favicon.ico">-->
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
 
@@ -34,6 +35,7 @@
         <link rel="stylesheet" href="assets/styles/custom.css">
         <link rel="stylesheet" href="assets/styles/callme.css">
         <link rel="stylesheet" href="assets/styles/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="assets/styles/nav-effect.css" />
 
 
 
@@ -120,24 +122,24 @@
               <ul class="nav navbar-nav">
 
                 <!-- Elements -->
-                <li class="dropdown">
+                <li class="dropdown cl-effect-14">
                   <a href="./pages/about-1.html" class="dropdown-toggle">WHO AM I </a>
                 </li><!-- / Elements -->
 
 
                 <!-- Pages -->
-                <li class="dropdown mega-fw">
+                <li class="dropdown mega-fw cl-effect-14">
                   <a href="./pages/services-1.html" class="dropdown-toggle">Services </a>
                 </li>
 
 
-                <li class="dropdown mega-fw">
+                <li class="dropdown mega-fw cl-effect-14">
                   <a href="./pages/portfolio/portfolio-fw-1col.html" class="dropdown-toggle">Portfolio </a>
                 </li><!-- / Portfolio -->
                 
 
                 <!-- Blog -->
-                <li class="dropdown">
+                <li class="dropdown cl-effect-14">
                   <a href="./pages/contact-2.html" class="dropdown-toggle">CONTACT </a>
                 </li>
 
@@ -183,9 +185,9 @@
                       </div>
                       <div class="menu">
                         <ul class="menu__inner">
-                          <li class="menu__item"><a href="#whatido" class="scroll menu__link" data-switch>What I do</a></li>
-                          <li class="menu__item"><a href="#sixsteps" class="scroll menu__link" data-switch>MY PROCESS</a></li>
-                          <li class="menu__item"><a href="#whoami" class="scroll menu__link" data-switch>WHO AM I</a></li>
+                          <li class="menu__item"><a onclick="$('#whatido').animatescroll();" href="#whatido" class="scroll menu__link" data-switch>What I do</a></li>
+                          <li class="menu__item"><a onclick="$('#sixsteps').animatescroll();" href="#sixsteps" class="scroll menu__link" data-switch>MY PROCESS</a></li>
+                          <li class="menu__item"><a onclick="$('#whoami').animatescroll();" href="#whoami" class="scroll menu__link" data-switch>WHO AM I</a></li>
                         </ul>
                       </div>
                       <div class="menu menu--code">
@@ -930,6 +932,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- ========== Footer Litle ========== -->
 
         <footer id="contact" class="footer-litle">
@@ -1002,11 +1016,15 @@
             <div class="container">
               <div class="row">
                 
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <small>&copy; 2018 DIGITALDIMENSIONZ.</small>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4" style="text-align: center;">
+                  <small><a href="./pages/faq-2.html">FAQ'S</a></small>
+                </div>
+
+                <div class="col-md-4">
                   <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
                 </div>
 
@@ -1043,6 +1061,7 @@
         <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
         <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+        <script src="assets/js/animatescroll.js"></script>
 
         <!-- digital_facer JS -->
 

@@ -20,3 +20,13 @@ featured artist demo image : <img src="http://plmcreations.com/aboutUsImages/gre
 
 
 add another class to 'progress .progress-bar{}' i main.css to make preogress bars work in main template.
+
+$('form .step1 .form-group.firstName input').val()
+$('form .step1 .form-group.lastname input').val()
+$('form .step1 .form-group.email input').val()
+
+
+$('form .step2 .form-group textarea').val()
+
+
+

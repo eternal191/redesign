@@ -1,9 +1,11 @@
-<?php 
+<?php
+
+
+
 
 if(isset($_POST['email'])) {
  
-     
- 
+
     // ADD YOUR EMAIL WHERE YOU WANT TO RECIEVE THE MESSAGES
  
     $email_to = "eternal191@gmail.com";
@@ -29,18 +31,17 @@ if(isset($_POST['email'])) {
         die();
  
     }
- 
-     
- 
     // validation expected data exists
  
-    if(!isset($_POST['name']) ||
+    if(!isset($_POST['firstname']) ||
   
-        !isset($_POST['email']) ||
+        !isset($_POST['lastname']) ||
+
+        !isset($_POST['textarea']) ||
  
         // !isset($_POST['phone']) || // un-commet for required
  
-        !isset($_POST['message'])) {
+        !isset($_POST['email'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
  
@@ -48,13 +49,13 @@ if(isset($_POST['email'])) {
  
      
  
-    $name = $_POST['name']; // required
+    $name = $_POST['firstname']; // required
   
     $email_from = $_POST['email']; // required
  
-    $telephone = $_POST['phone']; // not required
+    $telephone = $_POST['lastname']; // not required
  
-    $message = $_POST['message']; // required
+    $message = $_POST['textarea']; // required
  
      
  
@@ -112,7 +113,7 @@ if(isset($_POST['email'])) {
  
      
  
-     
+     error_log($email_message);
  
 // create email headers
  

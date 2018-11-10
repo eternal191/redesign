@@ -923,7 +923,7 @@
 		if (hasCountdown) {
 
 			// Add end date here (current: 2017/01/01) from witch the timer will countdown.
-			$('#cs-timer').countdown('2017/01/01', function(event) {
+			$('#cs-timer').countdown('2018/11/11', function(event) {
 			    $(this).html(event.strftime('<div class="item"><span class="nbr-timer">%D</span><span class="title-timer">Days<span></div><div class="item"><span class="nbr-timer">%H</span><span class="title-timer">Hours<span></div><div class="item"><span class="nbr-timer">%M</span><span class="title-timer">Minutes<span></div><div class="item"><span class="nbr-timer">%S</span><span class="title-timer">Seconds<span></div>'));
 			  });
 
