@@ -110,3 +110,7 @@ ul.nav.navbar-nav .linea-music-bell.ring {
     43% { -webkit-transform: rotateZ(0); }
     100% { -webkit-transform: rotateZ(0); }
 }
+
+textarea.quick-message {
+    margin-bottom: 20px;
+}

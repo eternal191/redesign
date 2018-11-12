@@ -414,7 +414,7 @@ a.button {
 }
 
 .button.button-navy-blue {
-    border: 1px solid #ffffff;
+/*    border: 1px solid #ffffff;*/
     color: #2C3459;
     background: #78d2a8;
     padding-top: 10px;
