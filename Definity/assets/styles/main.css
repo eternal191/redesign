@@ -1966,6 +1966,11 @@ fieldset[disabled] .form-control:hover {
     padding-bottom: 80px;
 }
 
+.page-title.starsheader {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 
 
  @media screen and (min-width: 1200px){

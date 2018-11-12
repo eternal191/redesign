@@ -30,6 +30,25 @@
 
         <link rel="stylesheet" href="../assets/styles/planet.css">
 
+
+
+      <style type="text/css">
+
+        #stars {
+          display: block;
+          position: relative;
+          width:1436px;
+          height:536px;
+          z-index: 1;
+          background-color: #31102F;
+          background: radial-gradient(ellipse at center, #6dcc9e 0%, #000000 100%);
+        }
+
+
+      </style>
+
+
+
         <!-- JS -->
         <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -375,9 +394,15 @@
         
         <!-- ========== Page Title ========== -->
 
-        <header class="page-title pt-small">
-          <div class="container">
+        <header class="page-title pt-small starsheader" style="background: #211f1f;">
+          <div class="container" style="width: 100%;">
             <div class="row">
+
+                <canvas id="stars" width="300" height="300"></canvas>
+                <script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+                <script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
+
+
          <!--     <h1 class="col-sm-6">F.A.Q.</h1>
               <ol class="col-sm-6 text-right breadcrumb">
                 <li><a href="#">Home</a></li>
@@ -1019,5 +1044,9 @@
 
         <!-- Definity JS -->
         <script src="../assets/js/main.js"></script>
+
+        <script src="../assets/js/stars.js"></script>
+
+
     </body>
 </html>
