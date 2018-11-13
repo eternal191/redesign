@@ -1,1094 +1,849 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
-        <!--<link rel="shortcut icon" href="./assets/images/favicon.ico">-->
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
 
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="shortcut icon" href="favicon.ico">
 
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
-        <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
-        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-        <!-- Slider -->
-        <link rel="stylesheet" href="assets/vendor/slick.css">
-        <!-- Lightbox -->
-        <link rel="stylesheet" href="assets/vendor/magnific-popup.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="assets/vendor/animate.css">
-
-
-        <!-- Definity CSS -->
-        <link rel="stylesheet" href="assets/styles/main.css">
-        <link rel="stylesheet" href="assets/styles/responsive.css">
-        <link rel="stylesheet" href="assets/styles/custom.css">
-        <link rel="stylesheet" href="assets/styles/callme.css">
-        <link rel="stylesheet" href="assets/styles/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
 
-        <link rel="stylesheet" href="assets/styles/planet.css" />
-        <!--<link rel="stylesheet" href="assets/styles/nav-effect.css" />-->
+  <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
+  <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/vendor/slick.css">
+  <link rel="stylesheet" href="assets/vendor/magnific-popup.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css">
+
+
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/responsive.css">
+  <link rel="stylesheet" href="assets/styles/custom.css">
+  <link rel="stylesheet" href="assets/styles/callme.css">
+  <link rel="stylesheet" href="assets/styles/jquery.mCustomScrollbar.css" />
+
+
+
+  <link rel="stylesheet" href="assets/styles/planet.css" />
+  <!--<link rel="stylesheet" href="assets/styles/nav-effect.css" />-->
 
 
 
 
 
-      <script>document.documentElement.className = "js";
-      var supportsCssVars = function () {
-        var e, t = document.createElement("style");
-        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-      };
-      supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-      </script>
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+      var e, t = document.createElement("style");
+      return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
 
 
-      <!-- digital_facer CSS -->
-      <link rel="stylesheet" href="assets/styles/digital_face_css/demo.css">
-      <link rel="stylesheet" href="assets/styles/digital_face_css/pieces.css">
-      <link rel="stylesheet" href="assets/vendor/particlebuttons/particles.css">
-      <!--<link rel="stylesheet" href="assets/vendor/particlebuttons/base.css">-->
+  <!-- digital_facer CSS -->
+  <link rel="stylesheet" href="assets/styles/digital_face_css/demo.css">
+  <link rel="stylesheet" href="assets/styles/digital_face_css/pieces.css">
+  <link rel="stylesheet" href="assets/vendor/particlebuttons/particles.css">
+  <!--<link rel="stylesheet" href="assets/vendor/particlebuttons/base.css">-->
 
 
-        <!-- JS -->
-        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- JS -->
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
 
-      <style type="text/css">
+  <style type="text/css">
+    .clients-slider .slick-prev i.fa {
+      font-size: 80px;
+      position: absolute;
+      right: 2%;
+      transform: rotate(180deg);
+    }
 
-        .clients-slider .slick-prev  i.fa {
-          font-size: 80px;
-          position: absolute;
-          right: 2%;
-          transform: rotate(180deg);
-        }
-
-        .clients-slider .slick-next i.fa {
-          font-size: 80px;
-          position: absolute;
-          left: 2%;
-          transform: rotate(180deg);
-        }
-
-
-        .clients-slider .slick-next i.fa, .clients-slider .slick-prev i.fa {
-          top:44%;
-        }
-
-      </style>
+    .clients-slider .slick-next i.fa {
+      font-size: 80px;
+      position: absolute;
+      left: 2%;
+      transform: rotate(180deg);
+    }
 
 
-    </head>
-    <body id="page-top">
-
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
-        <!-- ========== Preloader ========== -->
-
-        <div class="preloader">
-          <img src="assets/images/loader.svg" alt="Loading...">
-        </div>
+    .clients-slider .slick-next i.fa,
+    .clients-slider .slick-prev i.fa {
+      top: 44%;
+    }
+  </style>
 
 
-        
-        <!-- ========== Navigation ========== -->
+</head>
 
-        <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+<body id="page-top">
 
-              <!-- Logo -->
-              <!--<a class="navbar-brand" href="index.html"><img class="navbar-logo" src="assets/images/logo.png" alt="Definity - Logo"></a>-->
-            </div><!-- / .navbar-header -->
-
-            <!-- Navbar Links -->
-            <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
-              <ul class="nav navbar-nav">
-
-                <!-- Elements -->
-                <li class="dropdown">
-                  <a href="pages/about.html" class="dropdown-toggle">WHO AM I </a>
-                </li><!-- / Elements -->
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
 
-                <!-- Pages -->
-                <li class="dropdown mega-fw">
-                  <a href="pages/services.html" class="dropdown-toggle">Services </a>
-                </li>
+<!-- ========== Preloader ========== -->
 
-
-                <li class="dropdown mega-fw">
-                  <a href="pages/portfolio/portfolio.html" class="dropdown-toggle">Portfolio </a>
-                </li><!-- / Portfolio -->
-                
-
-                <!-- Blog -->
-                <li class="dropdown">
-                  <a href="pages/contact.html" class="dropdown-toggle">CONTACT </a>
-                </li>
-
-                <span class="nav-icon linea-music-bell" style="display: inline-block;position: relative;top: 12px;color: #6dcc9e;"></span>
-
-              </ul>
-              
-
-
-            </div><!--/.navbar-collapse -->
-          </div><!-- / .container -->
-        </nav><!-- / .navbar -->
+<div class="preloader">
+  <img src="assets/images/loader.svg" alt="Loading...">
+</div>
 
 
 
-        <!-- ========== Hero Cover ========== -->
+<!-- ========== Navigation ========== -->
 
-        <div id="home" class="freelancer-hero">
-          <div class="bg-overlay">
-                            
-            <!-- Hero Content -->
-            <div class="hero-content-wrapper">
-              <div class="hero-content">
-
-
-                <main>
-                  <div class="pieces" style="background-image: url(assets/images/digital_face_images/me3.jpg)" data-img-alt="url(assets/images/digital_face_images/megreen2.jpg)" data-img-code="url(assets/images/digital_face_images/me-code_2.jpg)"></div>
-                  <div class="overlay overlay--hidden"></div>
-                  <div class="content">
-                    <div class="content__inner">
-                      <div class="content__top">
-                        <h2 class="title">
-                          <span class="title__inner mode mode--design" data-switch data-glitch>DIGITAL DIMENSIONZ</span>
-                        </h2>
-                        <div class="controls">
-                          <a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/GridLoadingAnimations/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-                          <a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=30725" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
-                          <button class="btn btn--menu mode mode--design" data-switch>
-                            <svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
-                            <svg class="icon icon--menu-alt"><use xlink:href="#icon-menu-alt"></use></svg>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="menu">
-                        <ul class="menu__inner">
-                          <li class="menu__item"><a onclick="$('#whatido').animatescroll();" href="#whatido" class="scroll menu__link" data-switch>What I do</a></li>
-                          <li class="menu__item"><a onclick="$('#sixsteps').animatescroll();" href="#sixsteps" class="scroll menu__link" data-switch>MY PROCESS</a></li>
-                          <li class="menu__item"><a onclick="$('#whoami').animatescroll();" href="#whoami" class="scroll menu__link" data-switch>WHO AM I</a></li>
-                        </ul>
-                      </div>
-                      <div class="menu menu--code">
-                        <ul class="menu__inner">
-                          <li class="menu__item"><a href="#techstack" class="menu__link" data-switch>TECH STACK</a></li>
-                          <li class="menu__item"><a href="https://github.com/eternal191?tab=repositories" target="_blank" class="menu__link" data-switch>Github Code Repo</a></li>
-                          <li class="menu__item"><a href="https://www.linkedin.com/in/gregory-m-lewis-9873319" class="menu__link" data-switch target="_blank"> Find me on Linked-IN</a></li>
-                        </ul>
-                      </div>
-                      <div class="content__bottom">
-                        <div class="switch mode mode--design">
-                          <a class="switch__item switch__item--current">Designer</a>
-                          <a class="switch__item"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
-                        </div>
-                        <div class="link-wrap">
-                          <a class="contact-link mode mode--design" href="pages/contact.html#contact-depp-link" data-switch data-glitch>Work with me</a>
-                        </div>
-                      </div>
-                    </div><!-- /content__inner-->
-                  </div><!-- /content -->
-                  <div class="loading"></div>
-                </main>
+<nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
+  <div class="container">
+    <div class="navbar-header" <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
 
-                <div class="masthead_hdrs" style="position:absolute;left: 20px;/* margin-left: -100px; */top: 472px;/* width: 815px; */right: 20px;">
-                  <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" style=" color: white; visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeIn;">Freelance Web Developer</h4>
-                  <h1 class="hero-lead wow fadeInUp" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInUp;">GREGORY LEWIS</h1>
-                  <!--<a href="pages/contact-3.html" target="_blank" class="btn btn-light btn-small wow fadeIn" data-wow-duration="2s" data-wow-delay="1s" style="visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeIn;">Schedule your free consultation</a>-->
+
+  </div>
+
+
+  <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
+    <ul class="nav navbar-nav">
+
+
+      <li class="dropdown">
+        <a href="pages/about.html" class="dropdown-toggle">WHO AM I </a>
+      </li>
+
+
+
+      <li class="dropdown mega-fw">
+        <a href="pages/services.html" class="dropdown-toggle">Services </a>
+      </li>
+
+
+      <li class="dropdown mega-fw">
+        <a href="pages/portfolio/portfolio.html" class="dropdown-toggle">Portfolio </a>
+      </li>
+
+
+
+      <li class="dropdown">
+        <a href="pages/contact.html" class="dropdown-toggle">CONTACT </a>
+      </li>
+
+      <span class="nav-icon linea-music-bell" style="display: inline-block;position: relative;top: 12px;color: #6dcc9e;"></span>
+
+    </ul>
+
+
+
+  </div>
+  </div>
+</nav>
+
+
+
+
+
+<div id="home" class="freelancer-hero">
+  <div class="bg-overlay">
+
+
+    <div class="hero-content-wrapper">
+      <div class="hero-content">
+
+
+        <main>
+          <div class="pieces" style="background-image: url(assets/images/digital_face_images/me3.jpg)" data-img-alt="url(assets/images/digital_face_images/megreen2.jpg)" data-img-code="url(assets/images/digital_face_images/me-code_2.jpg)"></div>
+          <div class="overlay overlay--hidden"></div>
+          <div class="content">
+            <div class="content__inner">
+              <div class="content__top">
+                <h2 class="title">
+                  <span class="title__inner mode mode--design" data-switch data-glitch>DIGITAL DIMENSIONZ</span>
+                </h2>
+                <div class="controls">
+                  <a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/GridLoadingAnimations/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+                  <a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=30725" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+                  <button class="btn btn--menu mode mode--design" data-switch>
+                    <svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
+                    <svg class="icon icon--menu-alt"><use xlink:href="#icon-menu-alt"></use></svg>
+                  </button>
                 </div>
-
+              </div>
+              <div class="menu">
+                <ul class="menu__inner">
+                  <li class="menu__item"><a onclick="$('#whatido').animatescroll();" href="#whatido" class="scroll menu__link" data-switch>What I do</a></li>
+                  <li class="menu__item"><a onclick="$('#sixsteps').animatescroll();" href="#sixsteps" class="scroll menu__link" data-switch>MY PROCESS</a></li>
+                  <li class="menu__item"><a onclick="$('#whoami').animatescroll();" href="#whoami" class="scroll menu__link" data-switch>WHO AM I</a></li>
+                </ul>
+              </div>
+              <div class="menu menu--code">
+                <ul class="menu__inner">
+                  <li class="menu__item"><a href="#techstack" class="menu__link" data-switch>TECH STACK</a></li>
+                  <li class="menu__item"><a href="https://github.com/eternal191?tab=repositories" target="_blank" class="menu__link" data-switch>Github Code Repo</a></li>
+                  <li class="menu__item"><a href="https://www.linkedin.com/in/gregory-m-lewis-9873319" class="menu__link" data-switch target="_blank"> Find me on Linked-IN</a></li>
+                </ul>
+              </div>
+              <div class="content__bottom">
+                <div class="switch mode mode--design">
+                  <a class="switch__item switch__item--current">Designer</a>
+                  <a class="switch__item"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
+                </div>
+                <div class="link-wrap">
+                  <a class="contact-link mode mode--design" href="pages/contact.html#contact-depp-link" data-switch data-glitch>Work with me</a>
+                </div>
               </div>
             </div>
-
-            <!-- Scroller -->
-           <!-- <a href="#services" class="scroller">
-              <span class="scroller-text">scroll down</span>
-              <span class="linea-basic-magic-mouse"></span>
-            </a>-->
-
-          </div><!-- / .bg-overlay -->
-        </div><!-- / .main-hero-2 -->
+          </div>
+          <div class="loading"></div>
+        </main>
 
 
+        <div class="masthead_hdrs" style="position:absolute;left: 20px;/* margin-left: -100px; */top: 472px;/* width: 815px; */right: 20px;">
+          <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s" style=" color: white; visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeIn;">Freelance Web Developer</h4>
+          <h1 class="hero-lead wow fadeInUp" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInUp;">GREGORY LEWIS</h1>
 
-        <!-- ========== Services ========== -->
+        </div>
 
-        <div class="gray-bg">
-          <section id="services" class="container ft-cards">
-            <div class="row section">
-
-              <header class="sec-heading animated bounce delay-2s">
-                <h2 id="whatido" class="wow bounceInLeft" data-wow-delay=".1s">What i do</h2>
-                <span class="subheading">I create both the front end and back end of your web site or application</span>
-              </header>
-              
-              <!-- Item 1 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s">
-                  <span class="linea-basic-book-pencil"></span>
-                  <h4>Technical Consultation</h4>
-                  <p>I offer a free technical consultation in which I meet with you to gather information about yuor business and goals.  This allows me to understand what type of web functionality
-                  would simplify, and speed up your daily business operations, or even eliminate some task all together.</p>
-                </div>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                  <span class="linea-basic-cards-diamonds"></span>
-                  <h4>Development</h4>
-                  <p>
-                    Any successful project such as a website requires a special attention to detail at every phase of
-                    the project. Having a clear idea of the expected outcome at the beginning of a project ensures your
-                    original goals will be meet. I compare what you want to different web technologies, giving you an
-                    array of options allowing you to choose the solution ment for you.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                  <span class="linea-basic-star"></span>
-                  <h4>Marketing</h4>
-                  <p>
-                    No matter how great a website is, depending on if the design is aesthetically pleasing or not will
-                    determine if a user will stay or leave your site. I’m a
-                    true fan of effective design principles. I employ modern web trends and design standards in all my
-                    responsive designs. Merging your brand into digital tolls while keeping the integrity of our brand
-                    is the focus of my designs.
-
-                  </p>
-                </div>
-              </div>
-
-            </div><!-- / .row -->
-          </section>
-        </div><!-- / .gray-bg -->
+      </div>
+    </div>
 
 
 
-        <!-- ========== Feature - Steps Numbers ========== -->
-
-        <section class="container ft-steps-numbers" id="sixsteps">
-            <div class="row section">
-
-              <header id="process" class="sec-heading ws-s">
-                <h2>My six step Work process</h2>
-                <span class="subheading">clear and straightforward worlflow</span>
-              </header>
-              
-              <!-- Step 1 -->
-              <div class="col-lg-4 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s">
-                <span class="ft-nbr">01</span>
-                <h4>Information Gathering</h4>
-                <p>
-                  This initial stage involves a getting a solid understanding of the your company. Here I fdefine your
-                  business goals.
-                </p>
-              </div>
-
-              <!-- Step 2 -->
-              <div class="col-lg-4 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                <span class="ft-nbr">02</span>
-                <h4>Planning</h4>
-                <p>On the basis of the information that was gathered together in the previous phase, a sitemap is
-                  created to help visualize the overall structure of the website and what features it will have. </p>
-              </div>
-
-              <!-- Step 3 -->
-              <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
-                <span class="ft-nbr">03</span>
-                <h4>Design</h4>
-                <p>This is where the visual layout of the website begins to take shape. Using information gathered from
-                  the client in the planning phase, begin designing the layout.</p>
-              </div>
-
-              <!-- Step 4 -->
-              <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
-                <span class="ft-nbr">04</span>
-                <h4>Development</h4>
-                <p>This is where the bulk of the work happens. At this point I code your ideas and goals into working
-                  web software. </p>
-              </div>
-
-              <!-- Step 5 -->
-              <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
-                <span class="ft-nbr">05</span>
-                <h4>Testing/Delivery</h4>
-                <p>I run all the developed features through a through testing process to ensure your sites works
-                  properly and free of bugs.</p>
-              </div>
-
-              <!-- Step 6 -->
-              <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
-                <span class="ft-nbr">06</span>
-                <h4>Maintenance</h4>
-                <p>After the project is completed, you may want to edit your content at your own will. If this is a
-                  requirement, I build cudtom wordpress alllowing you to author your content.</p>
-              </div>
-
-            </div><!-- / .row -->
-            
-            <!-- CTA Button -->
-            <div class="row ws-m">
-              <div class="text-center">
-                <a href="#contact" class="btn">Get a free quote</a>
-              </div>
-            </div><!-- / .row -->
-
-        </section><!-- / .container -->
+  </div>
+</div>
 
 
 
 
-        <!-- ========== technologies List - Dark ========== -->
-        <div class="dark-bg" id="techstack">
-          <div class="container">
-            <div class="row">
-              <div class="ws-s">
-                  <h3 style="
+
+<div class="gray-bg">
+  <section id="services" class="container ft-cards">
+    <div class="row section">
+
+      <header class="sec-heading animated bounce delay-2s">
+        <h2 id="whatido" class="wow bounceInLeft" data-wow-delay=".1s">What i do</h2>
+        <span class="subheading">I create both the front end and back end of your web site or application</span>
+      </header>
+
+
+      <div class="col-lg-4 col-md-6 mb-sm-50">
+        <div class="ft-item wow fadeInUp" data-wow-duration="1s">
+          <span class="linea-basic-book-pencil"></span>
+          <h4>Technical Consultation</h4>
+          <p>I offer a free technical consultation in which I meet with you to gather information about yuor business and goals. This allows me to understand what type of web functionality would simplify, and speed up your daily business operations, or even eliminate some task all together.</p>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 mb-sm-50">
+        <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+          <span class="linea-basic-cards-diamonds"></span>
+          <h4>Development</h4>
+          <p>
+            Any successful project such as a website requires a special attention to detail at every phase of the project. Having a clear idea of the expected outcome at the beginning of a project ensures your original goals will be meet. I compare what you want to different web technologies, giving you an array of options allowing you to choose the solution ment for you.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 mb-sm-50">
+        <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+          <span class="linea-basic-star"></span>
+          <h4>Marketing</h4>
+          <p>
+            No matter how great a website is, depending on if the design is aesthetically pleasing or not will determine if a user will stay or leave your site. I’m a true fan of effective design principles. I employ modern web trends and design standards in all my responsive designs. Merging your brand into digital tolls while keeping the integrity of our brand is the focus of my designs.
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+
+
+
+<section class="container ft-steps-numbers" id="sixsteps">
+  <div class="row section">
+
+    <header id="process" class="sec-heading ws-s">
+      <h2>My six step Work process</h2>
+      <span class="subheading">clear and straightforward worlflow</span>
+    </header>
+
+
+    <div class="col-lg-4 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s">
+      <span class="ft-nbr">01</span>
+      <h4>Information Gathering</h4>
+      <p>
+        This initial stage involves a getting a solid understanding of the your company. Here I fdefine your business goals.
+      </p>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 mb-sm-100 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+      <span class="ft-nbr">02</span>
+      <h4>Planning</h4>
+      <p>On the basis of the information that was gathered together in the previous phase, a sitemap is created to help visualize the overall structure of the website and what features it will have. </p>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+      <span class="ft-nbr">03</span>
+      <h4>Design</h4>
+      <p>This is where the visual layout of the website begins to take shape. Using information gathered from the client in the planning phase, begin designing the layout.</p>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+      <span class="ft-nbr">04</span>
+      <h4>Development</h4>
+      <p>This is where the bulk of the work happens. At this point I code your ideas and goals into working web software. </p>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+      <span class="ft-nbr">05</span>
+      <h4>Testing/Delivery</h4>
+      <p>I run all the developed features through a through testing process to ensure your sites works properly and free of bugs.</p>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 ft-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+      <span class="ft-nbr">06</span>
+      <h4>Maintenance</h4>
+      <p>After the project is completed, you may want to edit your content at your own will. If this is a requirement, I build cudtom wordpress alllowing you to author your content.</p>
+    </div>
+
+  </div>
+
+
+  <div class="row ws-m">
+    <div class="text-center">
+      <a href="#contact" class="btn">Get a free quote</a>
+    </div>
+  </div>
+  <!-- / .row -->
+
+</section>
+
+
+
+
+<div class="dark-bg" id="techstack">
+  <div class="container">
+    <div class="row">
+      <div class="ws-s">
+        <h3 style="
     text-align: center;
 ">Brands I've worked on</h3>
-              </div>
-              <ul class="t-clients clients-slider ws-s">
-                <!--<li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
-                <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>-->
+      </div>
+      <ul class="t-clients clients-slider ws-s">
+        <li><a href="#"><img src="assets/images/brandsImages/fordlogo.png" alt="Client"></a></li>
+        <li><a href="#"><img src="assets/images/brandsImages/general_motors.jpg" alt="Client"></a></li>
+        <li><a href="#"><img src="assets/images/brandsImages/mastercard_logo_2.png" alt="Client"></a></li>
+        <li><a href="#"><img src="assets/images/brandsImages/general_motors_company.png" alt="Client"></a></li>
+        <li><a href="#"><img src="assets/images/brandsImages/verizonwireless-logo.png" alt="Client"></a></li>
+        <li><a href="#"><img src="assets/images/brandsImages/weather_channel_logo.jpg" alt="Client"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-                  <li><a href="#"><img src="assets/images/brandsImages/fordlogo.png" alt="Client"></a></li>
-                  <li><a href="#"><img src="assets/images/brandsImages/general_motors.jpg" alt="Client"></a></li>
-                  <li><a href="#"><img src="assets/images/brandsImages/mastercard_logo_2.png" alt="Client"></a></li>
-                  <li><a href="#"><img src="assets/images/brandsImages/general_motors_company.png" alt="Client"></a></li>
-                  <li><a href="#"><img src="assets/images/brandsImages/verizonwireless-logo.png" alt="Client"></a></li>
-                  <li><a href="#"><img src="assets/images/brandsImages/weather_channel_logo.jpg" alt="Client"></a></li>
 
-              </ul>
+
+
+
+<div id="whoami" class="gray-bg">
+  <section id="about" class="container freelancer-about">
+    <div class="row section">
+
+
+      <div class="col-lg-offset-2 col-lg-4 col-md-6 mb-sm-50 img-wrapper">
+        <div class="t-item">
+
+
+          <div class="t-image">
+
+            <a href="pages/about.html">
+              <img src="assets/images/me.jpg" alt="Team Member" class="img-responsive">
+            </a>
+          </div>
+
+
+          <div class="t-info">
+            <h4 class="t-name">GREGORY LEWIS</h4>
+            <span class="t-role">Front-End Developer</span>
+            <ul class="social-links">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 freelancer-about-content">
+        <h2 class="t1-heading wow fadeInRight">About me</h2>
+        <p>I am excited about new web technologies that enhance and innovate the way in which we communicate and interact with each other and the world. Our goal is to provide my clients with the best that the web has to offer, keeping them up to date and ahead of the game. </p>
+        <p>The future of the internet is bright and we are only in the infancy of the webs lifecycle, I plan to evolve as a developer taking the world of technology to its next phase.</p>
+        <img src="assets/images/signew.png" alt="J.Webb">
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+
+
+
+<div class="number-counters">
+  <div class="container">
+    <div id="counters" class="row count-wrapper">
+
+
+      <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+        <span id="count-1" class="count-nbr">105</span>
+        <span class="count-text">Projects completed</span>
+      </div>
+
+
+      <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+        <span id="count-2" class="count-nbr">2015</span>
+        <span class="count-text">Bugs smashed</span>
+      </div>
+
+
+      <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+        <span id="count-3" class="count-nbr">46,930</span>
+        <span class="count-text">Pixels created</span>
+      </div>
+
+
+      <div class="col-md-3 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+        <span id="count-4" class="count-nbr">702,890</span>
+        <span class="count-text">Satisfied users</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="gray-bg" id="integrations">
+  <section class="container section ft-boxed-hover">
+    <div class="row">
+
+      <header class="sec-heading">
+        <h2>FEATURED INTEGRATIONS</h2>
+        <span class="subheading">I provide cutting edge web features and services.</span>
+      </header>
+
+      <div class="col-md-12 no-gap">
+
+        <ul>
+
+          <li>
+
+            <span class="linea-basic-webpage" style="font-size: 56px;"></span>
+            <h5>WEB APPS</h5>
+            <h6 class="h-alt">CUSTOM WEB APPS</h6>
+
+            <div class="hover-content">
+              <span class="linea-basic-webpage" style="font-size: 56px;"></span>
+              <span class="ft-heading">WEB APPS</span>
+              <p>
+                Wepp apps are websites that look feel, and function like a desktop application.
+              </p>
             </div>
+          </li <li>
+          <span class="ft-icon et-facebook" style="font-size: 60px"></span>
+          <h5>Facebook</h5>
+          <h6 class="h-alt">Facebook Integrations</h6>
+
+          <div class="hover-content">
+            <span class="et-facebook ft-icon"></span>
+            <span class="ft-heading">Facebook Integration</span>
+            <p>
+              Leverage the power of your Facebook data and users to add a social environment to your website or application.
+            </p>
+          </div>
+        </li>
+
+
+          <li>
+
+            <span class="fab fa-wordpress-simple" style="font-size: 63px;"></span>
+            <h5>Wordpress</h5>
+            <h6 class="h-alt">Content Management </h6>
+
+            <div class="hover-content">
+              <span class="fab fa-wordpress-simple" style="font-size: 37px;"></span>
+              <span class="ft-heading">Wordpress</span>
+              <p>
+                Manage any part of your website with a custom built Wordpress theme.
+              </p>
+            </div>
+          </li>
+
+
+          <li>
+            <span class="et-mobile" style="font-size: 60px;"></span>
+            <h5>Responsive Design</h5>
+            <h6 class="h-alt">Lorem Ipsum Dolor</h6>
+
+            <div class="hover-content">
+              <span class="et-mobile" style="font-size: 60px;"></span>
+              <span class="ft-heading">Responsive Design</span>
+              <p>
+                Responsive design is a website built to respond to any device.
+              </p>
+            </div>
+          </li>
+
+
+          <li>
+
+            <span class="linea-ecommerce-cart-cloud ft-icon"></span>
+
+            <h5>E-Commerce</h5>
+            <h6 class="h-alt">E-Commerce</h6>
+
+            <div class="hover-content">
+
+              <span class="linea-ecommerce-cart-cloud ft-icon"></span>
+
+              <span class="ft-heading">E-Commerce</span>
+              <p>
+                Manage your business and products from your backend dashboard with custom Shopify integration.
+              </p>
+            </div>
+          </li>
+
+
+          <li>
+            <span class="linea-music-playlist ft-icon" style="font-size: 37px"></span>
+            <h5>Audio Integretions</h5>
+            <h6 class="h-alt">Soundcloud/Spotify</h6>
+
+            <div class="hover-content">
+              <span class="linea-music-playlist ft-icon"></span>
+              <span class="ft-heading">Soundcloud/Spotify</span>
+              <p>
+                Pay and sell your music from Soundcloud or Spotify on your site.
+              </p>
+            </div>
+          </li>
+
+
+          <li>
+            <span class="fab fa-youtube" style="font-size:58px"></span>
+            <h5>Youtube Api</h5>
+            <h6 class="h-alt">Youtube Api</h6>
+
+            <div class="hover-content">
+              <span class="fab fa-youtube" style="font-size:58px"></span>
+              <span class="ft-heading">Youtube Api</span>
+              <p>
+                Stream and customize your youtube videos on your site.
+              </p>
+            </div>
+          </li>
+
+
+          <li>
+            <span class="fas fa-search" style="font-size: 44px;"></span>
+            <h5>S.E.O</h5>
+            <h6 class="h-alt">SEARCH ENGINE OPTIMIZATION</h6>
+
+            <div class="hover-content">
+              <span class="fas fa-search" style="font-size: 44px;"></span>
+              <span class="ft-heading">S.E.O</span>
+              <p>
+                Boost your serach engine ranking with a search engine optimization campaign.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+
+
+<section class="call-to-action background">
+  <div class="center">
+    <div class="left">
+      <h2>Send me a quick text message</h2>
+      <p>Lets discuss your project details.</p>
+      <div class="form">
+        <div class="call-to-action-thanks">
+          <div class="call-to-action-thanks-content">
+            Thank you, we'll call you soon.
+            <span class="call-to-action-thanks-close">Close this notice.</span>
           </div>
         </div>
-
-
-
-        <!-- ========== Freelancer Layout ========== -->
-
-        <div id="whoami" class="gray-bg">
-          <section id="about" class="container freelancer-about">
-            <div class="row section">
-
-              <!-- Freelancer -->
-              <div class="col-lg-offset-2 col-lg-4 col-md-6 mb-sm-50 img-wrapper">
-                <div class="t-item">
-
-                  <!-- Image -->
-                  <div class="t-image">
-                    <!--<img src="http://placehold.it/360x440" alt="Team Member" class="img-responsive">-->
-                    <a href="pages/about.html">
-                      <img src="assets/images/me.jpg" alt="Team Member" class="img-responsive">
-                    </a>
-                  </div>
-
-                  <!-- Info -->
-                  <div class="t-info">
-                    <h4 class="t-name">GREGORY LEWIS</h4>
-                    <span class="t-role">Front-End Developer</span>
-                    <ul class="social-links">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-
-                </div><!-- / .t-item -->
-              </div><!-- / .col-md-4 -->
-              <div class="col-lg-4 freelancer-about-content">
-                <h2 class="t1-heading wow fadeInRight">About me</h2>
-                <p>I am excited about new web technologies that enhance and innovate the way in which we communicate and
-                  interact with each other and the world. Our goal is to provide my clients with the best that the web
-                  has to offer, keeping them up to date and ahead of the game. </p>
-                <p>The future of the internet is bright and
-                  we are only in the infancy of the webs lifecycle, I plan to evolve as a developer taking the world of
-                  technology to its next phase.</p>
-                <img src="assets/images/signew.png" alt="J.Webb">
-              </div>
-
-            </div><!-- / .row -->
-          </section><!-- / .container -->
-        </div><!-- / .gray-bg -->
-
-
-
-        <!-- ========== Number Counters - Parallax ========== -->
-
-        <div class="number-counters">
-          <div class="container">
-            <div id="counters" class="row count-wrapper">
-              
-              <!-- Item 1 -->
-              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                <span id="count-1" class="count-nbr">105</span>
-                <span class="count-text">Projects completed</span>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
-                <span id="count-2" class="count-nbr">2015</span>
-                <span class="count-text">Bugs smashed</span>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
-                <span id="count-3" class="count-nbr">46,930</span>
-                <span class="count-text">Pixels created</span>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="col-md-3 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                <span id="count-4" class="count-nbr">702,890</span>
-                <span class="count-text">Satisfied users</span>
-              </div>
-
-            </div><!-- / .row -->
-          </div><!-- / .container -->
-        </div><!-- / .number-counters -->
-
-        
-
-        <!-- ========== Portfolio ========== -->
-
-        <!-- / .portfolio-columns-fw -->
-
-        <div class="gray-bg" id="integrations">
-          <section class="container section ft-boxed-hover">
-            <div class="row">
-
-              <header class="sec-heading">
-                <h2>FEATURED INTEGRATIONS</h2>
-                <span class="subheading">I provide cutting edge web features and services.</span>
-              </header>
-
-              <div class="col-md-12 no-gap">
-
-                <ul>
-                  <!-- Item 1 -->
-                  <li>
-                    <!--<span class="linea-basic-headset ft-icon"></span>-->
-                    <span class="linea-basic-webpage" style="font-size: 56px;"></span>
-                    <h5>WEB APPS</h5>
-                    <h6 class="h-alt">CUSTOM WEB APPS</h6>
-
-                    <div class="hover-content">
-                      <span class="linea-basic-webpage" style="font-size: 56px;"></span>
-                      <span class="ft-heading">WEB APPS</span>
-                      <p>
-                        Wepp apps are websites that look feel, and function like a desktop application.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-
-                  <!-- Item 2 -->
-                  <li>
-                    <span class="ft-icon et-facebook" style="font-size: 60px"></span>
-                    <h5>Facebook</h5>
-                    <h6 class="h-alt">Facebook Integrations</h6>
-
-                    <div class="hover-content">
-                      <span class="et-facebook ft-icon"></span>
-                      <span class="ft-heading">Facebook Integration</span>
-                      <p>
-                        Leverage the power of your Facebook data and users to add a social environment to your website
-                        or application.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-
-                  <!-- Item 3 -->
-                  <li>
-                    <!--<span class="linea-basic-joypad ft-icon"></span>-->
-                    <span class="fab fa-wordpress-simple" style="font-size: 63px;"></span>
-                    <h5>Wordpress</h5>
-                    <h6 class="h-alt">Content Management </h6>
-
-                    <div class="hover-content">
-                      <span class="fab fa-wordpress-simple" style="font-size: 37px;"></span>
-                      <span class="ft-heading">Wordpress</span>
-                      <p>
-                        Manage any part of your website with a custom built Wordpress theme.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-
-                  <!-- Item 4 -->
-                  <li>
-                    <span class="et-mobile" style="font-size: 60px;"></span>
-                    <h5>Responsive Design</h5>
-                    <h6 class="h-alt">Lorem Ipsum Dolor</h6>
-
-                    <div class="hover-content">
-                      <span class="et-mobile" style="font-size: 60px;"></span>
-                      <span class="ft-heading">Responsive Design</span>
-                      <p>
-                        Responsive design is a website built to respond to any device.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-
-                  <!-- Item 5 -->
-                  <li>
-<!--                    <span class="et-camera ft-icon"></span>-->
-                    <span class="linea-ecommerce-cart-cloud ft-icon"></span>
-
-                    <h5>E-Commerce</h5>
-                    <h6 class="h-alt">E-Commerce</h6>
-
-                    <div class="hover-content">
-<!--                      <span class="et-camera ft-icon"></span>-->
-                      <span class="linea-ecommerce-cart-cloud ft-icon"></span>
-
-                      <span class="ft-heading">E-Commerce</span>
-                      <p>
-                        Manage your business and products from your backend dashboard with custom Shopify integration.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-
-                  <!-- Item 6 -->
-                  <li>
-                    <span class="linea-music-playlist ft-icon" style="font-size: 37px"></span>
-                    <h5>Audio Integretions</h5>
-                    <h6 class="h-alt">Soundcloud/Spotify</h6>
-
-                    <div class="hover-content">
-                      <span class="linea-music-playlist ft-icon"></span>
-                      <span class="ft-heading">Soundcloud/Spotify</span>
-                      <p>
-                        Pay and sell your music from Soundcloud or Spotify on your site.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-
-                  <!-- Item 7 -->
-                  <li>
-                    <span class="fab fa-youtube" style="font-size:58px"></span>
-                    <h5>Youtube Api</h5>
-                    <h6 class="h-alt">Youtube Api</h6>
-
-                    <div class="hover-content">
-                      <span class="fab fa-youtube" style="font-size:58px"></span>
-                      <span class="ft-heading">Youtube Api</span>
-                      <p>
-                        Stream and customize your youtube videos on your site.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-
-                  <!-- Item 8 -->
-                  <li>
-                    <span class="fas fa-search" style="font-size: 44px;"></span>
-                    <h5>S.E.O</h5>
-                    <h6 class="h-alt">SEARCH ENGINE OPTIMIZATION</h6>
-
-                    <div class="hover-content">
-                      <span class="fas fa-search" style="font-size: 44px;"></span>
-                      <span class="ft-heading">S.E.O</span>
-                      <p>
-                          Boost your serach engine ranking with a search engine optimization campaign.
-                      </p>
-                    </div><!-- / .hover-content -->
-                  </li>
-                </ul>
-
-              </div>
-
-            </div><!-- / .row -->
-          </section><!-- / .cotnainer -->
+        <textarea class="form-control quick-message" name="textarea" id="txt-forms" rows="9" placeholder="Your Message"></textarea>
+        <button class="button button-navy-blue send-phone-call-quote">Send Text Message <i
+                class="icon-phone"></i></button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="circles">
+        <div class="circle-1 circle-pulse">
         </div>
-
-
-
-        <!-- ========== CTA - Contact Link ========== -->
-
-       <!-- <div class="cta-link">
-          <div class="bg-overlay">
-            
-            <div class="cta-wrapper">
-              <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">See what we can do for you</h3>
-              <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
-            </div>
-
+        <div class="circle-2 circle-pulse">
+        </div>
+        <div class="circle-3 circle-pulse">
+        </div>
+        <div class="circle-4 circle-pulse">
+        </div>
+        <a href="tel:+13136516669">
+          <div class="circle-center">
+            <div class="circle-center-tip">Call us: <strong>313-651-6669</strong></div>
+            <i class="fas fa-phone-volume"></i>
           </div>
-        </div>-->
-
-
-        <section class="call-to-action background">
-            <div class="center">
-                <div class="left">
-                    <h2>Send me a quick text message</h2>
-                    <p>Lets discuss your project details.</p>
-                    <div class="form">
-                        <div class="call-to-action-thanks">
-                            <div class="call-to-action-thanks-content">
-                                Thank you, we'll call you soon.
-                                <span class="call-to-action-thanks-close">Close this notice.</span>
-                            </div>
-                        </div>
-                      <textarea class="form-control quick-message" name="textarea" id="txt-forms" rows="9" placeholder="Your Message"></textarea>
-                        <button class="button button-navy-blue send-phone-call-quote">Send Text Message <i
-                                class="icon-phone"></i></button>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="circles">
-                        <div class="circle-1 circle-pulse">
-                        </div>
-                        <div class="circle-2 circle-pulse">
-                        </div>
-                        <div class="circle-3 circle-pulse">
-                        </div>
-                        <div class="circle-4 circle-pulse">
-                        </div>
-                        <a href="tel:+13136516669">
-                            <div class="circle-center">
-                                <div class="circle-center-tip">Call us: <strong>313-651-6669</strong></div>
-                                <i class="fas fa-phone-volume"></i>
-                            </div>
-                        </a>
-                    </div>
-
-                  <p style="position: absolute;left: 9%;top: 156%;color: white;font-size: 36px;line-height: 54px;width: 98%;">GIVE ME A QUICK CALL</p>
-                </div>
-                <div class="clear">
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-        <!-- ========== Testimonials ========== -->
-
-        <!-- / .testimonials-parallax -->
-        <section class="container ft-small-icons section">
-
-          <header class="sec-heading">
-            <h2>Why hire me</h2>
-            <span class="subheading">I provide high quality services at affordable prices.</span>
-          </header>
-
-          <!-- List Square Check Full -->
-          <div class="row ws-s">
-
-            <div class="col-md-4 mb-sm-100">
-              <ul class="list-square-check-full">
-
-                <!-- Item 1 -->
-                <li>
-                  <h6>Save money</h6>
-                  <p>The truth is that most website development agencies charge a lot. While they may deliver a great
-                    website but they have to pay for overheads too and that gets added to your bill.  I save you money by cuting out the overhead of employee cost.</p>
-                </li>
-
-                <!-- Item 2 -->
-                <li>
-                  <h6>Diverse set of skills</h6>
-                  <p>Freelancers also try to bring in diversity in their skill sets so that they can cater to more types of clients.
-                    This brings in flexibility and you have more options on how you want your website to be.
-                  </p>
-                </li>
-
-              </ul>
-            </div><!-- / .col-md-4 -->
-
-            <div class="col-md-4 mb-sm-100">
-              <ul class="list-square-check-full">
-
-                <!-- Item 1 -->
-                <li>
-                  <h6>Responsive to your needs</h6>
-                  <p>I can answer your questions right away. As such, any changes,
-                    suggestions, or comments can be delivered without delay. It doesn’t matter whether you have a small project or a big one
-                    as your needs will always be met without delay.</p>
-                </li>
-
-                <!-- Item 2 -->
-                <li>
-                  <h6>Consistency</h6>
-                  <p>I wear many different hats as I build your website. This can include graphic
-                    design, copywriting, photography, UX design, and more. One person working on all aspects of your
-                    website can help keep your site’s design and tone consistent.</p>
-                </li>
-
-              </ul>
-            </div><!-- / .col-md-4 -->
-
-            <div class="col-md-4 mb-sm-100">
-              <ul class="list-square-check-full">
-
-                <!-- Item 1 -->
-                <li>
-                  <h6>Speed</h6>
-                  <p>I make decisions and move faster than a large design firm. Design revisions happen
-                    more quickly when there is a smaler group doing the coordinating.  I can more closly work around you particular schedule.</p>
-                </li>
-
-                <!-- Item 2 -->
-                <li>
-                  <h6>Experience</h6>
-                  <p>I have over 7 years working in the field on large sucessfull interprise projects, including General
-                    Motors, Mastercard, Verizon Wireless, Ford automotive dealerships.</p>
-                </li>
-
-              </ul>
-            </div><!-- / .col-md-4 -->
-
-          </div><!-- / .row -->
-        </section>
-
-
-        <!-- ========== Blog Preview ========== -->
-
-        <!--<div id="blog" class="gray-bg">
-          <section id="blog" class="section container blog-columns blog-preview">
-            <div class="row">
-              
-              <header class="sec-heading">
-                <h2>Latest from our blog</h2>
-                <span class="subheading">Check out our blog to see what were up to</span>
-              </header>
-
-              
-              &lt;!&ndash; Blog Post 1 &ndash;&gt;
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="blog-post wow fadeIn" data-wow-duration="2s">
-
-                  &lt;!&ndash; Image &ndash;&gt;
-                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
-
-                  <div class="bp-content">
-                    
-                    &lt;!&ndash; Meta data &ndash;&gt;
-                    <div class="post-meta">
-                      <a href="#" class="post-date">
-                        <i class="fa fa-calendar-o"></i>
-                        <span>August 01.2015</span>
-                      </a>
-                      <a href="#" class="post-comments">
-                        <i class="fa fa-comments-o"></i>
-                        <span>12</span>
-                      </a>
-                    </div>&lt;!&ndash; / .meta &ndash;&gt;
+        </a>
+      </div>
 
-                    &lt;!&ndash; Post Title &ndash;&gt;
-                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
+      <p style="position: absolute;left: 9%;top: 156%;color: white;font-size: 36px;line-height: 54px;width: 98%;">GIVE ME A QUICK CALL</p>
+    </div>
+    <div class="clear">
+    </div>
+  </div>
+</section>
 
-                    &lt;!&ndash; Blurb &ndash;&gt;
-                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
 
-                    &lt;!&ndash; Link &ndash;&gt;
-                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
-
-                  </div>&lt;!&ndash; / .bp-content &ndash;&gt;
 
-                </div>&lt;!&ndash; / .blog-post &ndash;&gt;
-              </div>&lt;!&ndash; / .col-lg-4 &ndash;&gt;
 
 
-              &lt;!&ndash; Blog Post 2 &ndash;&gt;
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">
 
-                  &lt;!&ndash; Image &ndash;&gt;
-                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
 
-                  <div class="bp-content">
-                    
-                    &lt;!&ndash; Meta data &ndash;&gt;
-                    <div class="post-meta">
-                      <a href="#" class="post-date">
-                        <i class="fa fa-calendar-o"></i>
-                        <span>August 01.2015</span>
-                      </a>
-                      <a href="#" class="post-comments">
-                        <i class="fa fa-comments-o"></i>
-                        <span>12</span>
-                      </a>
-                    </div>&lt;!&ndash; / .meta &ndash;&gt;
 
-                    &lt;!&ndash; Post Title &ndash;&gt;
-                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
 
-                    &lt;!&ndash; Blurb &ndash;&gt;
-                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
+<section class="container ft-small-icons section">
 
-                    &lt;!&ndash; Link &ndash;&gt;
-                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
+  <header class="sec-heading">
+    <h2>Why hire me</h2>
+    <span class="subheading">I provide high quality services at affordable prices.</span>
+  </header>
 
-                  </div>&lt;!&ndash; / .bp-content &ndash;&gt;
+  <div class="row ws-s">
 
-                </div>&lt;!&ndash; / .blog-post &ndash;&gt;
-              </div>&lt;!&ndash; / .col-lg-4 &ndash;&gt;
+    <div class="col-md-4 mb-sm-100">
+      <ul class="list-square-check-full">
 
-              
-              &lt;!&ndash; Blog Post 3 &ndash;&gt;
-              <div class="col-lg-4 col-md-6">
-                <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".6s">
+        <li>
+          <h6>Save money</h6>
+          <p>The truth is that most website development agencies charge a lot. While they may deliver a great website but they have to pay for overheads too and that gets added to your bill. I save you money by cuting out the overhead of employee cost.</p>
+        </li>
 
-                  &lt;!&ndash; Image &ndash;&gt;
-                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
+        <li>
+          <h6>Diverse set of skills</h6>
+          <p>Freelancers also try to bring in diversity in their skill sets so that they can cater to more types of clients. This brings in flexibility and you have more options on how you want your website to be.
+          </p>
+        </li>
 
-                  <div class="bp-content">
-                    
-                    &lt;!&ndash; Meta data &ndash;&gt;
-                    <div class="post-meta">
-                      <a href="#" class="post-date">
-                        <i class="fa fa-calendar-o"></i>
-                        <span>August 01.2015</span>
-                      </a>
-                      <a href="#" class="post-comments">
-                        <i class="fa fa-comments-o"></i>
-                        <span>12</span>
-                      </a>
-                    </div>&lt;!&ndash; / .meta &ndash;&gt;
+      </ul>
+    </div>
 
-                    &lt;!&ndash; Post Title &ndash;&gt;
-                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
+    <div class="col-md-4 mb-sm-100">
+      <ul class="list-square-check-full">
 
-                    &lt;!&ndash; Blurb &ndash;&gt;
-                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
+        <li>
+          <h6>Responsive to your needs</h6>
+          <p>I can answer your questions right away. As such, any changes, suggestions, or comments can be delivered without delay. It doesn’t matter whether you have a small project or a big one as your needs will always be met without delay.</p>
+        </li>
 
-                    &lt;!&ndash; Link &ndash;&gt;
-                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
+        <li>
+          <h6>Consistency</h6>
+          <p>I wear many different hats as I build your website. This can include graphic design, copywriting, photography, UX design, and more. One person working on all aspects of your website can help keep your site’s design and tone consistent.</p>
+        </li>
 
-                  </div>&lt;!&ndash; / .bp-content &ndash;&gt;
+      </ul>
+    </div>
 
-                </div>&lt;!&ndash; / .blog-post &ndash;&gt;
-              </div>&lt;!&ndash; / .col-lg-4 &ndash;&gt;
+    <div class="col-md-4 mb-sm-100">
+      <ul class="list-square-check-full">
 
 
-            </div>&lt;!&ndash; / .row &ndash;&gt;
-          </section>&lt;!&ndash; / .container &ndash;&gt;
-        </div>--><!-- / .gray-bg -->
+        <li>
+          <h6>Speed</h6>
+          <p>I make decisions and move faster than a large design firm. Design revisions happen more quickly when there is a smaler group doing the coordinating. I can more closly work around you particular schedule.</p>
+        </li>
 
 
+        <li>
+          <h6>Experience</h6>
+          <p>I have over 7 years working in the field on large sucessfull interprise projects, including General Motors, Mastercard, Verizon Wireless, Ford automotive dealerships.</p>
+        </li>
 
-        <!-- ========== CTA - Newsletter Signup ========== -->
+      </ul>
+    </div>
 
-     <!--   <div class="cta-newsletter">
-          <div class="bg-overlay">
-            <div class="cta-wrapper">
+  </div>
+</section>
 
-              <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Join my newsletter</h3>
 
-              <form class="mc-ajax mc-form subscribe-form" _lpchecked="1">
 
-                &lt;!&ndash; Email &ndash;&gt;
-                <input type="email" name="EMAIL" placeholder="Your email address" id="mc-email" class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s" >
-                
-                &lt;!&ndash; Send Button &ndash;&gt;
-                <input type="submit" name="subscribe" value="Subscribe" class="btn btn-light btn-large wow fadeInUp mc-send-btn" data-wow-delay=".1s" data-wow-duration="1s">
 
-                &lt;!&ndash; Info (uncomment this for extra info) &ndash;&gt;
-                &lt;!&ndash; <label for="mc-email" class="mc-info"></label> &ndash;&gt;
+<footer id="contact" class="footer-litle">
+  <div class="gray-bg">
 
-                &lt;!&ndash; Ajax message &ndash;&gt;
-                <div class="subscribe-result"></div>
-                
-              </form>
+    <address>
+      <ul>
+        <li class="skype-list">
 
-            </div>
-          </div>
-        </div>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- ========== Footer Litle ========== -->
-
-        <footer id="contact" class="footer-litle">
-          <div class="gray-bg">
-
-            <!-- Contact Info -->
-            <address>
-              <ul>
-                <!-- Address -->
-                <li class="skype-list">
-                  <!--<span class="wow fadeInLeft linea-basic-map adr-icon"></span>-->
-
-                  <a href="">
+          <a href="">
                     <span style="position: relative">
                        <i class="fab fa-skype" style="font-size: 60px;position: relative;bottom: 11px;right: 30px;"></i>
                   </span>
-                  </a>
+          </a>
 
 
-                  <div class="adr-group">
-                    <span class="adr-heading">Skype</span>
-                    <span class="adr-info">g_lewis34</span>
-                  </div>
-                </li>
+          <div class="adr-group">
+            <span class="adr-heading">Skype</span>
+            <span class="adr-info">g_lewis34</span>
+          </div>
+        </li>
 
-                <!-- Email -->
-                <li>
-                  <a href="mailto:eternal191@gmail.com">
-                    <span class="wow fadeInUpBig linea-basic-paperplane adr-icon"></span>
-                  </a>
-                  <div class="adr-group">
-                    <span class="adr-heading">Email</span>
-                    <span class="adr-info">eternal191@email.com</span>
-                  </div>
-                </li>
+        <li>
+          <a href="mailto:eternal191@gmail.com">
+            <span class="wow fadeInUpBig linea-basic-paperplane adr-icon"></span>
+          </a>
+          <div class="adr-group">
+            <span class="adr-heading">Email</span>
+            <span class="adr-info">eternal191@email.com</span>
+          </div>
+        </li>
 
-                <!-- Phone -->
-                <li>
-                  <a href="tel:1-313-651-6669">
-                    <span class="wow fadeInRight linea-basic-smartphone adr-icon"></span>
-                  </a>
-                  <div class="adr-group">
-                    <span class="adr-heading">Phone</span>
-                    <span class="adr-info">+ 313 651 6669</span>
-                  </div>
-                </li>
-              </ul>
-            </address>            
-          </div><!-- / .gray-bg -->
+        <li>
+          <a href="tel:1-313-651-6669">
+            <span class="wow fadeInRight linea-basic-smartphone adr-icon"></span>
+          </a>
+          <div class="adr-group">
+            <span class="adr-heading">Phone</span>
+            <span class="adr-info">+ 313 651 6669</span>
+          </div>
+        </li>
+      </ul>
+    </address>
+  </div>
 
 
-          <!-- Social Links -->
-          <div class="dark-bg">
-            <div class="container footer-social-links">
-              <div class="row">
-                
-                <ul>
-                  <li><a href="https://www.facebook.com/gregory.lewis.7902?ref=bookmarks">facebook</a></li>
-                  <li><a href="https://twitter.com/glewis83">Twitter</a></li>
-                  <li><a href="https://www.linkedin.com/in/gregory-m-lewis-9873319/">Linked In</a></li>
-                </ul>
+  <div class="dark-bg">
+    <div class="container footer-social-links">
+      <div class="row">
 
-              </div>
-            </div><!-- / .container -->
-          </div><!-- / .dark-bg -->
+        <ul>
+          <li><a href="https://www.facebook.com/gregory.lewis.7902?ref=bookmarks">facebook</a></li>
+          <li><a href="https://twitter.com/glewis83">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/gregory-m-lewis-9873319/">Linked In</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
 
 
-          <!-- Copyright -->
-          <div class="copyright">
-            <div class="container">
-              <div class="row">
-                
-                <div class="col-md-4">
-                  <small>&copy; 2018 DIGITALDIMENSIONZ.</small>
-                </div>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
 
-                <div class="col-md-4" style="text-align: center;">
-                  <small><a href="pages/faq.html">FAQ'S</a></small>
-                </div>
+        <div class="col-md-4">
+          <small>&copy; 2018 DIGITALDIMENSIONZ.</small>
+        </div>
 
-                <div class="col-md-4">
-                  <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
-                </div>
+        <div class="col-md-4" style="text-align: center;">
+          <small><a href="pages/faq.html">FAQ'S</a></small>
+        </div>
 
-              </div><!-- / .row -->
-            </div><!-- / .container -->
-          </div><!-- / .copyright -->
+        <div class="col-md-4">
+          <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
+        </div>
 
-          <span class="skype-button bubble " data-contact-id="g_lewis32" data-color="#6DCC9C"></span>
+      </div>
+    </div>
+  </div>
+
+  <span class="skype-button bubble " data-contact-id="g_lewis32" data-color="#6DCC9C"></span>
 
 
 
-        </footer><!-- / .footer-litle -->
-
-    
-
-        <!-- ========== Scripts ========== -->
-
-        <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-        <script src="assets/js/animateextended.js"></script>
-        <script src="assets/js/vendor/google-fonts.js"></script>
-        <script src="assets/js/vendor/jquery.easing.js"></script>
-        <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
-        <script src="assets/js/vendor/smoothscroll.js"></script>
-        <script src="assets/js/vendor/jquery.localScroll.min.js"></script>
-        <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
-        <script src="assets/js/vendor/jquery.stellar.min.js"></script>
-        <script src="assets/js/vendor/jquery.parallax.js"></script>
-        <script src="assets/js/vendor/slick.min.js"></script>
-        <script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
-        <script src="assets/js/vendor/countup.min.js"></script>
-        <script src="assets/js/vendor/isotope.min.js"></script>
-        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/vendor/wow.min.js"></script>
-        <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
-        <script src="assets/js/animatescroll.js"></script>
-
-        <!-- digital_facer JS -->
-
-        <script src="assets/js/digital_face_js/anime.min.js"></script>
-        <script src="assets/vendor/particlebuttons/js/particles.js"></script>
-        <script src="assets/js/digital_face_js/charming.min.js"></script>
-        <script src="assets/js/digital_face_js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/digital_face_js/main.js"></script>
-        <!--<script src="assets/js/vendor/animDots.js"></script>-->
-        <script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-
-        <script src="assets/js/firbaseapp.js"></script>
+</footer>
 
 
-        <!-- Definity JS -->
-        <script src="assets/js/main.js"></script>
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-              $('iframe').hide();
-            });
-
-        </script>
 
 
-    </body>
+
+<script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="assets/js/animateextended.js"></script>
+<script src="assets/js/vendor/google-fonts.js"></script>
+<script src="assets/js/vendor/jquery.easing.js"></script>
+<script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
+<script src="assets/js/vendor/smoothscroll.js"></script>
+<script src="assets/js/vendor/jquery.localScroll.min.js"></script>
+<script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
+<script src="assets/js/vendor/jquery.stellar.min.js"></script>
+<script src="assets/js/vendor/jquery.parallax.js"></script>
+<script src="assets/js/vendor/slick.min.js"></script>
+<script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
+<script src="assets/js/vendor/countup.min.js"></script>
+<script src="assets/js/vendor/isotope.min.js"></script>
+<script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendor/wow.min.js"></script>
+<script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+<script src="assets/js/animatescroll.js"></script>
+
+
+<script src="assets/js/digital_face_js/anime.min.js"></script>
+<script src="assets/vendor/particlebuttons/js/particles.js"></script>
+<script src="assets/js/digital_face_js/charming.min.js"></script>
+<script src="assets/js/digital_face_js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/digital_face_js/main.js"></script>
+<!--<script src="assets/js/vendor/animDots.js"></script>-->
+<script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+
+<script src="assets/js/firbaseapp.js"></script>
+
+
+<script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('iframe').hide();
+  });
+</script>
+
+
+</body>
+
 </html>
