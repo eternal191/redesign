@@ -67,6 +67,23 @@
   .navbar .navbar-header .navbar-toggle:hover {
     background: none;
   }
+
+
+
+  @media(max-width: 477px) {
+    .navbar .navbar-header .navbar-toggle {
+      margin-right:60px;
+    }
+  }
+
+  @media(max-width: 477px) {
+    .navbar .navbar-header a {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+
   .navbar .navbar-header .navbar-toggle:hover span {
     background: #111;
   }
@@ -168,6 +185,13 @@
     margin-bottom: 50px;
     margin-right: 0;
   }
+
+
+  .footer-litle address ul li.skype-list i.fa-skype {
+      right:5px !important;
+  }
+
+
   .footer-litle address ul li:last-child {
     margin-bottom: 0;
   }

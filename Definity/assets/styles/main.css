@@ -2527,6 +2527,9 @@ fieldset[disabled] .form-control:hover {
     top: 15px;
 }
 
+
+
+
 /* ---- 7.3 Footer Litle ---- */
 .footer-litle address {
     margin-bottom: 0;
@@ -3179,7 +3182,7 @@ fieldset[disabled] .form-control:hover {
 
 @media (max-width:600px){
     .ft-cards .ft-item p {
-        font-size:12px;
+        font-size: 0.9em;
     }
 }
 

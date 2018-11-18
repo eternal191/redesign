@@ -114,3 +114,11 @@ ul.nav.navbar-nav .linea-music-bell.ring {
 textarea.quick-message {
     margin-bottom: 20px;
 }
+
+.navbar-default .nav-and-logo {
+    margin-top: 10px;
+}
+
+.navbar-default .nav-and-logo button {
+    margin-right:60px;
+}
