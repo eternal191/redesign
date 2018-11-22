@@ -30,6 +30,57 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <!-- JS -->
         <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <style type="text/css">
+            @media (max-width: 477px) {
+                .navbar.navbar-default .nav-and-logo{
+                    margin-top:10px;
+                }
+            }
+
+
+
+
+            @media (max-width: 477px){
+
+              /*  div#pfolio.folio-fixes .portfolio-1col-fw .portfolio-item {
+                    border-bottom: none;
+                    border-top: none;
+                    border-right: none;
+                    position: static;
+                    margin-bottom: 0px;
+                }*/
+
+                div#pfolio.folio-fixes .img-wrapper {
+                    -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+                }
+            }
+
+
+
+
+
+        /*    @media (max-width: 1050px) {
+                div#pfolio.folio-fixes .portfolio-1col-fw .portfolio-item {
+                     overflow: inherit;
+                }
+
+            }*/
+
+
+            @media (max-width: 600px) {
+                div#pfolio.folio-fixes .portfolio-1col-fw .portfolio-item figcaption {
+                    padding: 0px 35px 70px 35px;
+                }
+
+            }
+
+
+
+        </style>
+
+
     </head>
     <body id="page-top">
         
@@ -48,57 +99,79 @@
 
         <!-- ========== Navigation ========== -->
 
-        <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <!-- Logo -->
-              <a class="navbar-brand" href="../../index.html"><img class="navbar-logo" src="../../assets/images/digitaldimension.png" alt="Definity - Logo"></a>
-            </div><!-- / .navbar-header -->
-
-            <!-- Navbar Links -->
-
-            <!-- Navbar Links -->
-            <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
-              <ul class="nav navbar-nav">
-
-                <!-- Elements -->
-                <li class="dropdown">
-                  <a href="../about.html" class="dropdown-toggle">WHO AM I </a>
-                </li><!-- / Elements -->
-
-
-                <!-- Pages -->
-                <li class="dropdown mega-fw">
-                  <a href="../services.html" class="dropdown-toggle">Services </a>
-                </li>
-
-
-                <li class="dropdown mega-fw">
-                  <a href="../portfolio/portfolio.html" class="dropdown-toggle">Portfolio </a>
-                </li><!-- / Portfolio -->
-
-
-                <!-- Blog -->
-                <li class="dropdown">
-                  <a href="../contact.html" class="dropdown-toggle">CONTACT </a>
-                </li>
-
-
-              </ul>
 
 
 
-            </div><!--/.navbar-collapse -->
-            <!--/.navbar-collapse -->
-          </div><!-- / .container -->
-        </nav><!-- / .navbar -->
+
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-top mega mobile-nav">
+            <div class="container">
+
+                <!--<div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="../index.html" class="dd-logo">
+                        <img class="navbar-logo" src="../../assets/images/digitaldimension.png" alt="Definity - Logo">
+                    </a>
+
+                </div>-->
+
+
+                <div class="nav-and-logo">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <a href="../index.html"><img class="navbar-logo" src="../../assets/images/digitaldimension.png" alt="Definity - Logo"></a>
+                </div><!-- / .navbar-header -->
+
+
+                <div id="navbar" class="navbar-collapse collapse" style="max-height: 766px; width: 1167px; height: 0px;" aria-expanded="false">
+                    <ul class="nav navbar-nav">
+
+
+                        <li class="dropdown">
+                            <a href="../../pages/about.html" class="dropdown-toggle">WHO AM I </a>
+                        </li>
+
+
+
+                        <li class="dropdown mega-fw">
+                            <a href="../../pages/services.html" class="dropdown-toggle">Services </a>
+                        </li>
+
+
+                        <li class="dropdown mega-fw">
+                            <a href="../../pages/portfolio/portfolio.html" class="dropdown-toggle">Portfolio </a>
+                        </li>
+
+
+
+                        <li class="dropdown">
+                            <a href="../../pages/contact.html" class="dropdown-toggle">CONTACT </a>
+                        </li>
+
+                        <span class="nav-icon linea-music-bell" style="display: inline-block;position: relative;top: 12px;color: #6dcc9e;"></span>
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </nav>
 
 
 
@@ -160,21 +233,29 @@
           </div>-->
 
           <div class="row">
-            <div id="pfolio">
+            <div id="pfolio" class="folio-fixes">
 
 
 
-                <!-- Item 2 -->
+
+
+
+
+
+
+                <!-- Item 4 -->
                 <figure class="portfolio-item webdesing animated fadeInRight delay-2s">
                     <div class="col-md-7 no-gap img-wrapper pull-right">
-                        <img src="../../assets/images/porrtfolioPage/metro_comedy_bkg.png" alt="Project Example">
+                        <img src="../../assets/images/porrtfolioPage/portfolio_image_rhema.jpg" alt="Project Example">
                     </div>
                     <figcaption class="col-md-5 no-gap pull-left">
-                        <h3>Metro LateNight Comedy </h3>
-                        <h5 class="subheading">Comedy Club</h5>
+                        <h3 class="h-alt">Rhema International Church</h3>
+                        <h5 class="subheading">Product showcase site</h5>
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="techused">Technoligies used</p>
+                                <p class="techused"></p>
+                                <h3 class="h-alt">Technoligies used</h3>
+
                                 <ul class="flat-list">
                                     <li><i class="fa fa-check">List Item</i></li>
                                     <li><i class="fa fa-check">List Item</i></li>
@@ -187,99 +268,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="portfolio-single-1-0.html" class="btn-ghost btn-small view-btn">View project</a>
+                        <a href="portfolio-single-1-4.html" class="btn-ghost btn-small view-btn">View project</a>
                     </figcaption>
                 </figure><!-- / .portfolio-item -->
 
 
 
 
-
-
-              <!-- Item 1 -->
-              <figure class="portfolio-item print animated fadeInLeft delay-2s">
-                <div class="col-md-7 no-gap img-wrapper">
-                  <img src="../../assets/images/porrtfolioPage/portfolio_image_rhema.jpg" alt="Project Example">
-                </div>
-                <figcaption class="col-md-5 no-gap">
-                  <h3>Rhema International Church</h3>
-                  <h5 class="subheading">Christian Church</h5>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="techused">Technoligies used</p>
-                        <ul class="flat-list">
-                            <li><i class="fa fa-check">List Item</i></li>
-                            <li><i class="fa fa-check">List Item</i></li>
-                            <li><i class="fa fa-check">List Item</i></li>
-                            <li><i class="fa fa-check">List Item</i></li>
-                            <li><i class="fa fa-check">List Item</i></li>
-                            <li><i class="fa fa-check">List Item</i></li>
-                            <li><i class="fa fa-check">List Item</i></li>
-                            <li><i class="fa fa-check">List Item</i></li>
-                        </ul>
-                    </div>
-                    </div>
-                  <a href="portfolio-single-1.html?page=1" class="btn-ghost btn-small view-btn">View project</a>
-                </figcaption>
-              </figure><!-- / .portfolio-item -->
-              
-              <!-- Item 2 -->
-              <figure class="portfolio-item webdesing animated fadeInRight delay-2s">
-                <div class="col-md-7 no-gap img-wrapper pull-right">
-                  <img src="../../assets/images/porrtfolioPage/portfolio-card-nicole.png" alt="Project Example">
-                </div>
-                <figcaption class="col-md-5 no-gap pull-left">
-                    <h3>PLM Creations</h3>
-                    <h5 class="subheading">Graphic Designer</h5>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="techused">Technoligies used</p>
-                            <ul class="flat-list">
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                            </ul>
-                        </div>
-                    </div>
-                  <a href="portfolio-single-1-2.html?page=2" class="btn-ghost btn-small view-btn">View project</a>
-                </figcaption>
-              </figure><!-- / .portfolio-item -->
-              
-              <!-- Item 3 -->
-              <figure class="portfolio-item photo animated animated fadeInLeft delay-2s">
-                <div class="col-md-7 no-gap img-wrapper">
-                  <img src="../../assets/images/porrtfolioPage/Untitled-1.jpg" alt="Project Example">
-                </div>
-                <figcaption class="col-md-5 no-gap">
-                  <h3>Black Panther Costumes</h3>
-                  <h5 class="subheading">Ecommerce Site</h5>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="techused">Technoligies used</p>
-                            <ul class="flat-list">
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                                <li><i class="fa fa-check">List Item</i></li>
-                            </ul>
-                        </div>
-                    </div>
-                  <a href="portfolio-single-1-3.html" class="btn-ghost btn-small view-btn">View project</a>
-                </figcaption>
-              </figure><!-- / .portfolio-item -->
-
                 <!-- Item 4 -->
-                <figure class="portfolio-item webdesing">
+                <figure class="portfolio-item webdesing animated fadeInRight delay-2s">
                     <div class="col-md-7 no-gap img-wrapper pull-right">
                         <img src="../../assets/images/porrtfolioPage/gensisHomepage.jpg" alt="Project Example">
                     </div>
@@ -306,6 +303,19 @@
                         <a href="portfolio-single-1-4.html" class="btn-ghost btn-small view-btn">View project</a>
                     </figcaption>
                 </figure><!-- / .portfolio-item -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div><!-- / #pfolio -->
           </div><!-- / .row -->

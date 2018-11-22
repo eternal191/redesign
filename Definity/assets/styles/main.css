@@ -595,6 +595,14 @@ hr {
     letter-spacing: 2.5px;
 }
 
+
+@media (max-width:477px){
+    .sec-heading .subheading {
+        min-height: 83px;
+    }
+
+}
+
 .sec-heading h1:first-child,
 .sec-heading .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer:first-child,
 .comingsoon .content-wrapper .content-inner .cs-timer .item .sec-heading .nbr-timer:first-child, .sec-heading h2:first-child,
@@ -1504,7 +1512,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light {
     background: none;
     color: #111;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     overflow: hidden;
     z-index: 1;
 }
@@ -1522,6 +1530,11 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
     z-index: -1;
 }
 
+
+.btn-ghost:after {
+    background: #cbeddc;
+}
+
 .btn-ghost:visited,
 .btn-ghost-light:visited,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,
@@ -1533,6 +1546,10 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover {
     color: #ececec;
     background: none;
+}
+
+.btn-ghost:hover {
+    background: #cbeddc;
 }
 
 .btn-ghost:hover:visited, .btn-ghost-light:hover:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover:visited {
@@ -1973,11 +1990,11 @@ fieldset[disabled] .form-control:hover {
 
 
 
- @media screen and (min-width: 1200px){
-     .page-title{
-         min-height: 351px;
-     }
- }
+@media screen and (min-width: 1200px){
+    .page-title{
+        min-height: 351px;
+    }
+}
 
 
 
@@ -3182,7 +3199,14 @@ fieldset[disabled] .form-control:hover {
 
 @media (max-width:600px){
     .ft-cards .ft-item p {
-        font-size: 0.9em;
+        font-size: 0.75em;
+    }
+}
+
+
+@media (min-width:477px){
+    a.dd-logo {
+        display: none;
     }
 }
 
@@ -5818,10 +5842,15 @@ fieldset[disabled] .form-control:hover {
 /* ---- 15.4 Single Column ---- */
 .portfolio-1col-fw .portfolio-item, .portfolio-1col-boxed .portfolio-item {
     position: relative;
+    /*
     margin-bottom: 50px;
+    */
     height: 440px;
     background: #f4f4f4;
     overflow: hidden;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
 }
 
 .portfolio-1col-fw .portfolio-item .img-wrapper, .portfolio-1col-boxed .portfolio-item .img-wrapper {
@@ -5860,17 +5889,19 @@ fieldset[disabled] .form-control:hover {
 
 .portfolio-1col-fw .portfolio-item figcaption, .portfolio-1col-boxed .portfolio-item figcaption {
     padding: 70px 100px 70px 70px;
-    background-color: black;
+    background-color: white;
+    border-right: 2px solid black;
 }
 
 .portfolio-1col-fw .portfolio-item figcaption .flat-list li {
     display: inline-block;
     margin-bottom: 35px;
-    color:white;
+    color: black;
 }
 
 .portfolio-1col-fw .portfolio-item figcaption p.techused {
     text-align: center;
+    color: black !important;
 }
 
 .portfolio-1col-fw .portfolio-item figcaption .subheading, .portfolio-1col-boxed .portfolio-item figcaption .subheading {
@@ -6403,6 +6434,13 @@ fieldset[disabled] .form-control:hover {
     text-align: center;
 }
 
+@media (max-width:600px) {
+    .cta-link .cta-wrapper {
+        padding-top: 40px;
+    }
+}
+
+
 .cta-link .cta-wrapper h3, .cta-link .cta-wrapper .page-title .subheading, .page-title .cta-link .cta-wrapper .subheading {
     margin-top: 0;
     margin-bottom: 50px;
@@ -6471,6 +6509,14 @@ fieldset[disabled] .form-control:hover {
     color: #999;
     -webkit-transition: border-color 0.4s;
     transition: border-color 0.4s;
+}
+
+
+@media (max-width:477px){
+    .services-url-wrap .cta-wrapper input[type="email"] {
+        width: 327px;
+        font-size: 2.1em;
+    }
 }
 
 .cta-newsletter .cta-wrapper input[type="email"]:focus {

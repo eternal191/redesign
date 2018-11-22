@@ -390,6 +390,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .cta-link .cta-wrapper h3 {
+    padding-top:25px;
+  }
+}
+
 /* ---- Counters ---- */
 @media (max-width: 1260px) {
   .circles-counters,
@@ -617,7 +623,7 @@
     height: auto;
     overflow: visible;
   }
-  .portfolio-1col-fw .portfolio-item .img-wrapper,
+
   .portfolio-1col-boxed .portfolio-item .img-wrapper {
     display: block;
     float: none !important;
