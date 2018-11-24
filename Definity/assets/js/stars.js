@@ -262,11 +262,9 @@ function resize() {
     /*canvas.width = window.innerWidth * (window.devicePixelRatio || 1);
     canvas.height = canvas.width * (canvas.clientHeight / canvas.clientWidth);*/
 
-/*
     canvas.width = 1436;
-*/
 
-    canvas.width = window.innerWidth;
+/*    canvas.width = window.innerWidth;*/
 
     canvas.height = 536;
 }
