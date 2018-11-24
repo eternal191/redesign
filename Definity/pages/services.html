@@ -15,14 +15,12 @@
         <link rel="stylesheet" href="../assets/vendor/slick.css">
         <link rel="stylesheet" href="../assets/vendor/magnific-popup.css">
         <link rel="stylesheet" href="../assets/vendor/animate.css">
-
-
-        <link rel="stylesheet" href="../assets/styles/main.css">
         <link rel="stylesheet" href="../assets/styles/responsive.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
         <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
+        <link rel="stylesheet" href="../assets/styles/main.css">
 
       <style type="text/css">
 
@@ -61,10 +59,61 @@
           <img src="../assets/images/loader.svg" alt="Loading...">
         </div>
 
-
-
-
         <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
+            <a href="../index.html" class="desktop-logo"><img class="navbar-logo" src="../assets/images/digitaldimension.png" alt="Definity - Logo"></a>
+
+            <div class="container" style="width: 100%;max-width: 1000px;padding-right: 15px;padding-left: 15px;margin: 0 auto;">
+                <div class="nav-and-logo">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <a href="../index.html" class="mobile-logo"><img class="navbar-logo" src="../assets/images/digitaldimension.png" alt="Definity - Logo"></a>
+                </div><!-- / .navbar-header -->
+
+                <!-- Navbar Links -->
+
+                <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Elements -->
+                        <li class="dropdown">
+                            <a href="about.html" class="dropdown-toggle">WHO AM I </a>
+                        </li><!-- / Elements -->
+
+
+                        <!-- Pages -->
+                        <li class="dropdown mega-fw">
+                            <a href="services.html" class="dropdown-toggle">Services </a>
+                        </li>
+
+
+                        <li class="dropdown mega-fw">
+                            <a href="portfolio/portfolio.html" class="dropdown-toggle">Portfolio </a>
+                        </li><!-- / Portfolio -->
+
+
+                        <!-- Blog -->
+                        <li class="dropdown">
+                            <a href="contact.html" class="dropdown-toggle">CONTACT </a>
+                        </li>
+
+
+                    </ul>
+
+
+
+                </div>
+                <!--/.navbar-collapse -->
+            </div><!-- / .container -->
+        </nav>
+
+
+        <!--<nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
           <div class="container">
               <div class="navbar-header">
 
@@ -82,7 +131,7 @@
               </div>
 
 
-        <!--    <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
+        &lt;!&ndash;    <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
               <ul class="nav navbar-nav">
 
                 <li class="dropdown">
@@ -103,7 +152,7 @@
                   <a href="contact.html" class="dropdown-toggle">CONTACT </a>
                 </li>
               </ul>
-            </div>-->
+            </div>&ndash;&gt;
 
               <div id="navbar" class="navbar-collapse collapse" style="max-height: 681px; width: 1167px; height: 0px;" aria-expanded="false">
                   <ul class="nav navbar-nav">
@@ -142,7 +191,7 @@
 
 
           </div>
-        </nav>
+        </nav>-->
 
 
 
@@ -494,6 +543,29 @@
 
 
           }
+
+
+
+
+          document.addEventListener("DOMContentLoaded", function(event) {
+              console.log("DOM fully loaded and parsed");
+              console.log('loaded');
+
+              if(  $('iframe').length ){
+
+                  console.log('yes')
+
+              }
+          });
+
+
+
+
+            setTimeout(function () {
+                $('iframe').hide();
+            }, 2000)
+
+
 
 
         </script>

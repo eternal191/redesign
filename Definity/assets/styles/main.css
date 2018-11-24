@@ -10442,3 +10442,33 @@ section.portfolio-hdr .port-bkg {
     }
 }
 
+
+
+
+
+nav.navbar.navbar-default > a.desktop-logo {
+    position: absolute;
+    top: 13px;
+}
+nav.navbar.navbar-default .nav-and-logo a.mobile-logo {
+    display: none;
+}
+
+
+/*nav.navbar.navbar-default .nav-and-logo a.mobile-logo {
+
+}*/
+
+@media(max-width:678px){
+
+    nav.navbar.navbar-default > a.desktop-logo {
+        display: none;
+    }
+
+    nav.navbar.navbar-default .nav-and-logo a.mobile-logo {
+        display: block;
+    }
+
+
+
+}
