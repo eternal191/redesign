@@ -1856,6 +1856,11 @@ pre code {
         width: 92%;
     }
 
+    .container.cpage {
+        /*width: 1170px*/
+        width: 100%;
+    }
+
     /*.container.contact {
         width: 92% !important;
     }*/

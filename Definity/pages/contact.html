@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Definity - Contact Page</title>
+  <title>CONTACT ME</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <link rel="stylesheet" href="../assets/noUiSlider/nouislider.css">
+  <link rel="stylesheet" href="../assets/styles/planet.css">
   <!--<link rel="stylesheet" href="assets/custom/css/form-wizard-blue.css">-->
 
 
@@ -73,6 +74,21 @@
       margin-right: 150px;
     }
 */
+
+
+
+
+    #stars {
+      display: block;
+      position: relative;
+      width:1436px;
+      height:536px;
+      z-index: 1;
+      background-color: #31102F;
+      background: radial-gradient(ellipse at center, #6dcc9e 0%, #000000 100%);
+    }
+
+
   </style>
 
   <!-- JS -->
@@ -155,7 +171,7 @@
 
         <!-- Blog -->
         <li class="dropdown">
-          <a href="contact.html" class="dropdown-toggle">CONTACT </a>
+          <a href="contact.html" class="dropdown-toggle">CONNECT </a>
         </li>
 
 
@@ -175,14 +191,39 @@
 
 
 <!-- ========== Page Title ========== -->
-
-<header class="page-title pt-dark contact" style="background-image: url('../assets/images/background_digital.jpg')">
-  <div class="container">
+<!--style="background-image: url('../assets/images/background_digital.jpg')"   removed this bkg for animation-->
+<header class="page-title pt-dark contact starsheader">
+  <div class="container cpage">
     <div class="row">
+
+      <canvas id="stars" width="300" height="300"></canvas>
+      <script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+      <script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
+
+
+      <!--     <h1 class="col-sm-6">F.A.Q.</h1>
+           <ol class="col-sm-6 text-right breadcrumb">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Pages</a></li>
+             <li class="active">FAQ</li>
+           </ol>-->
+
+
+      <div id="orbit-system">
+        <span class="logo" style="color: white;position: absolute;left: 105px;top: 105px;z-index: 2000;font-size: 27px;">DIGITAL DIMENSIONZ</span>
+        <div class="system">
+          <div class="satellite-orbit">
+            <div class="satellite">DD</div>
+          </div>
+          <div class="planet"></div>
+        </div>
+      </div>
+
+    <!--
       <div class="col-sm-6">
         <h1>Contact</h1>
         <span class="subheading">Love to hear from you</span>
-      </div>
+      </div>-->
 
     </div>
   </div>
@@ -1041,6 +1082,9 @@
 
   /*Dates Slider*/
 </script>
+
+<script src="../assets/js/stars.js"></script>
+
 
 </body>
 
