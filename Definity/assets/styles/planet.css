@@ -9,6 +9,13 @@
     top: 22%;
 }
 
+
+@media (max-width:477px){
+    #orbit-system {
+        top: 30%;
+    }
+}
+
 .system {
     position: relative;
     width: 100%;

@@ -323,6 +323,9 @@ hr {
     padding-top: 160px;
     padding-bottom: 100px;
 }
+#contact.section {
+    padding-top: 90px;
+}
 
 .section-heading h1,
 .section-heading .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer,
@@ -1983,6 +1986,14 @@ fieldset[disabled] .form-control:hover {
     padding-bottom: 80px;
 }
 
+
+
+@media (max-width:477px){
+    .contact-page .page-title {
+        right: 115px;
+    }
+}
+
 .page-title.starsheader {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2566,6 +2577,17 @@ fieldset[disabled] .form-control:hover {
     margin-right: 160px;
 }
 
+
+
+@media (max-width: 770px) {
+
+    .footer-litle address ul li {
+        display: block;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+}
+
 .footer-litle address ul li:first-child a:hover {
     color: #24c778;
 }
@@ -2575,15 +2597,15 @@ fieldset[disabled] .form-control:hover {
 }
 
 .footer-litle address ul li .adr-icon {
-    padding-right: 20px;
-    float: left;
+/*    padding-right: 20px;
+    float: left;*/
     font-size: 36px;
     color: #111;
 }
 
 .footer-litle address ul li .adr-group {
-    text-align: left;
-    float: right;
+/*    text-align: left;
+    float: right;*/
 }
 
 .footer-litle address ul li .adr-group .adr-heading {
@@ -5896,7 +5918,7 @@ fieldset[disabled] .form-control:hover {
 .portfolio-1col-fw .portfolio-item figcaption .flat-list li {
     display: inline-block;
     margin-bottom: 35px;
-    color: black;
+    color: #626467;
 }
 
 .portfolio-1col-fw .portfolio-item figcaption p.techused {
@@ -10476,4 +10498,11 @@ nav.navbar.navbar-default .nav-and-logo a.mobile-logo {
 
 
 
+}
+
+
+
+
+figcaption a.btn-ghost.btn-small.view-btn {
+    color:#564c4c;
 }
