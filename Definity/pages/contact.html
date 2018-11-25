@@ -69,11 +69,15 @@
       }
     }
 
-
-    /* .form-group.image-upload span:first-child {
-      margin-right: 150px;
+    @media (min-width:1260px){
+      .navbar.navbar-default .contact-nav-fix{
+        width: 100%;
+        max-width: 1000px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+      }
     }
-*/
 
 
 
@@ -93,6 +97,17 @@
         width:100%;
       }
     }
+
+
+
+
+    @media (max-width: 477px) {
+      .nav-and-logo.contact {
+        width: 380px;
+      }
+
+    }
+
 
 
   </style>
@@ -121,21 +136,7 @@
 <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
   <a href="../index.html" class="desktop-logo"><img class="navbar-logo" src="../assets/images/digitaldimension.png" alt="Definity - Logo"></a>
 
-  <div class="container" style="width: 100%;max-width: 1000px;padding-right: 15px;padding-left: 15px;margin: 0 auto;">
-<!--    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      &lt;!&ndash; Logo &ndash;&gt;
-      <a class="navbar-brand" href="../index.html"><img class="navbar-logo" src="../assets/images/digitaldimension.png" alt="Definity - Logo"></a>
-    </div>
-    &lt;!&ndash; / .navbar-header &ndash;&gt;-->
-
-
+  <div class="container contact-nav-fix" style="width: 100%;max-width: 1000px;padding-right: 15px;padding-left: 15px;margin: 0 auto;">
     <div class="nav-and-logo">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -148,19 +149,15 @@
       <a href="../index.html" class="mobile-logo"><img class="navbar-logo" src="../assets/images/digitaldimension.png" alt="Definity - Logo"></a>
     </div><!-- / .navbar-header -->
 
-
-
-
     <!-- Navbar Links -->
-    <!-- Navbar Links -->
-    <div id="navbar" class="navbar-collapse collapse" style="max-height: 578px;width: 1167px;">
+
+    <div id="navbar" class="navbar-collapse collapse" style="max-height: 762px; width: 1167px;">
       <ul class="nav navbar-nav">
 
         <!-- Elements -->
         <li class="dropdown">
           <a href="about.html" class="dropdown-toggle">WHO AM I </a>
-        </li>
-        <!-- / Elements -->
+        </li><!-- / Elements -->
 
 
         <!-- Pages -->
@@ -171,8 +168,7 @@
 
         <li class="dropdown mega-fw">
           <a href="portfolio/portfolio.html" class="dropdown-toggle">Portfolio </a>
-        </li>
-        <!-- / Portfolio -->
+        </li><!-- / Portfolio -->
 
 
         <!-- Blog -->
@@ -187,10 +183,7 @@
 
     </div>
     <!--/.navbar-collapse -->
-
-    <!--/.navbar-collapse -->
-  </div>
-  <!-- / .container -->
+  </div><!-- / .container -->
 </nav>
 <!-- / .navbar -->
 
