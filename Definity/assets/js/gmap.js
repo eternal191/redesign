@@ -15,7 +15,7 @@ $(document).ready(function($showINfoBtn){
 		zoom: 9,
 		scrollwheel: false,
 		// The latitude and longitude to center the map (always required)
-		center: new google.maps.LatLng(42.4797266, -83.3302484),// southfield
+		center: new google.maps.LatLng(42.501106, -83.2875612),// southfield
 
 		// Styling of the map in JSON object
 		styles:
@@ -396,8 +396,9 @@ $(document).ready(function($showINfoBtn){
 			map.setZoom(12);
 		});
 		// Map marker 
-		var image = 'http://localhost:63342/Digitaldimensionz_Redesign/Definity/assets/images/map-pin.png';
-		var myLatLng = new google.maps.LatLng(41.880038, -87.631127);
+		/*var image = 'http://localhost:63342/Digitaldimensionz_Redesign/Definity/assets/images/map-pin.png';*/
+		var image = 'https://zen-shockley-a642a3.netlify.com/definity/assets/images/digitaldimension.png';
+		var myLatLng = new google.maps.LatLng(42.501106, -83.2875612);
 		var beachMarker = new google.maps.Marker({
 			position: myLatLng,
 			map: map,
