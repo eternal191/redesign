@@ -8,7 +8,10 @@
     // Initialize all functions when the document is ready.
 	$(document).ready(function(){
 
+
+		setTimeout(function () {
 			$('iframe').hide();
+		}, 2000);
 
 		var isaboutpage = $('body.aboutme').length == 1;
 

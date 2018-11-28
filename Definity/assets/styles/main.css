@@ -286,6 +286,11 @@ hr {
     background: #000;
 }
 
+.container.portfolio-nav {
+    margin: 0 !important;
+    width: 100%;
+}
+
 .bg-white {
     background: #fff;
 }
@@ -6211,6 +6216,13 @@ fieldset[disabled] .form-control:hover {
     text-transform: uppercase;
 }
 
+.project-nav nav .nav-btns li.prev a {
+    padding-left:90px;
+}
+
+.project-nav nav .nav-btns li.next a {
+    padding-right:90px;
+}
 .project-nav nav .nav-btns .nav-icon {
     display: inline-block;
     font-size: 26px;
