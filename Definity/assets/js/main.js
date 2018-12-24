@@ -1034,7 +1034,7 @@ $( '.form-ajax' ).on( 'keyup', 'input.validate-locally', function() {
 });
 
 //	AJAX call
-$( '.form-ajax' ).submit(function(e) {
+/*$( '.form-ajax' ).submit(function(e) {
 	e.preventDefault();
 	var $this = $( this ),
 			action = $this.attr( 'action' );
@@ -1047,7 +1047,7 @@ $( '.form-ajax' ).submit(function(e) {
 				$( '.ajax-message' ).html( data );
 			}
 	);
-});
+});*/
 
 //	Validates the fileds
 function validateField ( field ) {
