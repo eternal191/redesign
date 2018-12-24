@@ -32,93 +32,6 @@
 			$(this).removeClass('input-error');
 		});
 
-
-        function validation(email)
-        {
-            var emailfilter =/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i
-
-            var b = emailfilter.test(email);
-
-            if(b == false)
-            {
-
-                return false;
-            } else {
-                return true;
-
-            }
-        }
-
-
-		function validateTextInputs(firstName, lastName, email, textArea) {
-
-                        if (validation(email) && firstName != null && lastName != null) {
-                            return true;
-                        }else {
-                            return false;
-                        }
-
-		}
-
-
-		function validateFormVals() {
-			/*TODO validate and send ajax request here*/
-			console.log('last step');
-			var firstName = $('form .step1 .form-group.firstName input').val();
-			var lastName = $('form .step1 .form-group.lastName input').val();
-            var email = $('form .step1 .form-group.email input').val();
-			var textArea = $('form .step2 .form-group textarea').val();
-
-			var priceLow = formobjectvals.prices.lowValue;
-			var highLow = formobjectvals.prices.highValue;
-
-			var dateStart = formobjectvals.dates.highValue;
-			var dateEnd = formobjectvals.dates.lowValue;
-
-			if (validateTextInputs(firstName, lastName, email, textArea)) {
-
-                var formData = {
-                    firstname:firstName,
-                    lastname:lastName,
-                    email:email,
-                    textarea: textArea
-                };
-
-
-			/*	var serilizedFormdata = JSON.stringify(formData);*/
-
-                $.ajax({
-                    type : 'POST',
-                    url : 'http://localhost:8888/Digitaldimensionz_Redesign/Definity/assets/contact-form/contact-form.php',
-
-                    data : formData,
-					success: function(data, textStatus, jqXHR)
-					{
-						//data - response from server
-						$('.form-wizard.form-header-classic.form-body-classic .success').html(data);
-						console.log(data);
-					},
-					error: function (jqXHR, textStatus, errorThrown)
-					{
-						console.log(errorThrown);
-
-					}
-                })
-
-
-			} else{
-                //TODO show error message
-
-
-            }
-
-
-
-
-		}
-
-
-		
 		// next step
 		$('.form-wizard .btn-next').on('click', function() {
 			var parent_fieldset = $(this).parents('fieldset');
@@ -126,7 +39,7 @@
 			// navigation steps / progress steps
 			var current_active_step = $(this).parents('.form-wizard').find('.form-wizard-step.active');
 			var progress_line = $(this).parents('.form-wizard').find('.form-wizard-progress-line');
-			
+
 			// fields validation
 			parent_fieldset.find('.required').each(function() {
 				if( $(this).val() == "" ) {
@@ -138,19 +51,11 @@
 				}
 			});
 			// fields validation
-			
+
 			if( next_step ) {
 				parent_fieldset.fadeOut(400, function() {
 					// change icons
 					current_active_step.removeClass('active').addClass('activated').next().addClass('active');
-
-					if (current_active_step.next().hasClass('last')) {
-
-
-
-						validateFormVals();
-
-					}
 					// progress bar
 					bar_progress(progress_line, 'right');
 					// show next step

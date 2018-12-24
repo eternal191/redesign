@@ -1,14 +1,14 @@
-use pages/portfolio/portfolio-single-1.html# as single portfolio page.
-
-show icons with companies I’ve worked for :  heart, GM, master card, verizon
 
 
-key services: wordpress, e-commerce, responsive websites, creative web design, seo, shopify expert
-
-third party integrations
 
 
-web development process section  : shopify, Facebook api,
+
+
+
+
+
+
+
 
 social net working apis section
 
