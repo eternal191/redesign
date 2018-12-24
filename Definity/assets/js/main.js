@@ -45,6 +45,8 @@
 
 		calmelistener();
 
+		whoisApiCall();
+
 		if ( document.getElementById('shop-slider-range') ) {
 			initRangeSlider();
 		}
@@ -135,8 +137,56 @@
 	}
 
 
+	function whoisApiCall() {
 
-/* --------------------------------------------------
+
+			/**
+			 *
+			 * whois API call
+			 *
+			 */
+
+			$('.whois-api-call').click(function () {
+				var element = $(this);
+				var inputWhoIsUrl = $('.cta-wrapper.styledbtn span.input.input--hoshi #input-4').val();
+
+				if (inputWhoIsUrl == '') {
+					console.log('input is empty');
+				} else {
+
+					var apidata;
+
+					$.get('https://www.whoisxmlapi.com/whoisserver/WhoisService?cmd=GET_DN_AVAILABILITY&domainName=' +inputWhoIsUrl+ '&username=eternal191&password=Forever35!&getMode=DNS_AND_WHOIS&outputFormat=JSON', function(data){
+
+						if(data.DomainInfo.domainAvailability === "AVAILABLE") {
+
+							console.log('Domain Name is Available');
+
+							/*$('.hidealert').removeClass('hidealert')*/;
+							$('.hidealert.alert-success').toggleClass('hidealert');
+
+						} else {
+							console.log('Domain Name is NOT Available');
+							$('.hidealert.alert-danger').toggleClass('hidealert');
+
+						}
+
+
+					})
+
+
+
+				}
+
+
+			});
+
+
+	}
+/* --
+
+
+------------------------------------------------
 	Navigation | Navbar
 -------------------------------------------------- */
 	

@@ -124,3 +124,10 @@ textarea.quick-message {
 }
 
 
+div.alert.alert-success.alert-dismissible.hidealert {
+    display: none;
+}
+
+div.alert.alert-danger.alert-dismissible.hidealert {
+    display: none;
+}
