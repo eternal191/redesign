@@ -1,6 +1,6 @@
 div#navbar a.link--surinami {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 100;
     text-transform: uppercase;
     font-size: 9em;
     color: #3A4945;
@@ -12,12 +12,16 @@ div#navbar ul.navbar-nav li {
     padding-top: 19px;
 }
 
+div#navbar ul.navbar-nav li a:hover{
+    color: #0BBE30 !important;
+}
+
 
 div#navbar a.link {
     outline: none;
     text-decoration: none;
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.0em;
     line-height: 1;
     color: #9e9ba4;
     display: inline-block;
@@ -72,7 +76,7 @@ div#navbar a.link--surinami:hover span {
 div#navbar a.link--surinami span::before,
 div#navbar a.link--surinami span::after {
     position: absolute;
-    color: #fff;
+    color: #6dcc9e;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
@@ -97,4 +101,9 @@ div#navbar a.link--surinami:hover span::after {
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+}
+
+
+nav.navbar.navbar-small{
+
 }
