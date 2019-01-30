@@ -1,0 +1,100 @@
+div#navbar a.link--surinami {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 9em;
+    color: #3A4945;
+    padding: 8px 0  0 54px;
+}
+
+div#navbar ul.navbar-nav li {
+    box-sizing: border-box;
+    padding-top: 19px;
+}
+
+
+div#navbar a.link {
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1;
+    color: #9e9ba4;
+    display: inline-block;
+    width:180px;
+}
+
+
+div#navbar a.link--surinami::before,
+div#navbar a.link--surinami::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    z-index: -1;
+    background: #3A4945;
+    position: absolute;
+    -webkit-transform: scale3d(0,1,1);
+    transform: scale3d(0,1,1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+div#navbar a.link--surinami::before {
+    right: 0;
+    top: 0;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+div#navbar a.link--surinami::after {
+    left: 0;
+    bottom: 0;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+div#navbar a.link--surinami:hover::before,
+div#navbar a.link--surinami:hover::after {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+div#navbar a.link--surinami span {
+    position: relative;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+div#navbar a.link--surinami:hover span {
+    color: transparent;
+}
+
+div#navbar a.link--surinami span::before,
+div#navbar a.link--surinami span::after {
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+div#navbar a.link--surinami span::before {
+    content: attr(data-letters-l);
+    left:0px;
+    -webkit-transform: translate3d(-5px,0,0);
+    transform: translate3d(-5px,0,0);
+}
+
+div#navbar a.link--surinami span::after {
+    content: attr(data-letters-r);
+    right:0px;
+    -webkit-transform: translate3d(5px,0,0);
+    transform: translate3d(5px,0,0);
+}
+
+div#navbar a.link--surinami:hover span::before,
+div#navbar a.link--surinami:hover span::after {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}

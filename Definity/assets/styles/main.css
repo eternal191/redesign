@@ -6220,6 +6220,15 @@ fieldset[disabled] .form-control:hover {
     padding-left:90px;
 }
 
+
+@media(max-width: 478px){
+    .project-nav nav .nav-btns li.prev a,
+    .project-nav nav .nav-btns li.next a
+    {
+        padding: 0px !important;
+    }
+}
+
 .project-nav nav .nav-btns li.next a {
     padding-right:90px;
 }
@@ -10491,7 +10500,7 @@ section.portfolio-hdr .port-bkg {
 
 nav.navbar.navbar-default > a.desktop-logo {
     position: absolute;
-    top: 13px;
+    top: 5px;
 }
 nav.navbar.navbar-default .nav-and-logo a.mobile-logo {
     display: none;
