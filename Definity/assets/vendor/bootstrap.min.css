@@ -4714,7 +4714,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 @media (min-width: 1260px) {
     .navbar-nav {
-        float: left;
+        float: right;
         margin: 0
     }
 
