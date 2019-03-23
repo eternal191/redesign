@@ -8,10 +8,10 @@
     // Initialize all functions when the document is ready.
 	$(document).ready(function(){
 
-
+/*
 		setTimeout(function () {
 			$('iframe').hide();
-		}, 2000);
+		}, 2000);*/
 
 		var isaboutpage = $('body.aboutme').length == 1;
 
@@ -110,21 +110,16 @@
 				textfild.removeClass('error');
 
 				//phpfile
-				var neximo = window.location.origin + '/Digitaldimensionz_Redesign/Definity/send-message.php';
+				var neximo = '../../send-message.php';
 				console.log(neximo);
 				$.ajax({
 					url: neximo,
 					data: {'textmeElement': textmeElement},
 					type: 'post',
 					success: function (output) {
-
-
 						console.log(output);
-						console.log('worked');
-
-
-					}
-					,
+						console.log('send txt message worked');
+					},
 					error: function (e) {
 						console.log(e);
 					}

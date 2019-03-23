@@ -862,8 +862,8 @@
   </div>
 
 
-  <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
-  <span class="skype-button bubble " data-contact-id="g_lewis32" data-color="#6DCC9C"></span>
+  <!--<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+  <span class="skype-button bubble " data-contact-id="g_lewis32" data-color="#6DCC9C"></span>-->
 
 </footer>
 
@@ -899,7 +899,7 @@
 <script src="assets/js/digital_face_js/imagesloaded.pkgd.min.js"></script>
 <script src="assets/js/digital_face_js/main.js"></script>
 <!--<script src="assets/js/vendor/animDots.js"></script>-->
-<script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>
+<!--<script src="assets/js/vendor/jquery.mCustomScrollbar.js"></script>-->
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
 
 <script src="assets/js/firbaseapp.js"></script>
@@ -908,12 +908,42 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/back-to-top.js"></script>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
   $(document).ready(function() {
     $('iframe').hide();
   });
-</script>
+</script>-->
 <a href="#0" class="cd-top js-cd-top">Top</a>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    /*js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';*/
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="1084453351746327"
+     theme_color="#6dcc9e"
+     logged_in_greeting="Welcome to DigitalDimensionz, how can I help you?"
+     logged_out_greeting="Welcome to DigitalDimensionz, how can I help you?">
+</div>
+
 
 </body>
 

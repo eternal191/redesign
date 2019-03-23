@@ -397,7 +397,7 @@ $(document).ready(function($showINfoBtn){
 		});
 		// Map marker 
 		/*var image = 'http://localhost:63342/Digitaldimensionz_Redesign/Definity/assets/images/map-pin.png';*/
-		var image = 'https://zen-shockley-a642a3.netlify.com/definity/assets/images/digitaldimension.png';
+		var image = '';
 		var myLatLng = new google.maps.LatLng(42.501106, -83.2875612);
 		var beachMarker = new google.maps.Marker({
 			position: myLatLng,

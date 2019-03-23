@@ -12,6 +12,7 @@ $twilio_number = "+12486218275";
 
 
 $usermessage = $_POST['textmeElement'];
+error_log($usermessage);
 
 $client = new Client($sid, $token);
 
@@ -22,8 +23,7 @@ $client->messages->create(
         'body' => $usermessage
         ));
 
-
-echo true;
+echo "success";
 
 
 ?>
