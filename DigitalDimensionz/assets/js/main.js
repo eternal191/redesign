@@ -152,31 +152,22 @@
 					var apidata;
 
 					$.get('https://www.whoisxmlapi.com/whoisserver/WhoisService?cmd=GET_DN_AVAILABILITY&domainName=' +inputWhoIsUrl+ '&username=eternal191&password=Forever35!&getMode=DNS_AND_WHOIS&outputFormat=JSON', function(data){
-
 						if(data.DomainInfo.domainAvailability === "AVAILABLE") {
-
 							console.log('Domain Name is Available');
-
-							/*$('.hidealert').removeClass('hidealert')*/;
-							$('.hidealert.alert-success').toggleClass('hidealert');
-
+							$('.alert-dismissible.alert-success').addClass('show-message');
 						} else {
 							console.log('Domain Name is NOT Available');
-							$('.hidealert.alert-danger').toggleClass('hidealert');
-
+							$('.alert-dismissible.alert-danger').addClass('show-message');
 						}
+					})
 
-
+					$('.alert.alert-dismissible.show-message').on('click', function (e) {
+							$(this).removeClass('show-message');
 					})
 
 
-
 				}
-
-
 			});
-
-
 	}
 /* --
 

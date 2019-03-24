@@ -20,11 +20,11 @@
 
     behind.on('click', function () {
         var pages = [
-             '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-0.html',
-             '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1.html',
-             '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-2.html',
-             '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-3.html',
-             '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-4.html'
+             '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-0.html',
+             '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1.html',
+             '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-2.html',
+             '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-3.html',
+             '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-4.html'
         ];
         var newUrl = prev(document.location.pathname, pages);
         window.open(newUrl, '_self');
@@ -32,12 +32,12 @@
     });
 
     forward.on('click', function () {
-        var pages =
-              '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-0.html',
-              '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1.html',
-              '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-2.html',
-              '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-3.html',
-              '/Digitaldimensionz_Redesign/pages/portfolio/portfolio-single-1-4.html'
+        var pages = [
+              '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-0.html',
+              '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1.html',
+              '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-2.html',
+              '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-3.html',
+              '/redesign/Digitaldimensionz/pages/portfolio/portfolio-single-1-4.html'
         ];
         var newUrl = next(document.location.pathname, pages);
         window.open(newUrl, '_self');
