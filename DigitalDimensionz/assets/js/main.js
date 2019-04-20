@@ -47,6 +47,8 @@
 
 		whoisApiCall();
 
+		critiqueSiteURL()
+
 		if ( document.getElementById('shop-slider-range') ) {
 			initRangeSlider();
 		}
@@ -132,6 +134,19 @@
 	}
 
 
+	function critiqueSiteURL() {
+
+		$('.websitecretique').on('click', function (e) {
+			console.log('clicked url critique');
+
+			var URLVALUE = $('div.cta-link .input__field--hoshi').val();
+			
+			/*TODO send url off to php Script toolbar be sent to my email*/
+
+		})
+
+	}
+
 	function whoisApiCall() {
 
 
@@ -153,19 +168,11 @@
 
 					$.get('https://www.whoisxmlapi.com/whoisserver/WhoisService?cmd=GET_DN_AVAILABILITY&domainName=' +inputWhoIsUrl+ '&username=eternal191&password=Forever35!&getMode=DNS_AND_WHOIS&outputFormat=JSON', function(data){
 						if(data.DomainInfo.domainAvailability === "AVAILABLE") {
-							console.log('Domain Name is Available');
-							$('.alert-dismissible.alert-success').addClass('show-message');
+							alert('Domain is AVAILABLE')
 						} else {
-							console.log('Domain Name is NOT Available');
-							$('.alert-dismissible.alert-danger').addClass('show-message');
+							alert('Domain is not AVAILABLE')
 						}
-					})
-
-					$('.alert.alert-dismissible.show-message').on('click', function (e) {
-							$(this).removeClass('show-message');
-					})
-
-
+					});
 				}
 			});
 	}

@@ -124,22 +124,4 @@ textarea.quick-message {
 }
 
 
-div.alert.alert-success {
-    display: none;
-    visibility: hidden;
-}
 
-div.alert.alert-danger {
-    display: none;
-    visibility: hidden;
-}
-
-div.alert.alert-success.show-message {
-    display: block;
-    visibility: visible;
-}
-
-div.alert.alert-danger.show-message {
-    display: block;
-    visibility: visible;
-}
