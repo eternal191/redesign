@@ -86,6 +86,11 @@ section.content#btnstyle .box.bg-3 {
     display: inline-table;
 }
 
+
+.bg-3 .button.button--nuka a {
+    color: black;
+}
+
 /* Sizes */
 .button--size-s {
     font-size: 14px;

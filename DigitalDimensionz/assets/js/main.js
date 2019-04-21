@@ -135,16 +135,27 @@
 
 
 	function critiqueSiteURL() {
-
 		$('.websitecretique').on('click', function (e) {
-			console.log('clicked url critique');
 
 			var URLVALUE = $('div.cta-link .input__field--hoshi').val();
-			
-			/*TODO send url off to php Script toolbar be sent to my email*/
 
+			if (URLVALUE == '') {
+				console.log('input is empty');
+			} else {
+				$.ajax({
+					type: "POST",
+					url: "../../../../assets/contact-form/websiteCritique.php",
+					data: "url=" + URLVALUE,
+					success : function(text){
+						if (text === "success"){
+							console.log('URL sent');
+						} else {
+							console.log('submitted FAILED');
+						}
+					}
+				})
+			}
 		})
-
 	}
 
 	function whoisApiCall() {

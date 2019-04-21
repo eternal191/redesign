@@ -118,6 +118,9 @@
 			var email_val = $('.form-wizard fieldset.step1 .form-group.email input').val();
 			var comments_val = $.trim($('.form-wizard fieldset.step2 .form-group.message textarea').val());
 
+
+
+
 			$.ajax({
 				type: "POST",
 				url: "../../../../assets/contact-form/contact-form.php",
