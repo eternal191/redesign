@@ -118,6 +118,22 @@
 			var email_val = $('.form-wizard fieldset.step1 .form-group.email input').val();
 			var comments_val = $.trim($('.form-wizard fieldset.step2 .form-group.message textarea').val());
 
+			var $dateLow = moment.unix(date_low).utc()._d;
+			var $dateHigh = moment.unix(date_high).utc()._d;
+
+
+
+			var $dateLowFIelds = $dateLow.toDateString().split(' ');
+			var $dateHighFields = $dateHigh.toDateString().split(' ');
+
+			var $dateLowMessage = $dateHighFields[0] + " " + $dateHighFields[1] + " " + $dateHighFields[2];
+			var $dateHighMessage = $dateLowFIelds[0] + " " + $dateLowFIelds[1] + " " + $dateLowFIelds[2];
+
+			console.log("%cDateLowValue", "color: blue; font-size: x-large");
+			console.log($dateLowMessage);
+			console.log("%cDateHighValue", "color: red; font-size: x-large");
+			console.log($dateHighMessage);
+
 
 
 
