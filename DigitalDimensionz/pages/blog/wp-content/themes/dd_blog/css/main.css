@@ -2105,7 +2105,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .pt-plax-md-light {
-    background: url(http://placehold.it/2440x1280);
+    background: url('../img/bucket-list.jpg');
     background-size: cover;
 }
 

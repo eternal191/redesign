@@ -62,3 +62,4 @@
     </div>
 </footer>
 <!-- / .footer-widgets -->
+<script src="https://use.fontawesome.com/880dffd417.js"></script>
