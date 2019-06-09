@@ -2638,7 +2638,7 @@ fieldset[disabled] .form-control:hover {
 
 .navbar .navbar-header {
     width: 27%;
-    margin-top: 6px;
+    margin-top: 0px;
 }
 
 .navbar .navbar-header .navbar-brand {
@@ -10489,7 +10489,7 @@ section.portfolio-hdr .port-bkg {
 
 @media (min-width: 1260px) {
     .navbar-nav > li > a {
-        padding-top: 25px;
+        padding-top: 0px;
         padding-bottom: 15px;
     }
 }

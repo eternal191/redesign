@@ -112,6 +112,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui error, incidunt quia pariatur facere quasi totam inventore amet rerum.</p>
     </div><!-- / .text-widget -->
 
+<?php echo dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- / .sidebar -->
 
 

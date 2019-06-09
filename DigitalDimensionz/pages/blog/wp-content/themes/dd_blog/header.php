@@ -8,28 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../favicon.ico">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../assets/vendor/bootstrap.min.css">
-    <!-- Fonts -->
-    <link rel="stylesheet" href="../../assets/fonts/et-lineicons/css/style.css">
-    <link rel="stylesheet" href="../../assets/fonts/linea-font/css/linea-font.css">
-    <link rel="stylesheet" href="../../assets/fonts/fontawesome/css/font-awesome.min.css">
-    <!-- Slider -->
-    <link rel="stylesheet" href="../../assets/vendor/slick.css">
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="../../assets/vendor/magnific-popup.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="../../assets/vendor/animate.css">
 
 
-    <!-- Definity CSS -->
-    <link rel="stylesheet" href="../../assets/styles/main.css">
-    <link rel="stylesheet" href="../../assets/styles/responsive.css">
-
-    <!-- JS -->
-    <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
-    <base href="<?php echo site_url(); ?>/">
 
     <?php wp_head(); ?>
 </head>
@@ -87,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h1>Blog</h1>
+                    <h1>DIGITALDIMENSIONZ Blog</h1>
                     <span class="subheading"><?php  echo bloginfo('admin_email')?> </span>
                 </div>
             </div>
