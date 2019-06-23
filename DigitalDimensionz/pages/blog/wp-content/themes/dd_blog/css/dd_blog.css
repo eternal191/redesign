@@ -1,0 +1,95 @@
+/*
+.blog-post-comments {
+
+}
+
+.blog-post-comments > li.comment {
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.blog-post-comments .comment-author.vcard img {
+    margin-right: 30px;
+}
+.blog-post-comments .comment-author.vcard {
+    width: 240px;
+    float: left;
+}
+
+.blog-post-comments .comment-author.vcard span,b {
+    position: relative;
+    top: -20px;
+}
+
+.blog-post-comments .comment-body .comment-content {
+  margin: 0px;
+    border-top: 1px transparent;
+    position: relative;
+    left: -145px;
+}
+
+.blog-post-comments .comment-body .comment-metadata a{
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+*/
+
+
+div.bp-comment.thread-odd p {
+    display: inline;
+    position: relative;
+    left: -480px;
+}
+
+
+div.bp-comment.thread-odd.depth-1 p {
+    display: block;
+    left:0px;
+    margin-left: 100px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+div.bp-comment.thread-odd.depth-1 .comment-info a {
+    color: #999;
+
+}
+
+div.bypostauthor p {
+    display: block;
+    position: relative;
+    left: 100px;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 30px;
+}
+
+/*div.comment.odd.alt.thread-odd.thread-alt.depth-1.bp-comment > p {
+    margin-left: 100px;
+}*/
+
+.blog-post-comments .bp-comment .comment-info a.comment-reply-link {
+    display: inline-block;
+    padding: 5px 20px;
+    background: none;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    font-size: .8em;
+    line-height: 1em;
+    letter-spacing: 2px;
+    color: #999;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.blog-post-comments .bp-comment .comment-info a.comment-reply-link:hover{
+    color: #ececec;
+    border-color: #111;
+    background: #111;
+}

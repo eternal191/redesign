@@ -15,6 +15,7 @@
     wp_enqueue_style( 'lineacss', get_template_directory_uri() . '/css/linea-font.css');
     wp_enqueue_style( 'fontawesomecss', get_template_directory_uri() . '/css/font-awesome.min.css');
     wp_enqueue_style( 'maincss', get_template_directory_uri() . '/css/main.css');
+    wp_enqueue_style( 'ddblogcss', get_template_directory_uri() . '/css/dd_blog.css');
     wp_enqueue_style( 'respcss', get_template_directory_uri() . '/css/responsive.css');
 
 
@@ -46,7 +47,7 @@
 
 
 
-    add_theme_support('html5', array('comment-list','comment-form'));
+    /*add_theme_support('html5', array('comment-list','comment-form'));*/
 /*function dd_widgets_init() {
     register_sidebar( array(
         'name'          => __( 'Glewis Sidebar', 'theme_glewis' ),
@@ -57,7 +58,7 @@
         'after_title'   => '</h3>',
     ) );
 }
-add_action( 'widgets_init', 'dd_widgets_init' );*/
+add_action( 'widgets_init', 'dd_widgets_init' );
 
 
 ?>

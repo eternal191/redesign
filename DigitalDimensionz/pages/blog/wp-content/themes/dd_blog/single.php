@@ -16,11 +16,13 @@
                 <div class="post-meta">
                     <a href="#" class="post-date">
                         <i class="fa fa-calendar-o"></i>
-                        <span>August 01.2015</span>
+                        <span><?php the_time('F j, Y g:i'); ?></span>
                     </a>
                     <a href="#" class="post-comments">
                         <i class="fa fa-comments-o"></i>
-                        <span>4</span>
+                        <span>
+                        <?php comments_number(); ?>
+                        </span>
                     </a>
                 </div><!-- / .meta -->
                 <!-- Title -->
@@ -52,51 +54,16 @@
             
             <div class="row">
                 <div class="col-md-12 blog-post-comments">
-                    <h4 class="blog-section-title">Comments <span>(4)</span></h4>
+                    <h4 class="blog-section-title"> <span>(<?php comments_number(); ?>)</span></h4>
 
-                    <!-- Comment 1 -->
-                    <div class="bp-comment">
-                        <div class="comment-avatar"><i class="fa fa-user"></i></div>
-                        <div class="comment-info">
-                            <h6 class="comment-name">Stella Hartmann</h6>
-                            <span class="comment-time">on June 23,2015, at 22:34</span>
-                            <button class="comment-replay-btn"><i class="fa fa-mail-reply-all"></i> Reply</button>
-                        </div>
-                        <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div><!-- / .bp-comment -->
 
-                    <!-- Replay Comment -->
-                    <div class="bp-comment-reply">
-                        <div class="comment-avatar"><i class="fa fa-user"></i></div>
-                        <div class="comment-info">
-                            <h6 class="comment-name">Stella Hartmann</h6>
-                            <span class="comment-time">on June 23,2015, at 22:34</span>
-                            <button class="comment-replay-btn"><i class="fa fa-mail-reply-all"></i> Reply</button>
-                        </div>
-                        <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div><!-- / .bp-comment-reply -->
 
-                    <!-- Comment 2 -->
-                    <div class="bp-comment">
-                        <div class="comment-avatar"><i class="fa fa-user"></i></div>
-                        <div class="comment-info">
-                            <h6 class="comment-name">Stella Hartmann</h6>
-                            <span class="comment-time">on June 23,2015, at 22:34</span>
-                            <button class="comment-replay-btn"><i class="fa fa-mail-reply-all"></i> Reply</button>
-                        </div>
-                        <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div><!-- / .bp-comment -->
-
-                    <!-- Comment 3 -->
-                    <div class="bp-comment">
-                        <div class="comment-avatar"><i class="fa fa-user"></i></div>
-                        <div class="comment-info">
-                            <h6 class="comment-name">Stella Hartmann</h6>
-                            <span class="comment-time">on June 23,2015, at 22:34</span>
-                            <button class="comment-replay-btn"><i class="fa fa-mail-reply-all"></i> Reply</button>
-                        </div>
-                        <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-                    </div><!-- / .bp-comment -->
+                                    <?php
+                                        if ( comments_open() || get_comments_number() ) :
+                                            comments_template();
+                                        endif;
+                                    ?>
+                    <!-- / .bp-comment -->
                     <!-- Leave a comment -->
             <!--        <div class="comment-form">
                         <h4 class="blog-section-title">Leave a comment</h4>

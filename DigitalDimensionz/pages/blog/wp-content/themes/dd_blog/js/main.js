@@ -69,6 +69,10 @@
 
 		}
 
+
+		$("div.comment-info a.comment-reply-link").prepend("<i class='fa fa-mail-reply-all' style='padding-right: 10px;'></i>");
+
+
 	});
 
 	// Initialize functions after elements are loaded.
