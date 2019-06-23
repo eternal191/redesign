@@ -107,6 +107,8 @@
                             '<input id="author" name="author" type="text" value="helo" size="30" /></p>',
 
                         'label_submit'=>'Submit',
+	                    // submit btn class
+                        'class_submit'=>'btn',
                         // change the title of the reply section
                         'title_reply'=>'Write a Reply or Comment',
                         // remove "Text or HTML to be displayed after the set of comment fields"
@@ -123,8 +125,8 @@
             <!-- Post Navigation -->
             <div class="row">
                 <nav class="blog-post-nav">
-                    <a href="#" class="prev-btn">Prev post</a>
-                    <a href="#" class="next-btn">Next post</a>
+	                <?php previous_post_link(); ?>
+                    <?php next_post_link(); ?>
                 </nav>
             </div>
 

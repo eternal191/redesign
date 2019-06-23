@@ -47,6 +47,13 @@
 
 
 
+
+function posts_link_attributes() {
+    return 'class="next-btn"';
+}
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+
     /*add_theme_support('html5', array('comment-list','comment-form'));*/
 /*function dd_widgets_init() {
     register_sidebar( array(

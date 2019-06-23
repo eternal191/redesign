@@ -55,6 +55,38 @@ div.bp-comment.thread-odd.depth-1 p {
 
 }
 
+
+p.comment-form-cookies-consent label {
+    margin-left: 10px;
+}
+
+.comment-form .form-submit input {
+    width: 200px;
+}
+
+
+.blog-post-nav a[rel=prev] {
+    float: left;
+    padding-right: 15px;
+    display: inline-block;
+    color: #999;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.blog-post-nav a[rel=next] {
+    float: right;
+    padding-right: 15px;
+    display: inline-block;
+    color: #999;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 div.bp-comment.thread-odd.depth-1 .comment-info a {
     color: #999;
 
