@@ -18,7 +18,7 @@
 <![endif]-->
 <!-- ========== Preloader ========== -->
 <div class="preloader">
-    <img src="../../assets/images/loader.svg" alt="Loading...">
+    <img src="./img/loader.svg" alt="Loading...">
 </div>
 <!-- ========== Navigation ========== -->
 <nav class="navbar navbar-default navbar-static-top mega">

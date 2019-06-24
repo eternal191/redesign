@@ -1,4 +1,3 @@
-<h1>COMMENTS BABY</h1>
 
 <?php
 wp_list_comments(apply_filters('list_comments_args', array(

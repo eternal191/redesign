@@ -125,8 +125,8 @@
             <!-- Post Navigation -->
             <div class="row">
                 <nav class="blog-post-nav">
-	                <?php previous_post_link(); ?>
-                    <?php next_post_link(); ?>
+	                <?php previous_post_link( ' %link', '< Previous Post '); ?>
+                    <?php next_post_link('%link ', 'Next Post >'); ?>
                 </nav>
             </div>
 

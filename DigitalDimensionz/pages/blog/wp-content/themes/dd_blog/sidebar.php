@@ -26,7 +26,6 @@
             <li><a href="#">CSS3</a></li>
             <li><a href="#">iOS</a></li>-->
         </ul>
--->
 
 
     </div>
@@ -38,7 +37,7 @@
 	    <?php
 	    $recent_posts = wp_get_recent_posts();
 	    foreach( $recent_posts as $recent ){
-		    echo '<div class="widget-item"> <a href="' . get_permalink($recent["ID"]) .'"><h6 class="h-alt">Blog Post Example</h6></a></div>';
+		    echo '<div class="widget-item"> <a href="' . get_permalink($recent["ID"]) .'"><h6 class="h-alt">' . $recent["post_name"] . '</h6></a></div>';
 		    error_log(print_r($recent,true));
 	    }
 	    wp_reset_query();
@@ -50,25 +49,24 @@
     <div class="col-md-12 ws-s categories-widget">
         <h5 class="header-widget">Categories</h5>
 
-        <!-- Item 1 -->
-        <div class="widget-item">
+        <?php wp_list_categories(); ?>
+
+
+     <!--   <div class="widget-item">
             <a href="#">Web Design - <span>15</span></a>
         </div>
 
-        <!-- Item 2 -->
         <div class="widget-item">
             <a href="#">Graphic Design - <span>6</span></a>
         </div>
 
-        <!-- Item 3 -->
         <div class="widget-item">
             <a href="#">iOS Development - <span>12</span></a>
         </div>
 
-        <!-- Item 4 -->
         <div class="widget-item">
             <a href="#">Other - <span>3</span></a>
-        </div>
+        </div>-->
 
     </div><!-- / .categories-widget -->
 
@@ -77,25 +75,23 @@
     <div class="col-md-12 ws-s comments-widget">
         <h5 class="header-widget">Comments</h5>
 
-        <!-- Item 1 -->
+        <?php wp_list_comments(); ?>
+     <!--
         <div class="widget-item">
             <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Lorem ipsum dolor sit amet</a></span>
         </div>
 
-        <!-- Item 2 -->
         <div class="widget-item">
             <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Sed do eiusmod</a></span>
         </div>
 
-        <!-- Item 3 -->
         <div class="widget-item">
             <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Lorem ipsum dolor sit amet</a></span>
         </div>
 
-        <!-- Item 4 -->
         <div class="widget-item">
             <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Sed do eiusmod</a></span>
-        </div>
+        </div>-->
 
     </div><!-- / .comments-widget -->
 
