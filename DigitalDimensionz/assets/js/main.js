@@ -75,10 +75,9 @@
 	$(window).load(function() {
 
 		// Preloader
-		$('.preloader img').fadeOut(); // will first fade out the loading animation
-		$('.preloader').delay(350).fadeOut('slow', function() {
+		$('.preloader img').hide(); // will first fade out the loading animation
 
-		});
+		$('.preloader').hide();
 
 
 		if ($('.portfolio-filters').length) {
@@ -434,7 +433,7 @@
 						separator : ','
 					};
 					// Counter 1
-					var counter1 = new CountUp('count-1', 0, 8, 0, 3, options);
+					var counter1 = new CountUp('count-1', 0, 10, 0, 3, options);
 					counter1.start();
 					// Counter 2
 					var counter2 = new CountUp('count-2', 0, 2835, 0, 3, options);

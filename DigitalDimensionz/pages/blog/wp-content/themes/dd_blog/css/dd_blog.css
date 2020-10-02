@@ -96,10 +96,16 @@ div.bypostauthor p {
     display: block;
     position: relative;
     left: 100px;
-    width: 100%;
+    width: 80%;
     border-bottom: 1px solid #ececec;
     padding-bottom: 30px;
 }
+
+        @media(max-width:500px) {
+                div.bypostauthor p {
+                    left:0px;
+                }
+        }
 
 /*div.comment.odd.alt.thread-odd.thread-alt.depth-1.bp-comment > p {
     margin-left: 100px;
@@ -124,4 +130,19 @@ div.bypostauthor p {
     color: #ececec;
     border-color: #111;
     background: #111;
+}
+
+.col-md-12.ws-s.comments-widget li {
+    list-style: none;
+}
+
+
+.recent-posts-widget a img {
+    width: 100%;
+    height: auto;
+}
+
+
+#commentform textarea {
+    width: 100%;
 }

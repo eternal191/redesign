@@ -79,7 +79,7 @@
 	$(window).load(function() {
 
 		// Preloader
-		$('.preloader img').fadeOut(); // will first fade out the loading animation
+		$('.preloader img').hide(); // will first fade out the loading animation
 		$('.preloader').delay(350).fadeOut('slow', function() {
 
 		});

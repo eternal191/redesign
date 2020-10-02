@@ -18,8 +18,9 @@
 <![endif]-->
 <!-- ========== Preloader ========== -->
 <div class="preloader">
-    <img src="./img/loader.svg" alt="Loading...">
+    <img src=" <?php echo get_template_directory_uri() .'/img/loader.svg' ?> " alt="Loading...">
 </div>
+
 <!-- ========== Navigation ========== -->
 <nav class="navbar navbar-default navbar-static-top mega">
     <div class="container">
